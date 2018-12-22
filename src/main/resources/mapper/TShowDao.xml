@@ -1,0 +1,124 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE mapper PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN" "http://mybatis.org/dtd/mybatis-3-mapper.dtd">
+<mapper namespace="com.admin.dao.TShowDao">
+    <!--查询单个-->
+    <select id="queryById"  resultType="com.admin.pojo.T_Show">
+        select
+          show_id, show_name, show_img, show_min_price, show_place, categorie_id, areainfo_id, show_title, count, show_status, show_begin_time, show_end_time, show_max_price, show_ipt_num
+        from t_show
+        where show_id = #{show_Id}
+    </select>
+
+    <!--查询指定行数据-->
+    <select id="queryAllByLimit" resultType="com.admin.pojo.T_Show">
+        select
+          show_id, show_name, show_img, show_min_price, show_place, categorie_id, areainfo_id, show_title, count, show_status, show_begin_time, show_end_time, show_max_price, show_ipt_num
+        from t_show
+    </select>
+
+    <!--通过实体作为筛选条件查询-->
+    <select id="queryAll" resultType="com.admin.pojo.T_Show">
+        select
+          show_id, show_name, show_img, show_min_price, show_place, categorie_id, areainfo_id, show_title, count, show_status, show_begin_time, show_end_time, show_max_price, show_ipt_num
+        from t_show
+        <!--<where>-->
+            <!--<if test="showId != null">-->
+                <!--and show_id = #{showId}-->
+            <!--</if>-->
+            <!--<if test="showName != null and showName != ''">-->
+                <!--and show_name = #{showName}-->
+            <!--</if>-->
+            <!--<if test="showImg != null and showImg != ''">-->
+                <!--and show_img = #{showImg}-->
+            <!--</if>-->
+            <!--<if test="showMinPrice != null">-->
+                <!--and show_min_price = #{showMinPrice}-->
+            <!--</if>-->
+            <!--<if test="showPlace != null and showPlace != ''">-->
+                <!--and show_place = #{showPlace}-->
+            <!--</if>-->
+            <!--<if test="categorieId != null">-->
+                <!--and categorie_id = #{categorieId}-->
+            <!--</if>-->
+            <!--<if test="areainfoId != null and areainfoId != ''">-->
+                <!--and areainfo_id = #{areainfoId}-->
+            <!--</if>-->
+            <!--<if test="showTitle != null and showTitle != ''">-->
+                <!--and show_title = #{showTitle}-->
+            <!--</if>-->
+            <!--<if test="count != null">-->
+                <!--and count = #{count}-->
+            <!--</if>-->
+            <!--<if test="showStatus != null">-->
+                <!--and show_status = #{showStatus}-->
+            <!--</if>-->
+            <!--<if test="showBeginTime != null">-->
+                <!--and show_begin_time = #{showBeginTime}-->
+            <!--</if>-->
+            <!--<if test="showEndTime != null">-->
+                <!--and show_end_time = #{showEndTime}-->
+            <!--</if>-->
+            <!--<if test="showMaxPrice != null">-->
+                <!--and show_max_price = #{showMaxPrice}-->
+            <!--</if>-->
+            <!--<if test="showIptNum != null">-->
+                <!--and show_ipt_num = #{showIptNum}-->
+            <!--</if>-->
+        <!--</where>-->
+    </select>
+
+    <!--新增所有列-->
+    <insert id="insert" keyProperty="show_Id" useGeneratedKeys="true">
+        insert into t_show(show_name, show_img, show_min_price, show_place, categorie_id, areainfo_id, show_title, count, show_status, show_begin_time, show_end_time, show_max_price, show_ipt_num)
+        values (#{show_Name}, #{show_Img}, #{show_Min_Price}, #{show_Place}, #{categorie_Id}, #{areainfo_Id}, #{show_Title}, #{count}, #{show_Status}, convert(varchar(10),getdate(),120), dateadd(ms,-3,DATEADD(yy,DATEDIFF(yy,0,getdate())+1,0)), #{show_Max_Price}, #{show_Ipt_Num})
+    </insert>
+
+    <!--通过主键修改数据-->
+    <update id="update">
+        update t_show
+        <trim prefix="set" suffixOverrides="," suffix="where show_id=#{show_Id}">
+            <if test="show_Name != null and show_Name != ''">
+                show_name = #{show_Name},
+            </if>
+            <if test="show_Img != null and show_Img != ''">
+                show_img = #{show_Img},
+            </if>
+            <if test="show_Min_Price != null">
+                show_min_price = #{show_Min_Price},
+            </if>
+            <if test="show_Place != null and show_Place != ''">
+                show_place = #{show_Place},
+            </if>
+            <if test="categorie_Id != null">
+                categorie_id = #{categorie_Id},
+            </if>
+            <if test="areainfo_Id != null and areainfo_Id != ''">
+                areainfo_id = #{areainfo_Id},
+            </if>
+            <if test="show_Title != null and show_Title != ''">
+                show_title = #{show_Title},
+            </if>
+            <if test="show_Status != null">
+                show_status = #{show_Status},
+            </if>
+            <if test="show_Begin_Time != null">
+                show_begin_time = #{show_Begin_Time},
+            </if>
+            <if test="show_End_Time != null">
+                show_end_time = #{show_End_Time},
+            </if>
+            <if test="show_Max_Price != null">
+                show_max_price = #{show_Max_Price},
+            </if>
+            <if test="show_Ipt_Num != null">
+                show_ipt_num = #{show_Ipt_Num},
+            </if>
+        </trim>
+    </update>
+
+    <!--通过主键删除-->
+    <delete id="deleteById">
+        delete from t_show where show_id = #{showId}
+    </delete>
+
+</mapper>

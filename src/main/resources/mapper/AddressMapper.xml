@@ -1,0 +1,50 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE mapper PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN" 
+"http://mybatis.org/dtd/mybatis-3-mapper.dtd">
+
+<!--suppress ALL -->
+<mapper namespace="com.admin.dao.AddressDao">
+	<update id="updateadd">
+		<trim prefix="set" suffixOverrides="," suffix="where address_id=#{address_id}">
+			<if test="address_addressee != null">
+				address_addressee=#{address_addressee} ,
+			</if>
+			<if test="phone != null">
+				phone=#{phone} ,
+			</if>
+			<if test="password!= null">
+				password=#{password} ,
+			</if>
+			<if test="identityCode!= null">
+				identityCode=#{identityCode} ,
+			</if>
+			<if test="loginName!= null">
+				loginName=#{loginName} ,
+			</if>
+			<if test="usertype!= null">
+				usertype=#{usertype} ,
+			</if>
+			<if test="login_phone!= null">
+				login_phone=#{login_phone} ,
+			</if>
+			<if test="provice_id!= null">
+				provice_id=#{provice_id} ,
+			</if>
+			<if test="city_id!= null">
+				city_id=#{city_id} ,
+			</if>
+			<if test="area_id!= null">
+				area_id=#{area_id} ,
+			</if>
+			<if test="detailed!= null">
+				detailed=#{detailed} ,
+			</if>
+			<if test="preferred!= null">
+				preferred=#{preferred} ,
+			</if>
+		</trim>
+	</update>
+	<select id="getadd" resultType="com.admin.pojo.T_Address">
+		select * from t_address where user_id=#{uid};
+	</select>
+</mapper>

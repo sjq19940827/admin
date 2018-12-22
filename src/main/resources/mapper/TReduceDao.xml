@@ -1,0 +1,71 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE mapper PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN" "http://mybatis.org/dtd/mybatis-3-mapper.dtd">
+<mapper namespace="com.admin.dao.TReduceDao">
+
+    <resultMap type="com.admin.pojo.TReduce" id="TReduceMap">
+        <result property="reduceId" column="reduce_id" jdbcType="INTEGER"/>
+        <result property="reduceNumber" column="reduce_number" jdbcType="VARCHAR"/>
+        <result property="reduceTot" column="reduce_tot" jdbcType="VARCHAR"/>
+        <result property="sub" column="sub" jdbcType="VARCHAR"/>
+        <result property="createdate" column="createDate" jdbcType="TIMESTAMP"/>
+        <result property="exitdate" column="exitDate" jdbcType="TIMESTAMP"/>
+    </resultMap>
+
+    <!--查询单个-->
+    <select id="queryById" resultMap="TReduceMap">
+        select
+          reduce_id, reduce_number, reduce_tot, sub, createDate, exitDate
+        from xiaomai.t_reduce
+        where reduce_id = #{reduceId}
+    </select>
+
+    <select id="queryByName" resultMap="TReduceMap">
+        select
+          reduce_id, reduce_number, reduce_tot, sub, createDate, exitDate
+        from xiaomai.t_reduce
+        where reduce_tot= #{reduceTot}
+    </select>
+    <!--查询指定行数据-->
+
+    <!--通过实体作为筛选条件查询-->
+    <select id="queryAll" resultMap="TReduceMap">
+        select
+          reduce_id, reduce_number, reduce_tot, sub, createDate, exitDate
+        from xiaomai.t_reduce
+    </select>
+
+    <!--新增所有列-->
+    <insert id="insert" keyProperty="reduceId" useGeneratedKeys="true">
+        insert into xiaomai.t_reduce(reduce_number, reduce_tot, sub, createDate, exitDate)
+        values (#{reduceNumber}, #{reduceTot}, #{sub}, #{createdate}, #{exitdate})
+    </insert>
+
+    <!--通过主键修改数据-->
+    <update id="update">
+        update xiaomai.t_reduce
+        <set>
+            <if test="reduceNumber != null and reduceNumber != ''">
+                reduce_number = #{reduceNumber},
+            </if>
+            <if test="reduceTot != null and reduceTot != ''">
+                reduce_tot = #{reduceTot},
+            </if>
+            <if test="sub != null and sub != ''">
+                sub = #{sub},
+            </if>
+            <if test="createdate != null">
+                createDate = #{createdate},
+            </if>
+            <if test="exitdate != null">
+                exitDate = #{exitdate},
+            </if>
+        </set>
+        where reduce_id = #{reduceId} or reduce_tot = #{reduceTot}
+    </update>
+
+    <!--通过主键删除-->
+    <delete id="deleteById">
+        delete from xiaomai.t_reduce where reduce_id = #{reduceId}
+    </delete>
+
+</mapper>

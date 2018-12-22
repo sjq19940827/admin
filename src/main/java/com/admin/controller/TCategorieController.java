@@ -1,0 +1,69 @@
+package com.admin.controller;
+
+import com.admin.pojo.T_Categorie;
+import com.admin.service.TCategorieService;
+import io.swagger.annotations.Api;
+import io.swagger.annotations.ApiOperation;
+import io.swagger.annotations.ApiParam;
+import org.springframework.web.bind.annotation.*;
+
+import javax.annotation.Resource;
+
+/**
+ * (T_Categorie)表控制层
+ *
+ * @author makejava
+ * @since 2018-12-20 16:32:04
+ */
+@RestController
+@RequestMapping("tCategorie/")
+@Api(value = "tCategorie/",description = "商品种类管理")
+public class TCategorieController {
+    /**
+     * 服务对象
+     */
+    @Resource
+    private TCategorieService tCategorieService;
+
+    /**
+     * 通过主键查询单条数据
+     *
+     * @param id 主键
+     * @return 单条数据
+     */
+    @GetMapping("selectOne")
+    @ApiOperation(value = "按ID查询类型",httpMethod = "GET",notes = "类型json数据")
+    public T_Categorie selectOne(@RequestParam("id") Long id) {
+        return this.tCategorieService.queryById(id);
+    }
+
+    @GetMapping("getall")
+    @ApiOperation(value = "分页查询全部订单",httpMethod = "GET",notes = "订单json数组")
+    public String getall(@RequestParam("pagenum")int pagenum , @RequestParam("pagesize") int pagesize){
+        String s = tCategorieService.queryAllByLimit(pagenum, pagesize);
+        return s;
+    }
+
+    @RequestMapping(value = "update",method = RequestMethod.POST)
+    @ApiOperation(value = "动态修改商品类别信息",notes = "返回商品类别对象json")
+    public String update(@ApiParam(required = true, name ="tCategorie", value ="商品类型名称")@RequestBody T_Categorie tCategorie){
+        String update = tCategorieService.update(tCategorie);
+        return update;
+    }
+
+    @RequestMapping(value = "insert",method = RequestMethod.POST)
+    @ApiOperation(value = "新增商品类别信息",notes = "相应结果")
+    public String insert(@ApiParam(required = true, name ="tCategorie", value ="商品类型名称")@RequestBody T_Categorie tCategorie){
+        String insert = tCategorieService.insert(tCategorie);
+        return insert;
+    }
+
+
+    @GetMapping("del")
+    @ApiOperation(value = "删除商品类型信息",httpMethod = "POST",notes = "相应结果")
+    public String del(@RequestParam("categorieid") long categorieid){
+        String s = tCategorieService.deleteById(categorieid);
+        return s;
+    }
+
+}

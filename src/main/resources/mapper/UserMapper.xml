@@ -1,0 +1,37 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE mapper PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN" 
+"http://mybatis.org/dtd/mybatis-3-mapper.dtd">
+
+<!--suppress ALL -->
+<mapper namespace="com.admin.dao.UserDao">
+	<update id="updateuser">
+		update t_user
+		<trim prefix="set" suffixOverrides="," suffix="where id=#{id}">
+			<if test="userName != null">
+				userName=#{userName} ,
+			</if>
+			<if test="nickname != null">
+				nickname=#{nickname} ,
+			</if>
+			<if test="password!= null">
+				password=#{password} ,
+			</if>
+			<if test="identityCode!= null">
+				identityCode=#{identityCode} ,
+			</if>
+			<if test="loginName!= null">
+				loginName=#{loginName} ,
+			</if>
+			<if test="usertype!= null">
+				usertype=#{usertype} ,
+			</if>
+			<if test="login_Phone!= null">
+				login_Phone=#{login_Phone} ,
+			</if>
+		</trim>
+	</update>
+
+	<select id="getall" resultType="com.admin.pojo.T_User">
+		select id,userName,password,sex,loginName,usertype,login_phone from t_user
+	</select>
+</mapper>

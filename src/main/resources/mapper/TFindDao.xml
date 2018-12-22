@@ -1,0 +1,91 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE mapper PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN" "http://mybatis.org/dtd/mybatis-3-mapper.dtd">
+<mapper namespace="com.admin.dao.TFindDao">
+
+    <resultMap type="com.admin.pojo.TFind" id="TFindMap">
+        <result property="findId" column="find_id" jdbcType="INTEGER"/>
+        <result property="information" column="information" jdbcType="VARCHAR"/>
+        <result property="showId" column="show_id"/>
+        <result property="userId" column="user_id" jdbcType="INTEGER"/>
+        <result property="releasetime" column="releasetime" jdbcType="TIMESTAMP"/>
+    </resultMap>
+
+    <!--查询单个-->
+    <select id="queryById" resultMap="TFindMap">
+        select
+          find_id, information, show_id, user_id, releasetime
+        from xiaomai.t_find
+        where find_id = #{findId}
+    </select>
+
+    <select id="queryByUserId" resultMap="TFindMap">
+        select
+          find_id, information, show_id, user_id, releasetime
+        from xiaomai.t_find
+        where user_id = #{userId}
+    </select>
+
+    <!--查询指定行数据-->
+    <select id="queryAllByLimit" resultMap="TFindMap">
+        select
+          find_id, information, show_id, user_id, releasetime
+        from xiaomai.t_find
+        limit #{offset}, #{limit}
+    </select>
+
+    <!--通过实体作为筛选条件查询-->
+    <select id="queryAll" resultMap="TFindMap">
+        select
+          find_id, information, show_id, user_id, releasetime
+        from xiaomai.t_find
+        <where>
+            <if test="findId != null">
+                and find_id = #{findId}
+            </if>
+            <if test="information != null and information != ''">
+                and information = #{information}
+            </if>
+            <if test="showId != null">
+                and show_id = #{showId}
+            </if>
+            <if test="userId != null">
+                and user_id = #{userId}
+            </if>
+            <if test="release time != null">
+                and releasetime = #{releasetime}
+            </if>
+        </where>
+    </select>
+
+    <!--新增所有列-->
+    <insert id="insert" keyProperty="findId" useGeneratedKeys="true">
+        insert into xiaomai.t_find(information, show_id, user_id, releasetime)
+        values (#{information}, #{showId}, #{userId}, #{releasetime})
+    </insert>
+
+    <!--通过主键修改数据-->
+    <update id="update">
+        update xiaomai.t_find
+        <set>
+            <if test="information != null and information != ''">
+                information = #{information},
+            </if>
+            <if test="showId != null">
+                show_id = #{showId},
+            </if>
+            <if test="userId != null">
+                user_id = #{userId},
+            </if>
+            <if test="releasetime != null">
+                releasetime = #{releasetime},
+            </if>
+        </set>
+        where find_id = #{findId}
+    </update>
+
+    <!--通过主键删除-->
+    <delete id="deleteById">
+        delete from xiaomai.t_find where find_id = #{findId}
+    </delete>
+
+</mapper>
