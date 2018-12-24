@@ -1,7 +1,6 @@
 package com.admin.controller;
 
 import com.admin.pojo.TReduce;
-import com.admin.pojo.City;
 import com.admin.service.TReduceService;
 import com.alibaba.fastjson.JSON;
 import io.swagger.annotations.Api;
@@ -34,6 +33,7 @@ public class TReduceController {
      * @return 单条数据
      */
     @GetMapping("selectOne")
+    @ApiOperation(value = "按优惠券ID查询优惠券",notes = "优惠券json数组")
     public String selectOne(Integer id) {
         TReduce tReduce = this.tReduceService.queryById(id);
         return JSON.toJSONString(tReduce);
@@ -41,6 +41,7 @@ public class TReduceController {
 
 
     @GetMapping("selectbyname")
+    @ApiOperation(value = "按名字查询优惠券",notes = "优惠券json数组")
     public String selectOnebyname(String reducetot) {
         TReduce tReduce = tReduceService.queryByName(reducetot);
         System.out.println(JSON.toJSONString(tReduce));

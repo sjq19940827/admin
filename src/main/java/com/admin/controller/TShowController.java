@@ -4,11 +4,8 @@ import com.admin.pojo.T_Show;
 import com.admin.service.TShowService;
 import io.swagger.annotations.Api;
 import io.swagger.annotations.ApiOperation;
-import io.swagger.annotations.ApiParam;
 import org.springframework.stereotype.Controller;
-import org.springframework.ui.Model;
 import org.springframework.web.bind.annotation.*;
-import sun.net.www.http.HttpClient;
 
 import javax.annotation.Resource;
 import javax.servlet.http.HttpServletRequest;
@@ -37,6 +34,7 @@ public class TShowController {
      * @return 单条数据
      */
     @GetMapping("selectOne")
+
     public String selectOne(Long id) {
         return this.tShowService.queryById(id);
     }

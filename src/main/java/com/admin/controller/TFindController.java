@@ -1,6 +1,5 @@
 package com.admin.controller;
 
-import com.admin.pojo.City;
 import com.admin.pojo.TFind;
 import com.admin.service.TFindService;
 import com.alibaba.fastjson.JSON;
@@ -34,13 +33,15 @@ public class TFindController {
      * @return 单条数据
      */
     @GetMapping("selectOne")
-    public TFind selectOne(Integer id) {
-        return this.tFindService.queryById(id);
+    @ApiOperation(value = "按照发现ID查询发现",notes = "发现对象")
+    public String selectOne(Integer id) {
+        return JSON.toJSONString(this.tFindService.queryById(id));
     }
 
     @GetMapping("userid")
-    public TFind selectOnebyname(Integer userid) {
-        return this.tFindService.queryByUserId(userid);
+    @ApiOperation(value = "按用户ID查询发现",notes = "发现对象")
+    public String selectOnebyname(Integer userid) {
+        return JSON.toJSONString(this.tFindService.queryByUserId(userid));
     }
 
     @GetMapping("getall")

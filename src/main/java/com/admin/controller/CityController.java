@@ -4,7 +4,6 @@ import com.admin.pojo.City;
 import com.admin.service.CityService;
 import com.alibaba.fastjson.JSON;
 import io.swagger.annotations.Api;
-import io.swagger.annotations.ApiImplicitParam;
 import io.swagger.annotations.ApiOperation;
 import io.swagger.annotations.ApiParam;
 import org.springframework.web.bind.annotation.*;
@@ -31,17 +30,18 @@ public class CityController {
      * 通过主键查询单条数据
      *
      * @param id 主键
-     * @return 单条数据
+     * @return 单条数据z
      */
     @GetMapping("selectbyid")
-    public City selectOne(Integer id) {
-        return this.cityService.queryById(id);
+    @ApiOperation(value = "根据城市ID查询",notes = "城市对象")
+    public String selectOne(Integer id) {
+        return JSON.toJSONString(this.cityService.queryById(id));
     }
     @GetMapping("selectbyname")
-    public City selectOnebyname(String cityname) {
-        return this.cityService.queryByName(cityname);
+    @ApiOperation(value = "根据城市名称查询",notes = "城市对象")
+    public String selectOnebyname(String cityname) {
+        return JSON.toJSONString(this.cityService.queryByName(cityname));
     }
-
 
     @GetMapping("getall")
     @ApiOperation(value = "分页查询全部城市",notes = "城市信息")
