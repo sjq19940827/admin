@@ -1283,3 +1283,77 @@ java.sql.SQLException: Field 'question_Id' doesn't have a default value
 2018-12-24 16:06:09.026  INFO 9980 --- [http-nio-8080-exec-1] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring DispatcherServlet 'dispatcherServlet'
 2018-12-24 16:06:09.027  INFO 9980 --- [http-nio-8080-exec-1] o.s.web.servlet.DispatcherServlet        : Initializing Servlet 'dispatcherServlet'
 2018-12-24 16:06:09.090  INFO 9980 --- [http-nio-8080-exec-1] o.s.web.servlet.DispatcherServlet        : Completed initialization in 63 ms
+2018-12-24 16:54:19.224  INFO 20136 --- [main] com.admin.AdminApplication               : Starting AdminApplication on WIN-MFNRLAVRVCB with PID 20136 (E:\ideaWorkSpace\admin\target\classes started by Administrator in E:\ideaWorkSpace\admin)
+2018-12-24 16:54:19.257  INFO 20136 --- [main] com.admin.AdminApplication               : The following profiles are active: dev
+2018-12-24 16:54:22.958  INFO 20136 --- [main] .s.d.r.c.RepositoryConfigurationDelegate : Multiple Spring Data modules found, entering strict repository configuration mode!
+2018-12-24 16:54:22.988  INFO 20136 --- [main] .s.d.r.c.RepositoryConfigurationDelegate : Bootstrapping Spring Data repositories in DEFAULT mode.
+2018-12-24 16:54:23.225  INFO 20136 --- [main] .s.d.r.c.RepositoryConfigurationDelegate : Finished Spring Data repository scanning in 88ms. Found 0 repository interfaces.
+2018-12-24 16:54:24.125  INFO 20136 --- [main] trationDelegate$BeanPostProcessorChecker : Bean 'com.alibaba.druid.spring.boot.autoconfigure.stat.DruidSpringAopConfiguration' of type [com.alibaba.druid.spring.boot.autoconfigure.stat.DruidSpringAopConfiguration] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2018-12-24 16:54:24.156  INFO 20136 --- [main] trationDelegate$BeanPostProcessorChecker : Bean 'org.springframework.transaction.annotation.ProxyTransactionManagementConfiguration' of type [org.springframework.transaction.annotation.ProxyTransactionManagementConfiguration$$EnhancerBySpringCGLIB$$a4c9e8e8] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2018-12-24 16:54:24.179  INFO 20136 --- [main] trationDelegate$BeanPostProcessorChecker : Bean 'spring.datasource.druid-com.alibaba.druid.spring.boot.autoconfigure.properties.DruidStatProperties' of type [com.alibaba.druid.spring.boot.autoconfigure.properties.DruidStatProperties] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2018-12-24 16:54:24.201  INFO 20136 --- [main] trationDelegate$BeanPostProcessorChecker : Bean 'advisor' of type [org.springframework.aop.support.RegexpMethodPointcutAdvisor] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2018-12-24 16:54:25.389  INFO 20136 --- [main] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat initialized with port(s): 8080 (http)
+2018-12-24 16:54:25.439  INFO 20136 --- [main] o.apache.catalina.core.StandardService   : Starting service [Tomcat]
+2018-12-24 16:54:25.440  INFO 20136 --- [main] org.apache.catalina.core.StandardEngine  : Starting Servlet Engine: Apache Tomcat/9.0.13
+2018-12-24 16:54:25.460  INFO 20136 --- [main] o.a.catalina.core.AprLifecycleListener   : The APR based Apache Tomcat Native library which allows optimal performance in production environments was not found on the java.library.path: [C:\Program Files\Java\jdk1.8.0_181\bin;C:\Windows\Sun\Java\bin;C:\Windows\system32;C:\Windows;C:\Program Files (x86)\Common Files\Oracle\Java\javapath;C:\Program Files\Java\jdk1.8.0_181\bin;C:\Program Files\MySQL\MySQL Server 5.5\bin；%CALTALINA_HOME%\bin;;CATALINA_HOME%\bin;E:\sdlihdroighdlghdf\MyEclipse 10\File\New\Web Project\tomcat\lib;D:\Maven\apache-maven-3.5.4\bin;C:\Program Files\TortoiseSVN\bin;D:\新建文件夹\;D:\G;t\cmd;D:\Git\cmd;C:\Program Files\erl7.1\bin;C:\Windows/system32;C:\Windows;D:\gradle\gradle-5.0\bin;C:\Users\Administrator\AppData\Roaming\npm;.]
+2018-12-24 16:54:25.918  INFO 20136 --- [main] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring embedded WebApplicationContext
+2018-12-24 16:54:25.919  INFO 20136 --- [main] o.s.web.context.ContextLoader            : Root WebApplicationContext: initialization completed in 6365 ms
+2018-12-24 16:54:26.177  INFO 20136 --- [main] c.a.d.s.b.a.DruidDataSourceAutoConfigure : Init DruidDataSource
+2018-12-24 16:54:26.574  INFO 20136 --- [main] com.alibaba.druid.pool.DruidDataSource   : {dataSource-1} inited
+2018-12-24 16:54:28.098  INFO 20136 --- [main] o.s.s.concurrent.ThreadPoolTaskExecutor  : Initializing ExecutorService 'applicationTaskExecutor'
+2018-12-24 16:54:29.785  INFO 20136 --- [main] d.s.w.p.DocumentationPluginsBootstrapper : Context refreshed
+2018-12-24 16:54:29.835  INFO 20136 --- [main] d.s.w.p.DocumentationPluginsBootstrapper : Found 1 custom documentation plugin(s)
+2018-12-24 16:54:29.849  INFO 20136 --- [main] s.d.s.w.s.ApiListingReferenceScanner     : Scanning for api listing references
+2018-12-24 16:54:30.094  INFO 20136 --- [main] .d.s.w.r.o.CachingOperationNameGenerator : Generating unique operation named: delUsingGET_1
+2018-12-24 16:54:30.099  INFO 20136 --- [main] .d.s.w.r.o.CachingOperationNameGenerator : Generating unique operation named: getallUsingGET_1
+2018-12-24 16:54:30.108  INFO 20136 --- [main] .d.s.w.r.o.CachingOperationNameGenerator : Generating unique operation named: selectOneUsingGET_1
+2018-12-24 16:54:30.113  INFO 20136 --- [main] .d.s.w.r.o.CachingOperationNameGenerator : Generating unique operation named: updateUsingPOST_1
+2018-12-24 16:54:30.121  INFO 20136 --- [main] .d.s.w.r.o.CachingOperationNameGenerator : Generating unique operation named: getallUsingGET_2
+2018-12-24 16:54:30.126  INFO 20136 --- [main] .d.s.w.r.o.CachingOperationNameGenerator : Generating unique operation named: insertUsingPOST_1
+2018-12-24 16:54:30.131  INFO 20136 --- [main] .d.s.w.r.o.CachingOperationNameGenerator : Generating unique operation named: selectOneUsingGET_2
+2018-12-24 16:54:30.135  INFO 20136 --- [main] .d.s.w.r.o.CachingOperationNameGenerator : Generating unique operation named: updateUsingPOST_2
+2018-12-24 16:54:30.139  INFO 20136 --- [main] .d.s.w.r.o.CachingOperationNameGenerator : Generating unique operation named: delUsingGET_2
+2018-12-24 16:54:30.143  INFO 20136 --- [main] .d.s.w.r.o.CachingOperationNameGenerator : Generating unique operation named: getallUsingGET_3
+2018-12-24 16:54:30.148  INFO 20136 --- [main] .d.s.w.r.o.CachingOperationNameGenerator : Generating unique operation named: insertUsingPOST_2
+2018-12-24 16:54:30.151  INFO 20136 --- [main] .d.s.w.r.o.CachingOperationNameGenerator : Generating unique operation named: selectOneUsingGET_3
+2018-12-24 16:54:30.154  INFO 20136 --- [main] .d.s.w.r.o.CachingOperationNameGenerator : Generating unique operation named: selectOnebynameUsingGET_1
+2018-12-24 16:54:30.156  INFO 20136 --- [main] .d.s.w.r.o.CachingOperationNameGenerator : Generating unique operation named: updateUsingPOST_3
+2018-12-24 16:54:30.162  INFO 20136 --- [main] .d.s.w.r.o.CachingOperationNameGenerator : Generating unique operation named: delUsingGET_3
+2018-12-24 16:54:30.165  INFO 20136 --- [main] .d.s.w.r.o.CachingOperationNameGenerator : Generating unique operation named: getallUsingGET_4
+2018-12-24 16:54:30.172  INFO 20136 --- [main] .d.s.w.r.o.CachingOperationNameGenerator : Generating unique operation named: selectOneUsingGET_4
+2018-12-24 16:54:30.179  INFO 20136 --- [main] .d.s.w.r.o.CachingOperationNameGenerator : Generating unique operation named: updateUsingPOST_4
+2018-12-24 16:54:30.182  INFO 20136 --- [main] .d.s.w.r.o.CachingOperationNameGenerator : Generating unique operation named: delUsingGET_4
+2018-12-24 16:54:30.185  INFO 20136 --- [main] .d.s.w.r.o.CachingOperationNameGenerator : Generating unique operation named: getallUsingGET_5
+2018-12-24 16:54:30.190  INFO 20136 --- [main] .d.s.w.r.o.CachingOperationNameGenerator : Generating unique operation named: insertUsingPOST_3
+2018-12-24 16:54:30.193  INFO 20136 --- [main] .d.s.w.r.o.CachingOperationNameGenerator : Generating unique operation named: selectOneUsingGET_5
+2018-12-24 16:54:30.196  INFO 20136 --- [main] .d.s.w.r.o.CachingOperationNameGenerator : Generating unique operation named: selectOnebynameUsingGET_2
+2018-12-24 16:54:30.198  INFO 20136 --- [main] .d.s.w.r.o.CachingOperationNameGenerator : Generating unique operation named: updateUsingPOST_5
+2018-12-24 16:54:30.202  INFO 20136 --- [main] .d.s.w.r.o.CachingOperationNameGenerator : Generating unique operation named: delUsingGET_5
+2018-12-24 16:54:30.205  INFO 20136 --- [main] .d.s.w.r.o.CachingOperationNameGenerator : Generating unique operation named: getallUsingGET_6
+2018-12-24 16:54:30.208  INFO 20136 --- [main] .d.s.w.r.o.CachingOperationNameGenerator : Generating unique operation named: insertUsingPOST_4
+2018-12-24 16:54:30.211  INFO 20136 --- [main] .d.s.w.r.o.CachingOperationNameGenerator : Generating unique operation named: selectOneUsingGET_6
+2018-12-24 16:54:30.213  INFO 20136 --- [main] .d.s.w.r.o.CachingOperationNameGenerator : Generating unique operation named: selectOnebynameUsingGET_3
+2018-12-24 16:54:30.224  INFO 20136 --- [main] .d.s.w.r.o.CachingOperationNameGenerator : Generating unique operation named: updateUsingPOST_6
+2018-12-24 16:54:30.227  INFO 20136 --- [main] .d.s.w.r.o.CachingOperationNameGenerator : Generating unique operation named: delUsingPOST_1
+2018-12-24 16:54:30.236  INFO 20136 --- [main] .d.s.w.r.o.CachingOperationNameGenerator : Generating unique operation named: selectOneUsingGET_7
+2018-12-24 16:54:30.238  INFO 20136 --- [main] .d.s.w.r.o.CachingOperationNameGenerator : Generating unique operation named: updateUsingPOST_7
+2018-12-24 16:54:30.264  INFO 20136 --- [main] .d.s.w.r.o.CachingOperationNameGenerator : Generating unique operation named: getaddUsingPOST_1
+2018-12-24 16:54:30.265  INFO 20136 --- [main] .d.s.w.r.o.CachingOperationNameGenerator : Generating unique operation named: getaddUsingPOST_2
+2018-12-24 16:54:30.267  INFO 20136 --- [main] .d.s.w.r.o.CachingOperationNameGenerator : Generating unique operation named: getaddUsingPOST_3
+2018-12-24 16:54:30.268  INFO 20136 --- [main] .d.s.w.r.o.CachingOperationNameGenerator : Generating unique operation named: getaddUsingPOST_4
+2018-12-24 16:54:30.269  INFO 20136 --- [main] .d.s.w.r.o.CachingOperationNameGenerator : Generating unique operation named: getaddUsingPOST_5
+2018-12-24 16:54:30.271  INFO 20136 --- [main] .d.s.w.r.o.CachingOperationNameGenerator : Generating unique operation named: getaddUsingPOST_6
+2018-12-24 16:54:30.272  INFO 20136 --- [main] .d.s.w.r.o.CachingOperationNameGenerator : Generating unique operation named: getaddUsingPOST_7
+2018-12-24 16:54:30.275  INFO 20136 --- [main] .d.s.w.r.o.CachingOperationNameGenerator : Generating unique operation named: getuserUsingPOST_1
+2018-12-24 16:54:30.277  INFO 20136 --- [main] .d.s.w.r.o.CachingOperationNameGenerator : Generating unique operation named: getuserUsingPOST_2
+2018-12-24 16:54:30.278  INFO 20136 --- [main] .d.s.w.r.o.CachingOperationNameGenerator : Generating unique operation named: getuserUsingPOST_3
+2018-12-24 16:54:30.280  INFO 20136 --- [main] .d.s.w.r.o.CachingOperationNameGenerator : Generating unique operation named: getuserUsingPOST_4
+2018-12-24 16:54:30.281  INFO 20136 --- [main] .d.s.w.r.o.CachingOperationNameGenerator : Generating unique operation named: getuserUsingPOST_5
+2018-12-24 16:54:30.283  INFO 20136 --- [main] .d.s.w.r.o.CachingOperationNameGenerator : Generating unique operation named: getuserUsingPOST_6
+2018-12-24 16:54:30.284  INFO 20136 --- [main] .d.s.w.r.o.CachingOperationNameGenerator : Generating unique operation named: getuserUsingPOST_7
+2018-12-24 16:54:30.296  INFO 20136 --- [main] .d.s.w.r.o.CachingOperationNameGenerator : Generating unique operation named: updateUsingPOST_8
+2018-12-24 16:54:30.413  INFO 20136 --- [main] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat started on port(s): 8080 (http) with context path ''
+2018-12-24 16:54:30.417  INFO 20136 --- [main] com.admin.AdminApplication               : Started AdminApplication in 12.801 seconds (JVM running for 21.351)
+2018-12-24 16:58:10.797  INFO 20136 --- [http-nio-8080-exec-1] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring DispatcherServlet 'dispatcherServlet'
+2018-12-24 16:58:10.798  INFO 20136 --- [http-nio-8080-exec-1] o.s.web.servlet.DispatcherServlet        : Initializing Servlet 'dispatcherServlet'
+2018-12-24 16:58:10.892  INFO 20136 --- [http-nio-8080-exec-1] o.s.web.servlet.DispatcherServlet        : Completed initialization in 94 ms
