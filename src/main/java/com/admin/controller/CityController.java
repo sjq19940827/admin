@@ -4,6 +4,7 @@ import com.admin.pojo.City;
 import com.admin.service.CityService;
 import com.alibaba.fastjson.JSON;
 import io.swagger.annotations.Api;
+import io.swagger.annotations.ApiImplicitParam;
 import io.swagger.annotations.ApiOperation;
 import io.swagger.annotations.ApiParam;
 import org.springframework.web.bind.annotation.*;
@@ -65,7 +66,7 @@ public class CityController {
 
     @RequestMapping(value = "update",method = RequestMethod.POST)
     @ApiOperation(value = "修改城市信息",notes = "相应结果")
-    public String update(@RequestBody City city){
+    public String update(@ApiParam(required = true, name ="city", value ="城市对象") @RequestBody City city){
         String insert = cityService.update(city);
         return insert;
     }

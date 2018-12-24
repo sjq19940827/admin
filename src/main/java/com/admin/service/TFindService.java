@@ -28,11 +28,11 @@ public interface TFindService {
     /**
      * 查询多条数据
      *
-     * @param offset 查询起始位置
-     * @param limit 查询条数
+     * @param pagenum 查询起始位置
+     * @param pagesize 查询条数
      * @return 对象列表
      */
-    List<TFind> queryAllByLimit(int offset, int limit);
+    String queryAllByLimit(int pagenum, int pagesize);
 
     /**
      * 新增数据
@@ -40,7 +40,7 @@ public interface TFindService {
      * @param tFind 实例对象
      * @return 实例对象
      */
-    TFind insert(TFind tFind);
+    String insert(TFind tFind);
 
     /**
      * 修改数据
@@ -48,7 +48,7 @@ public interface TFindService {
      * @param tFind 实例对象
      * @return 实例对象
      */
-    TFind update(TFind tFind);
+    String update(TFind tFind);
 
     /**
      * 通过主键删除数据
@@ -56,6 +56,6 @@ public interface TFindService {
      * @param findId 主键
      * @return 是否成功
      */
-    boolean deleteById(Integer findId);
+    String deleteById(Integer findId);
 
 }
