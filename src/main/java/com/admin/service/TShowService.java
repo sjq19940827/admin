@@ -1,9 +1,6 @@
 package com.admin.service;
 
-import com.admin.pojo.TOrder;
 import com.admin.pojo.T_Show;
-
-import java.util.List;
 
 /**
  * (T_Show)表服务接口

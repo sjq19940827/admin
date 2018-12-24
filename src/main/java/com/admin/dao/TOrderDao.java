@@ -8,7 +8,7 @@ import java.util.List;
  * 订单表(TOrder)表数据库访问层
  *
  * @author makejava
- * @since 2018-12-20 11:53:14
+ * @since 2018-12-24 12:10:20
  */
 public interface TOrderDao {
 
@@ -21,20 +21,11 @@ public interface TOrderDao {
     TOrder queryById(Integer orderId);
 
     /**
-     * 查询指定行数据
-     *
-     * @return 对象列表
-     */
-    List<TOrder> getAll();
-
-
-    /**
      * 通过实体作为筛选条件查询
      *
-     * @param tOrder 实例对象
      * @return 对象列表
      */
-    List<TOrder> queryAll(TOrder tOrder);
+    List<TOrder> queryAll();
 
     /**
      * 新增数据
@@ -58,6 +49,6 @@ public interface TOrderDao {
      * @param orderId 主键
      * @return 影响行数
      */
-    int deleteById(@Param("orderId") Integer orderId);
+    int deleteById(Integer orderId);
 
 }

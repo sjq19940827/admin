@@ -2,7 +2,6 @@ package com.admin.service;
 
 import com.admin.pojo.TOrder;
 
-import java.util.List;
 
 /**
  * 订单表(TOrder)表服务接口

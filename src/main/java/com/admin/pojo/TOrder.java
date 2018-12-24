@@ -1,159 +1,196 @@
 package com.admin.pojo;
 
-
+import java.util.Date;
 import java.io.Serializable;
-import java.sql.Timestamp;
 
 /**
  * 订单表(TOrder)实体类
  *
  * @author makejava
- * @since 2018-12-19 14:54:07
+ * @since 2018-12-24 12:10:19
  */
 public class TOrder implements Serializable {
-    private static final long serialVersionUID = -89408410138254878L;
+    private static final long serialVersionUID = 400828565970090097L;
     //订单id(主键)
-    private Integer order_Id;
+    private Integer orderId;
     //订单编号
-    private String order_Number;
+    private String orderNumber;
     //配送方式(1.为电子票,2.快递票)
-    private Integer order_Mode;
+    private Integer orderMode;
     //票数
-    private Integer order_Num;
+    private Integer orderNum;
     //票价(演出门票单价)
-    private Double order_Price;
+    private Object orderPrice;
     //运费
-    private Double transport;
+    private Object transport;
     //优惠价格(使用优惠券优惠了多少钱)
-    private Double discount;
+    private Object discount;
     //交易状态,0:交易关闭,1:待支付,2:待出票,3:待收货,4:已完成,5:已取消,6：已退款
     private Integer status;
     //用户id(外键)
-    private Integer user_Id;
+    private Integer userId;
     //演出id(外键)
-    private Integer show_Id;
+    private Integer showId;
     //收货地址id(外键)
-    private Integer address_Id;
+    private Integer addressId;
     //创建时间
-    private Timestamp createdate;
+    private Date createdate;
     //发货时间
-    private Timestamp deliverydate;
+    private Date deliverydate;
     //收货地址
     private String address;
+    //商品名称
+    private String shopName;
+    //商品图片
+    private String shopImg;
+    //用户姓名
+    private String username;
+    //用户手机号
+    private String userphone;
 
-    public static long getSerialVersionUID() {
-        return TOrder.serialVersionUID;
+
+    public Integer getOrderId() {
+        return orderId;
     }
 
-    public Integer getOrder_Id() {
-        return this.order_Id;
+    public void setOrderId(Integer orderId) {
+        this.orderId = orderId;
     }
 
-    public void setOrder_Id(final Integer order_Id) {
-        this.order_Id = order_Id;
+    public String getOrderNumber() {
+        return orderNumber;
     }
 
-    public String getOrder_Number() {
-        return this.order_Number;
+    public void setOrderNumber(String orderNumber) {
+        this.orderNumber = orderNumber;
     }
 
-    public void setOrder_Number(final String order_Number) {
-        this.order_Number = order_Number;
+    public Integer getOrderMode() {
+        return orderMode;
     }
 
-    public Integer getOrder_Mode() {
-        return this.order_Mode;
+    public void setOrderMode(Integer orderMode) {
+        this.orderMode = orderMode;
     }
 
-    public void setOrder_Mode(final Integer order_Mode) {
-        this.order_Mode = order_Mode;
+    public Integer getOrderNum() {
+        return orderNum;
     }
 
-    public Integer getOrder_Num() {
-        return this.order_Num;
+    public void setOrderNum(Integer orderNum) {
+        this.orderNum = orderNum;
     }
 
-    public void setOrder_Num(final Integer order_Num) {
-        this.order_Num = order_Num;
+    public Object getOrderPrice() {
+        return orderPrice;
     }
 
-    public Double getOrder_Price() {
-        return this.order_Price;
+    public void setOrderPrice(Object orderPrice) {
+        this.orderPrice = orderPrice;
     }
 
-    public void setOrder_Price(final Double order_Price) {
-        this.order_Price = order_Price;
+    public Object getTransport() {
+        return transport;
     }
 
-    public Double getTransport() {
-        return this.transport;
-    }
-
-    public void setTransport(final Double transport) {
+    public void setTransport(Object transport) {
         this.transport = transport;
     }
 
-    public Double getDiscount() {
-        return this.discount;
+    public Object getDiscount() {
+        return discount;
     }
 
-    public void setDiscount(final Double discount) {
+    public void setDiscount(Object discount) {
         this.discount = discount;
     }
 
     public Integer getStatus() {
-        return this.status;
+        return status;
     }
 
-    public void setStatus(final Integer status) {
+    public void setStatus(Integer status) {
         this.status = status;
     }
 
-    public Integer getUser_Id() {
-        return this.user_Id;
+    public Integer getUserId() {
+        return userId;
     }
 
-    public void setUser_Id(final Integer user_Id) {
-        this.user_Id = user_Id;
+    public void setUserId(Integer userId) {
+        this.userId = userId;
     }
 
-    public Integer getShow_Id() {
-        return this.show_Id;
+    public Integer getShowId() {
+        return showId;
     }
 
-    public void setShow_Id(final Integer show_Id) {
-        this.show_Id = show_Id;
+    public void setShowId(Integer showId) {
+        this.showId = showId;
     }
 
-    public Integer getAddress_Id() {
-        return this.address_Id;
+    public Integer getAddressId() {
+        return addressId;
     }
 
-    public void setAddress_Id(final Integer address_Id) {
-        this.address_Id = address_Id;
+    public void setAddressId(Integer addressId) {
+        this.addressId = addressId;
     }
 
-    public Timestamp getCreatedate() {
-        return this.createdate;
+    public Date getCreatedate() {
+        return createdate;
     }
 
-    public void setCreatedate(final Timestamp createdate) {
+    public void setCreatedate(Date createdate) {
         this.createdate = createdate;
     }
 
-    public Timestamp getDeliverydate() {
-        return this.deliverydate;
+    public Date getDeliverydate() {
+        return deliverydate;
     }
 
-    public void setDeliverydate(final Timestamp deliverydate) {
+    public void setDeliverydate(Date deliverydate) {
         this.deliverydate = deliverydate;
     }
 
     public String getAddress() {
-        return this.address;
+        return address;
     }
 
-    public void setAddress(final String address) {
+    public void setAddress(String address) {
         this.address = address;
     }
+
+    public String getShopName() {
+        return shopName;
+    }
+
+    public void setShopName(String shopName) {
+        this.shopName = shopName;
+    }
+
+    public String getShopImg() {
+        return shopImg;
+    }
+
+    public void setShopImg(String shopImg) {
+        this.shopImg = shopImg;
+    }
+
+    public String getUsername() {
+        return username;
+    }
+
+    public void setUsername(String username) {
+        this.username = username;
+    }
+
+    public String getUserphone() {
+        return userphone;
+    }
+
+    public void setUserphone(String userphone) {
+        this.userphone = userphone;
+    }
+
 }
