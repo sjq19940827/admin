@@ -1,8 +1,6 @@
 package com.admin.service;
 
 import com.admin.pojo.City;
-import java.util.List;
-
 /**
  * (City)表服务接口
  *
