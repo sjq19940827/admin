@@ -1,0 +1,95 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE mapper PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN" "http://mybatis.org/dtd/mybatis-3-mapper.dtd">
+<mapper namespace="com.admin.dao.TAdminDao">
+
+    <resultMap type="com.admin.pojo.TAdmin" id="TAdminMap">
+        <result property="adminId" column="admin_id" jdbcType="INTEGER"/>
+        <result property="adminName" column="admin_name" jdbcType="VARCHAR"/>
+        <result property="adminPwd" column="admin_pwd" jdbcType="VARCHAR"/>
+        <result property="adminNickname" column="admin_nickname" jdbcType="VARCHAR"/>
+        <result property="adminMark" column="admin_mark" jdbcType="INTEGER"/>
+        <result property="adminPhone" column="admin_phone" jdbcType="VARCHAR"/>
+    </resultMap>
+
+    <!--查询单个-->
+    <select id="queryById" resultMap="TAdminMap">
+        select
+          admin_id, admin_name, admin_pwd, admin_nickname, admin_mark, admin_phone
+        from xiaomai.t_admin
+        where admin_id = #{adminId}
+    </select>
+
+    <select id="queryByname" resultMap="TAdminMap">
+        select
+          admin_id, admin_name, admin_pwd, admin_nickname, admin_mark, admin_phone
+        from xiaomai.t_admin
+        where admin_name = #{adminName}
+    </select>
+
+    <select id="queryByphone" resultMap="TAdminMap">
+        select
+          admin_id, admin_name, admin_pwd, admin_nickname, admin_mark, admin_phone
+        from xiaomai.t_admin
+        where admin_phone = #{adminPhone}
+    </select>
+
+
+    <!--通过实体作为筛选条件查询-->
+    <select id="queryAll" resultMap="TAdminMap">
+        select
+          admin_id, admin_name, admin_pwd, admin_nickname, admin_mark, admin_phone
+        from xiaomai.t_admin
+    </select>
+
+    <!--新增所有列-->
+    <insert id="insert" keyProperty="adminId" useGeneratedKeys="true">
+        insert into xiaomai.t_admin(admin_name, admin_pwd, admin_nickname, admin_mark, admin_phone)
+        values (#{adminName}, #{adminPwd}, #{adminNickname}, #{adminMark}, #{adminPhone})
+    </insert>
+
+    <!--通过主键修改数据-->
+    <update id="update">
+        update xiaomai.t_admin
+        <set>
+            <if test="adminName != null and adminName != ''">
+                admin_name = #{adminName},
+            </if>
+            <if test="adminPwd != null and adminPwd != ''">
+                admin_pwd = #{adminPwd},
+            </if>
+            <if test="adminNickname != null and adminNickname != ''">
+                admin_nickname = #{adminNickname},
+            </if>
+            <if test="adminMark != null">
+                admin_mark = #{adminMark},
+            </if>
+            <if test="adminPhone != null and adminPhone != ''">
+                admin_phone = #{adminPhone},
+            </if>
+        </set>
+        where admin_id = #{adminId}
+    </update>
+    <update id="updatemark">
+        UPDATE xiaomai.t_admin SET admin_mark = #{adminMark}  WHERE admin_id = #{adminId};
+    </update>
+
+    <!--通过主键删除-->
+    <delete id="deleteById">
+        delete from xiaomai.t_admin where admin_id = #{adminId}
+    </delete>
+
+    <select id="loginByname" resultMap="TAdminMap">
+        select
+          admin_id, admin_name, admin_pwd, admin_nickname, admin_mark, admin_phone
+        from xiaomai.t_admin
+        where admin_name = #{adminName} and admin_pwd = #{adminPwd}
+    </select>
+
+    <select id="loginByphone" resultMap="TAdminMap">
+        select
+          admin_id, admin_name, admin_pwd, admin_nickname, admin_mark, admin_phone
+        from xiaomai.t_admin
+        where admin_phone = #{adminPhone} and admin_pwd = #{adminPwd}
+    </select>
+
+</mapper>

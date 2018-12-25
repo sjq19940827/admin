@@ -1,0 +1,70 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE mapper PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN" "http://mybatis.org/dtd/mybatis-3-mapper.dtd">
+<mapper namespace="com.admin.dao.TReplytalkDao">
+
+    <resultMap type="com.admin.pojo.TReplytalk" id="TReplytalkMap">
+        <result property="replyId" column="reply_id" jdbcType="INTEGER"/>
+        <result property="replyuserId" column="replyuser_id" jdbcType="INTEGER"/>
+        <result property="talkId" column="talk_id" jdbcType="INTEGER"/>
+        <result property="replyInfo" column="reply_info" jdbcType="VARCHAR"/>
+        <result property="praseCount" column="prase_count" jdbcType="INTEGER"/>
+        <result property="createtime" column="createtime" jdbcType="TIMESTAMP"/>
+    </resultMap>
+    <!--查询单个-->
+    <select id="queryById" resultMap="TReplytalkMap">
+        select
+          reply_id, replyuser_id, talk_id, reply_info, prase_count, createtime
+        from xiaomai.t_replytalk
+        where reply_id = #{replyId}
+    </select>
+
+    <select id="queryByuserid" resultMap="TReplytalkMap">
+        select
+          reply_id, replyuser_id, talk_id, reply_info, prase_count, createtime
+        from xiaomai.t_replytalk
+        where replyuser_id = #{replyuserId}
+    </select>
+
+
+    <!--通过实体作为筛选条件查询-->
+    <select id="queryAll" resultMap="TReplytalkMap">
+        select
+          reply_id, replyuser_id, talk_id, reply_info, prase_count, createtime
+        from xiaomai.t_replytalk
+    </select>
+
+    <!--新增所有列-->
+    <insert id="insert" keyProperty="replyId" useGeneratedKeys="true">
+        insert into xiaomai.t_replytalk(replyuser_id, talk_id, reply_info, prase_count, createtime)
+        values (#{replyuserId}, #{talkId}, #{replyInfo}, #{praseCount}, #{createtime})
+    </insert>
+
+    <!--通过主键修改数据-->
+    <update id="update">
+        update xiaomai.t_replytalk
+        <set>
+            <if test="replyuserId != null">
+                replyuser_id = #{replyuserId},
+            </if>
+            <if test="talkId != null">
+                talk_id = #{talkId},
+            </if>
+            <if test="replyInfo != null and replyInfo != ''">
+                reply_info = #{replyInfo},
+            </if>
+            <if test="praseCount != null">
+                prase_count = #{praseCount},
+            </if>
+            <if test="createtime != null">
+                createtime = #{createtime},
+            </if>
+        </set>
+        where reply_id = #{replyId}
+    </update>
+
+    <!--通过主键删除-->
+    <delete id="deleteById">
+        delete from xiaomai.t_replytalk where reply_id = #{replyId}
+    </delete>
+
+</mapper>

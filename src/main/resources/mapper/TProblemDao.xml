@@ -1,0 +1,59 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE mapper PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN" "http://mybatis.org/dtd/mybatis-3-mapper.dtd">
+<mapper namespace="com.admin.dao.TProblemDao">
+
+    <resultMap type="com.admin.pojo.TProblem" id="TProblemMap">
+        <result property="questionId" column="question_Id" jdbcType="INTEGER"/>
+        <result property="questionTitle" column="question_Title" jdbcType="VARCHAR"/>
+        <result property="questionContent" column="question_Content" jdbcType="VARCHAR"/>
+    </resultMap>
+
+    <!--查询单个-->
+    <select id="queryById" resultMap="TProblemMap">
+        select
+          question_Id, question_Title, question_Content
+        from xiaomai.t_problem
+        where question_Id = #{questionId}
+    </select>
+
+    <select id="queryByTitle" resultMap="TProblemMap">
+        select
+          question_Id, question_Title, question_Content
+        from xiaomai.t_problem
+        where question_Title = #{questionTitle}
+    </select>
+
+    <!--通过实体作为筛选条件查询-->
+    <select id="queryAll" resultMap="TProblemMap">
+        select
+          question_Id, question_Title, question_Content
+        from xiaomai.t_problem
+
+    </select>
+
+    <!--新增所有列-->
+    <insert id="insert" keyProperty="questionId" useGeneratedKeys="true">
+        insert into xiaomai.t_problem(question_Title, question_Content)
+        values (#{questionTitle}, #{questionContent})
+    </insert>
+
+    <!--通过主键修改数据-->
+    <update id="update">
+        update xiaomai.t_problem
+        <set>
+            <if test="questionTitle != null and questionTitle != ''">
+                question_Title = #{questionTitle},
+            </if>
+            <if test="questionContent != null and questionContent != ''">
+                question_Content = #{questionContent},
+            </if>
+        </set>
+        where question_Id = #{questionId}
+    </update>
+
+    <!--通过主键删除-->
+    <delete id="deleteById">
+        delete from xiaomai.t_problem where question_Id = #{questionId}
+    </delete>
+
+</mapper>
