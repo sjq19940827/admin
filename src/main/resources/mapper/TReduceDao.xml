@@ -7,21 +7,21 @@
         <result property="reduceNumber" column="reduce_number" jdbcType="VARCHAR"/>
         <result property="reduceTot" column="reduce_tot" jdbcType="VARCHAR"/>
         <result property="sub" column="sub" jdbcType="VARCHAR"/>
-        <result property="createdate" column="createDate" jdbcType="TIMESTAMP"/>
-        <result property="exitdate" column="exitDate" jdbcType="TIMESTAMP"/>
+        <result property="purpose" column="purpose" jdbcType="VARCHAR"/>
+        <result property="valid" column="valid" jdbcType="VARCHAR"/>
     </resultMap>
 
     <!--查询单个-->
     <select id="queryById" resultMap="TReduceMap">
         select
-          reduce_id, reduce_number, reduce_tot, sub, createDate, exitDate
+          reduce_id, reduce_number, reduce_tot, sub, purpose, valid
         from xiaomai.t_reduce
         where reduce_id = #{reduceId}
     </select>
 
     <select id="queryByName" resultMap="TReduceMap">
         select
-          reduce_id, reduce_number, reduce_tot, sub, createDate, exitDate
+          reduce_id, reduce_number, reduce_tot, sub, purpose, valid
         from xiaomai.t_reduce
         where reduce_tot= #{reduceTot}
     </select>
@@ -30,14 +30,14 @@
     <!--通过实体作为筛选条件查询-->
     <select id="queryAll" resultMap="TReduceMap">
         select
-          reduce_id, reduce_number, reduce_tot, sub, createDate, exitDate
+          reduce_id, reduce_number, reduce_tot, sub, purpose, valid
         from xiaomai.t_reduce
     </select>
 
     <!--新增所有列-->
     <insert id="insert" keyProperty="reduceId" useGeneratedKeys="true">
-        insert into xiaomai.t_reduce(reduce_number, reduce_tot, sub, createDate, exitDate)
-        values (#{reduceNumber}, #{reduceTot}, #{sub}, #{createdate}, #{exitdate})
+        insert into xiaomai.t_reduce(reduce_number, reduce_tot, sub, purpose, valid)
+        values (#{reduceNumber}, #{reduceTot}, #{sub}, #{purpose}, #{valid})
     </insert>
 
     <!--通过主键修改数据-->
@@ -53,11 +53,11 @@
             <if test="sub != null and sub != ''">
                 sub = #{sub},
             </if>
-            <if test="createdate != null">
-                createDate = #{createdate},
+            <if test="purpose != null">
+                purpose = #{purpose},
             </if>
-            <if test="exitdate != null">
-                exitDate = #{exitdate},
+            <if test="valid != null">
+                valid = #{valid},
             </if>
         </set>
         where reduce_id = #{reduceId} or reduce_tot = #{reduceTot}

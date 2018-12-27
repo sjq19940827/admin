@@ -60,8 +60,8 @@ public class CityController {
     @RequestMapping(value = "insert",method = RequestMethod.POST)
     @ApiOperation(value = "新增城市信息",notes = "相应结果")
     public String insert(@RequestBody City city){
-        City insert = cityService.insert(city);
-        return JSON.toJSONString(insert);
+        String insert = cityService.insert(city);
+        return insert;
     }
 
     @RequestMapping(value = "update",method = RequestMethod.POST)

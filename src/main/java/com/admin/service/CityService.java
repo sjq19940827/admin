@@ -34,7 +34,7 @@ public interface CityService {
      * @param city 实例对象
      * @return 实例对象
      */
-    City insert(City city);
+    String insert(City city);
 
     /**
      * 修改数据

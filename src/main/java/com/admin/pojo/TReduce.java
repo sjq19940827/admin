@@ -20,9 +20,9 @@ public class TReduce implements Serializable {
     
     private String sub;
     
-    private Date createdate;
+    private String purpose;
     
-    private Date exitdate;
+    private String valid;
 
 
     public Integer getReduceId() {
@@ -57,20 +57,23 @@ public class TReduce implements Serializable {
         this.sub = sub;
     }
 
-    public Date getCreatedate() {
-        return createdate;
+    public static long getSerialVersionUID() {
+        return TReduce.serialVersionUID;
     }
 
-    public void setCreatedate(Date createdate) {
-        this.createdate = createdate;
+    public String getPurpose() {
+        return this.purpose;
     }
 
-    public Date getExitdate() {
-        return exitdate;
+    public void setPurpose(final String purpose) {
+        this.purpose = purpose;
     }
 
-    public void setExitdate(Date exitdate) {
-        this.exitdate = exitdate;
+    public String getValid() {
+        return this.valid;
     }
 
+    public void setValid(final String valid) {
+        this.valid = valid;
+    }
 }

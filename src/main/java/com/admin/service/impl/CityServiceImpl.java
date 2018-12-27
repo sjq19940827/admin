@@ -56,12 +56,14 @@ public class CityServiceImpl implements CityService {
      * @return 实例对象
      */
     @Override
-    public City insert(City city) {
+    public String insert(City city) {
         int insert = this.cityDao.insert(city);
         if (insert>0){
-
+            return JSON.toJSONString(city);
+        }else {
+            return "新增失败";
         }
-        return city;
+
     }
 
     /**
