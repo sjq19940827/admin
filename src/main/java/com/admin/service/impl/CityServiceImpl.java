@@ -48,7 +48,6 @@ public class CityServiceImpl implements CityService {
         List<City> cities = cityDao.queryAll();
         return JSON.toJSONString(cities);
     }
-
     /**
      * 新增数据
      *
@@ -80,7 +79,6 @@ public class CityServiceImpl implements CityService {
         }else {
             return "修改失败";
         }
-
     }
 
     /**
