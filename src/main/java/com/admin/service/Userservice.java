@@ -38,6 +38,8 @@ import com.admin.pojo.T_User;
 import org.apache.catalina.User;
 import org.springframework.data.annotation.Id;
 
+import java.util.List;
+
 /**
  * 〈一句话功能简述〉<br> 
  * 〈〉
@@ -53,7 +55,7 @@ public interface Userservice {
      * @param pagesize
      * @return
      */
-    String getuser(int pagenum, int pagesize);
+    List<T_User> getuser(int pagenum, int pagesize);
 
     /**
      * 修改个人信息

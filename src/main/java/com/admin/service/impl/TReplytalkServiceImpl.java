@@ -49,10 +49,10 @@ public class  TReplytalkServiceImpl implements TReplytalkService {
      * @return 对象列表
      */
     @Override
-    public String queryAllByLimit(int pagenum, int pagesize) {
+    public List<TReplytalk> queryAllByLimit(int pagenum, int pagesize) {
         PageHelper.startPage(pagenum, pagesize);
         List<TReplytalk> tReplytalks = tReplytalkDao.queryAll();
-        return JSON.toJSONString(tReplytalks);
+        return tReplytalks;
     }
 
     /**

@@ -40,10 +40,10 @@ public class TShowServiceImpl implements TShowService {
      * @return 对象列表
      */
     @Override
-    public String queryAllByLimit(int pagenum,int pagesize) {
+    public List<T_Show> queryAllByLimit(int pagenum,int pagesize) {
         PageHelper.startPage(pagenum,pagesize);
         List<T_Show> t_shows = tShowDao.queryAll();
-        return JSON.toJSONString(t_shows);
+        return t_shows;
     }
 
     /**

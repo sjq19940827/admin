@@ -2,11 +2,13 @@ package com.admin.controller;
 
 import com.admin.pojo.TOrder;
 import com.admin.service.TOrderService;
+import com.alibaba.fastjson.JSONObject;
 import io.swagger.annotations.Api;
 import io.swagger.annotations.ApiOperation;
 import io.swagger.annotations.ApiParam;
 import org.springframework.web.bind.annotation.*;
 import javax.annotation.Resource;
+import java.util.List;
 
 /**
  * 订单表(TOrder)表控制层
@@ -38,9 +40,14 @@ public class TOrderController {
 
     @GetMapping("getall")
     @ApiOperation(value = "分页查询全部订单",httpMethod = "GET",notes = "订单json数组")
-    public String getall(int pagenum , int pagesize){
-        String s = tOrderService.queryAllByLimit(pagenum, pagesize);
-        return s;
+    public String getall(@RequestParam("page")int page , @RequestParam("limit") int limit){
+        List<TOrder> tOrders = tOrderService.queryAllByLimit(page, limit);
+        JSONObject obj=new JSONObject();
+        obj.put("code",0);
+        obj.put("msg","");
+        obj.put("count",100);
+        obj.put("data",tOrders);
+        return obj.toJSONString();
     }
 
     @ResponseBody

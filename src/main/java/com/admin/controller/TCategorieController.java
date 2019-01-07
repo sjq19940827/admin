@@ -2,12 +2,14 @@ package com.admin.controller;
 
 import com.admin.pojo.T_Categorie;
 import com.admin.service.TCategorieService;
+import com.alibaba.fastjson.JSONObject;
 import io.swagger.annotations.Api;
 import io.swagger.annotations.ApiOperation;
 import io.swagger.annotations.ApiParam;
 import org.springframework.web.bind.annotation.*;
 
 import javax.annotation.Resource;
+import java.util.List;
 
 /**
  * (T_Categorie)表控制层
@@ -39,9 +41,14 @@ public class TCategorieController {
 
     @GetMapping("getall")
     @ApiOperation(value = "分页查询全部订单",httpMethod = "GET",notes = "订单json数组")
-    public String getall(@RequestParam("pagenum")int pagenum , @RequestParam("pagesize") int pagesize){
-        String s = tCategorieService.queryAllByLimit(pagenum, pagesize);
-        return s;
+    public String getall(@RequestParam("page")int page , @RequestParam("limit") int limit){
+        List<T_Categorie> t_categories = tCategorieService.queryAllByLimit(page, limit);
+        JSONObject obj=new JSONObject();
+        obj.put("code",0);
+        obj.put("msg","");
+        obj.put("count",20);
+        obj.put("data",t_categories);
+        return obj.toJSONString();
     }
 
     @RequestMapping(value = "update",method = RequestMethod.POST)

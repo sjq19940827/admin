@@ -88,11 +88,10 @@ public class UserserviceImpl implements Userservice {
      * @return
      */
     @Override
-    public String getuser(int pagenum, int pagesize) {
+    public List<T_User> getuser(int pagenum, int pagesize) {
         PageHelper.startPage(pagenum,pagesize);
         List<T_User> getall = userDao.getall();
-        String s = JSON.toJSONString(getall);
-        return s;
+        return getall;
     }
 
     /**

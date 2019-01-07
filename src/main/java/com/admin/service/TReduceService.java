@@ -28,7 +28,7 @@ public interface TReduceService {
      *
      * @return 对象列表
      */
-    String queryAllByLimit(int pagenum, int pagesize);
+    List<TReduce> queryAllByLimit(int pagenum, int pagesize);
 
     /**
      * 新增数据

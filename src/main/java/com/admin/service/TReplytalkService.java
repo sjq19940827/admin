@@ -33,7 +33,7 @@ public interface TReplytalkService {
      * @param pagesize 查询条数
      * @return 对象列表
      */
-    String queryAllByLimit(int pagenum, int pagesize);
+    List<TReplytalk> queryAllByLimit(int pagenum, int pagesize);
 
     /**
      * 新增数据

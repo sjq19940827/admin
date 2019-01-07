@@ -3,12 +3,14 @@ package com.admin.controller;
 import com.admin.pojo.City;
 import com.admin.service.CityService;
 import com.alibaba.fastjson.JSON;
+import com.alibaba.fastjson.JSONObject;
 import io.swagger.annotations.Api;
 import io.swagger.annotations.ApiOperation;
 import io.swagger.annotations.ApiParam;
 import org.springframework.web.bind.annotation.*;
 
 import javax.annotation.Resource;
+import java.util.List;
 
 /**
  * (City)表控制层
@@ -45,9 +47,15 @@ public class CityController {
 
     @GetMapping("getall")
     @ApiOperation(value = "分页查询全部城市",notes = "城市信息")
-    public String getall(@RequestParam("pagenum")int pagenum , @RequestParam("pagesize") int pagesize){
-        String s = cityService.queryAllByLimit(pagenum, pagesize);
-        return s;
+    public String getall(@RequestParam("page")int page , @RequestParam("limit") int limit){
+        List<City> cities = cityService.queryAllByLimit(page, limit);
+        JSONObject obj=new JSONObject();
+        obj.put("code",0);
+        obj.put("msg","");
+        obj.put("count",130);
+        obj.put("data",cities);
+        return obj.toJSONString();
+//        jsoncode jsontojsonstring
     }
 
     @GetMapping("del")

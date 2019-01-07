@@ -45,10 +45,10 @@ public class TFindServiceImpl implements TFindService {
      * @return 对象列表
      */
     @Override
-    public String queryAllByLimit(int pagenum, int pagesize) {
+    public List<TFind> queryAllByLimit(int pagenum, int pagesize) {
         PageHelper.startPage(pagenum, pagesize);
         List<TFind> tFinds = tFindDao.queryAll();
-        return JSON.toJSONString(tFinds);
+        return tFinds;
     }
 
     /**

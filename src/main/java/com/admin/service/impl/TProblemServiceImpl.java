@@ -45,10 +45,10 @@ public class TProblemServiceImpl implements TProblemService {
      * @return 对象列表
      */
     @Override
-    public String queryAllByLimit(int pagenum, int pagesize) {
+    public List<TProblem> queryAllByLimit(int pagenum, int pagesize) {
         PageHelper.startPage(pagenum, pagesize);
         List<TProblem> tProblems = tProblemDao.queryAll();
-        return JSON.toJSONString(tProblems);
+        return tProblems;
     }
 
     /**

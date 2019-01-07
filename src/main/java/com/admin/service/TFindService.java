@@ -32,7 +32,7 @@ public interface TFindService {
      * @param pagesize 查询条数
      * @return 对象列表
      */
-    String queryAllByLimit(int pagenum, int pagesize);
+    List<TFind> queryAllByLimit(int pagenum, int pagesize);
 
     /**
      * 新增数据

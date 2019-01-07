@@ -43,10 +43,10 @@ public class CityServiceImpl implements CityService {
      * @return 对象列表
      */
     @Override
-    public String queryAllByLimit(int pagenum, int pagesize) {
+    public List<City> queryAllByLimit(int pagenum, int pagesize) {
         PageHelper.startPage(pagenum,pagesize);
         List<City> cities = cityDao.queryAll();
-        return JSON.toJSONString(cities);
+        return cities;
     }
     /**
      * 新增数据

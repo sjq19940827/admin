@@ -2,6 +2,8 @@ package com.admin.service;
 
 import com.admin.pojo.TOrder;
 
+import java.util.List;
+
 
 /**
  * 订单表(TOrder)表服务接口
@@ -26,7 +28,7 @@ public interface TOrderService {
      * @param pagesize 查询条数
      * @return 对象列表
      */
-    String queryAllByLimit(int pagenum, int pagesize);
+    List<TOrder> queryAllByLimit(int pagenum, int pagesize);
 
     /**
      * 新增数据

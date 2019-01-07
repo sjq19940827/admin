@@ -2,11 +2,14 @@ package com.admin.controller;
 
 import com.admin.pojo.T_User;
 import com.admin.service.Userservice;
+import com.alibaba.fastjson.JSONObject;
 import io.swagger.annotations.Api;
 import io.swagger.annotations.ApiOperation;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.beans.factory.annotation.Qualifier;
 import org.springframework.web.bind.annotation.*;
+
+import java.util.List;
 
 /**
  * Copyright (C), 2015-2018, XXX有限公司
@@ -74,9 +77,14 @@ public class UserController {
     @ResponseBody
     @RequestMapping("getuser")
     @ApiOperation(value = "分页查询所有用户信息" , httpMethod = "POST", notes = "返回所有用户信息数组")
-    public String getuser(@RequestParam("pagenum")int pagenum, @RequestParam("pagesize")int pagesize){
-        String getuser = userservice.getuser(pagenum, pagesize);
-        return getuser;
+    public String getuser(@RequestParam("page")int page , @RequestParam("limit") int limit){
+        List<T_User> getuser = userservice.getuser(page, limit);
+        JSONObject obj=new JSONObject();
+        obj.put("code",0);
+        obj.put("msg","");
+        obj.put("count",20);
+        obj.put("data",getuser);
+        return obj.toJSONString();
     }
 
     @ResponseBody

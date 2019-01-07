@@ -36,7 +36,7 @@ public interface TAdminService {
      * @param pagesize
      * @return
      */
-    String queryAllByLimit(int pagenum, int pagesize);
+    List<TAdmin> queryAllByLimit(int pagenum, int pagesize);
 
     /**
      * 修改数据

@@ -44,10 +44,10 @@ public class TReduceServiceImpl implements TReduceService {
      * @return 对象列表
      */
     @Override
-    public String queryAllByLimit(int pagenum, int pagesize) {
+    public List<TReduce> queryAllByLimit(int pagenum, int pagesize) {
         PageHelper.startPage(pagenum, pagesize);
         List<TReduce> tReduces = this.tReduceDao.queryAll();
-        return JSON.toJSONString(tReduces);
+        return tReduces;
     }
 
     /**

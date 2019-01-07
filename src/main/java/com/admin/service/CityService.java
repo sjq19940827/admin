@@ -1,6 +1,9 @@
 package com.admin.service;
 
 import com.admin.pojo.City;
+
+import java.util.List;
+
 /**
  * (City)表服务接口
  *
@@ -26,7 +29,7 @@ public interface CityService {
      * @param pagesize 查询条数
      * @return 对象列表
      */
-    String queryAllByLimit(int pagenum, int pagesize);
+    List<City> queryAllByLimit(int pagenum, int pagesize);
 
     /**
      * 新增数据

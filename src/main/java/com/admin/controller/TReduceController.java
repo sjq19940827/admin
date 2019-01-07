@@ -3,12 +3,14 @@ package com.admin.controller;
 import com.admin.pojo.TReduce;
 import com.admin.service.TReduceService;
 import com.alibaba.fastjson.JSON;
+import com.alibaba.fastjson.JSONObject;
 import io.swagger.annotations.Api;
 import io.swagger.annotations.ApiOperation;
 import io.swagger.annotations.ApiParam;
 import org.springframework.web.bind.annotation.*;
 
 import javax.annotation.Resource;
+import java.util.List;
 
 /**
  * (TReduce)表控制层
@@ -50,9 +52,14 @@ public class TReduceController {
 
     @GetMapping("getall")
     @ApiOperation(value = "分页查询全部优惠券",notes = "优惠券信息")
-    public String getall(@RequestParam("pagenum")int pagenum , @RequestParam("pagesize") int pagesize){
-        String s = tReduceService.queryAllByLimit(pagenum, pagesize);
-        return s;
+    public String getall(@RequestParam("page")int page , @RequestParam("limit") int limit){
+        List<TReduce> tReduces = tReduceService.queryAllByLimit(page, limit);
+        JSONObject obj=new JSONObject();
+        obj.put("code",0);
+        obj.put("msg","");
+        obj.put("count",15);
+        obj.put("data",tReduces);
+        return obj.toJSONString();
     }
 
     @GetMapping("del")

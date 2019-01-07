@@ -40,10 +40,10 @@ public class TCategorieServiceImpl implements TCategorieService {
      * @return 对象列表
      */
     @Override
-    public String queryAllByLimit(int pagenum,int pagesize) {
+    public List<T_Categorie> queryAllByLimit(int pagenum,int pagesize) {
         PageHelper.startPage(pagenum,pagesize);
         List<T_Categorie> getall = this.tCategorieDao.getall();
-        return JSON.toJSONString(getall);
+        return getall;
     }
 
     /**

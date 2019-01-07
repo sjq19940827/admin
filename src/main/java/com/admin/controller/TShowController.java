@@ -2,6 +2,7 @@ package com.admin.controller;
 
 import com.admin.pojo.T_Show;
 import com.admin.service.TShowService;
+import com.alibaba.fastjson.JSONObject;
 import io.swagger.annotations.Api;
 import io.swagger.annotations.ApiOperation;
 import org.springframework.stereotype.Controller;
@@ -10,6 +11,7 @@ import org.springframework.web.bind.annotation.*;
 import javax.annotation.Resource;
 import javax.servlet.http.HttpServletRequest;
 import javax.servlet.http.HttpSession;
+import java.util.List;
 
 /**
  * (T_Show)表控制层
@@ -40,9 +42,14 @@ public class TShowController {
     }
     @GetMapping("limit")
     @ApiOperation(value = "分页查询所有商品信息" , httpMethod = "GET", notes = "返回所有商品信息 数组")
-    public String querybylimit(@RequestParam("pagenum") int pagenum,@RequestParam("pagesize") int pagesize) throws Exception{
-        String s = tShowService.queryAllByLimit(pagenum, pagesize);
-        return s;
+    public String querybylimit(@RequestParam("page")int page , @RequestParam("limit") int limit) throws Exception{
+        List<T_Show> t_shows = tShowService.queryAllByLimit(page, limit);
+        JSONObject obj=new JSONObject();
+        obj.put("code",0);
+        obj.put("msg","");
+        obj.put("count",1200);
+        obj.put("data",t_shows);
+        return obj.toJSONString();
     }
 
     @RequestMapping(value = "update",method = RequestMethod.POST)

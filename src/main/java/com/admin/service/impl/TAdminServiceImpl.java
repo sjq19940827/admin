@@ -71,10 +71,10 @@ public class TAdminServiceImpl implements TAdminService {
     }
 
     @Override
-    public String queryAllByLimit(int pagenum, int pagesize) {
+    public List<TAdmin> queryAllByLimit(int pagenum, int pagesize) {
         PageHelper.startPage(pagenum, pagesize);
         List<TAdmin> tAdmins = tAdminDao.queryAll();
-        return JSON.toJSONString(tAdmins);
+        return tAdmins;
     }
 
     /**

@@ -2,6 +2,8 @@ package com.admin.service;
 
 import com.admin.pojo.T_Show;
 
+import java.util.List;
+
 /**
  * (T_Show)表服务接口
  *
@@ -23,7 +25,7 @@ public interface TShowService {
      *
      * @return 对象列表
      */
-    String queryAllByLimit(int pagenum,int pagesize);
+    List<T_Show> queryAllByLimit(int pagenum, int pagesize);
 
     /**
      * 新增数据

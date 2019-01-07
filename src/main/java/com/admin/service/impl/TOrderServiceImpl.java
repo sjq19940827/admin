@@ -38,10 +38,10 @@ public class TOrderServiceImpl implements TOrderService {
      * @return 对象列表
      */
     @Override
-    public String queryAllByLimit(int pagenum, int pagesize) {
+    public List<TOrder> queryAllByLimit(int pagenum, int pagesize) {
         PageHelper.startPage(pagenum,pagesize);
         List<TOrder> all = tOrderDao.queryAll();
-        return JSON.toJSONString(all);
+        return all;
     }
 
     /**

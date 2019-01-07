@@ -2,6 +2,8 @@ package com.admin.service;
 
 import com.admin.pojo.T_Categorie;
 
+import java.util.List;
+
 /**
  * (T_Categorie)表服务接口
  *
@@ -25,7 +27,7 @@ public interface TCategorieService {
      * @param pagesize 查询条数
      * @return 对象列表
      */
-    String queryAllByLimit(int pagenum, int pagesize);
+    List<T_Categorie> queryAllByLimit(int pagenum, int pagesize);
 
     /**
      * 新增数据

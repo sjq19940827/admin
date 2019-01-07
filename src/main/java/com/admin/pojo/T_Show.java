@@ -40,6 +40,8 @@ public class T_Show implements Serializable {
     //票数
     private Integer show_Ipt_Num;
 
+    private Integer show_mark;
+
     public static long getSerialVersionUID() {
         return T_Show.serialVersionUID;
     }
@@ -154,5 +156,13 @@ public class T_Show implements Serializable {
 
     public void setShow_Ipt_Num(final Integer show_Ipt_Num) {
         this.show_Ipt_Num = show_Ipt_Num;
+    }
+
+    public Integer getShow_mark() {
+        return this.show_mark;
+    }
+
+    public void setShow_mark(final Integer show_mark) {
+        this.show_mark = show_mark;
     }
 }

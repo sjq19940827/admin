@@ -50,10 +50,10 @@ public class TTalkServiceImpl implements TTalkService {
      * @return 对象列表
      */
     @Override
-    public String queryAllByLimit(int pagenum, int pagesize) {
+    public List<TTalk> queryAllByLimit(int pagenum, int pagesize) {
         PageHelper.startPage(pagenum, pagesize);
         List<TTalk> tTalks = tTalkDao.queryAll();
-        return JSON.toJSONString(tTalks);
+        return tTalks;
     }
 
     /**
