@@ -9,8 +9,6 @@ import org.springframework.stereotype.Controller;
 import org.springframework.web.bind.annotation.*;
 
 import javax.annotation.Resource;
-import javax.servlet.http.HttpServletRequest;
-import javax.servlet.http.HttpSession;
 import java.util.List;
 
 /**
@@ -19,7 +17,7 @@ import java.util.List;
  * @author makejava
  * @since 2018-12-19 19:27:28
  */
-@Controller
+@RestController
 @RequestMapping("tShow/")
 @Api(value = "tShow/",description = "商品管理")
 public class TShowController {
@@ -40,7 +38,9 @@ public class TShowController {
     public String selectOne(Long id) {
         return this.tShowService.queryById(id);
     }
-    @GetMapping("limit")
+
+
+    @GetMapping("getallshow")
     @ApiOperation(value = "分页查询所有商品信息" , httpMethod = "GET", notes = "返回所有商品信息 数组")
     public String querybylimit(@RequestParam("page")int page , @RequestParam("limit") int limit) throws Exception{
         List<T_Show> t_shows = tShowService.queryAllByLimit(page, limit);
