@@ -32,6 +32,6 @@
 	</update>
 
 	<select id="getall" resultType="com.admin.pojo.T_User">
-		select id,userName,password,sex,loginName,usertype,login_phone from t_user
+		select * from t_user
 	</select>
 </mapper>
