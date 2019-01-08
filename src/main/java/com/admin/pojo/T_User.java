@@ -4,6 +4,7 @@ package com.admin.pojo;
 import java.io.Serializable;
 import java.sql.Date;
 import java.sql.Timestamp;
+import java.util.List;
 
 public class T_User implements Serializable {
 
@@ -20,6 +21,16 @@ public class T_User implements Serializable {
   private Double balance;
   private java.sql.Timestamp latelyLogin;
   private Long login_Phone;
+
+  private List<TTalk> tTalks;
+
+  public List<TTalk> gettTalks() {
+    return this.tTalks;
+  }
+
+  public void settTalks(final List<TTalk> tTalks) {
+    this.tTalks = tTalks;
+  }
 
   public Integer getId() {
     return this.id;

@@ -2,6 +2,7 @@ package com.admin.pojo;
 
 import java.util.Date;
 import java.io.Serializable;
+import java.util.List;
 
 /**
  * (T_Show)实体类
@@ -41,6 +42,16 @@ public class T_Show implements Serializable {
     private Integer show_Ipt_Num;
 
     private Integer show_mark;
+
+    private List<TTalk> tTalks;
+
+    public List<TTalk> gettTalks() {
+        return this.tTalks;
+    }
+
+    public void settTalks(final List<TTalk> tTalks) {
+        this.tTalks = tTalks;
+    }
 
     public static long getSerialVersionUID() {
         return T_Show.serialVersionUID;

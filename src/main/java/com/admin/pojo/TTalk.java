@@ -1,7 +1,9 @@
 package com.admin.pojo;
 
+import java.util.ArrayList;
 import java.util.Date;
 import java.io.Serializable;
+import java.util.List;
 
 /**
  * (TTalk)实体类
@@ -26,6 +28,25 @@ public class TTalk implements Serializable {
     
     private Date createtime;
 
+    private List<T_Show> tShows=new ArrayList<T_Show>();
+
+    private List<T_User> tUsers = new ArrayList<T_User>();
+
+    public List<T_Show> gettShows() {
+        return this.tShows;
+    }
+
+    public void settShows(final List<T_Show> tShows) {
+        this.tShows = tShows;
+    }
+
+    public List<T_User> gettUsers() {
+        return this.tUsers;
+    }
+
+    public void settUsers(final List<T_User> tUsers) {
+        this.tUsers = tUsers;
+    }
 
     public Integer getTalkId() {
         return talkId;

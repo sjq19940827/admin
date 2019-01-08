@@ -10,6 +10,35 @@
         <result property="state" column="state" jdbcType="INTEGER"/>
         <result property="praseCount" column="prase_count" jdbcType="INTEGER"/>
         <result property="createtime" column="createtime" jdbcType="TIMESTAMP"/>
+        <association property="tUsers" javaType="com.admin.pojo.T_User">
+            <result column="id" property="id"/>
+            <result column="userName" property="userName"/>
+            <result column="nickname" property="nickname"/>
+            <result column="password" property="password"/>
+            <result column="sex" property="sex"/>
+            <result column="identityCode" property="identityCode"/>
+            <result column="identityCode" property="identityCode"/>
+            <result column="userdate" property="userdate"/>
+            <result column="loginName" property="loginName"/>
+            <result column="usertype" property="usertype"/>
+            <result column="imageName" property="imageName"/>
+            <result column="balance" property="balance"/>
+            <result column="latelyLogin" property="latelyLogin"/>
+            <result column="login_phone" property="login_Phone"/>
+        </association>
+        <association property="tShows" javaType="com.admin.pojo.T_Show">
+            <result column="show_name"  property="show_Name" />
+            <result column="show_img"  property="show_Img" />
+            <result column="show_min_price"  property="show_Min_Price" />
+            <result column="show_max_price"  property="show_Max_Price" />
+            <result column="show_place"  property="show_Place" />
+            <result column="show_title"  property="show_Title" />
+            <result column="count"  property="count" />
+            <result column="show_status"  property="show_Status" />
+            <result column="show_begin_time"  property="show_Begin_Time" />
+            <result column="show_end_time"  property="show_End_Time" />
+            <result column="show_ipt_num"  property="show_Ipt_Num"/>
+        </association>
     </resultMap>
 
     <!--查询单个-->
@@ -23,8 +52,10 @@
     <!--通过实体作为筛选条件查询-->
     <select id="queryAll" resultMap="TTalkMap">
         select
-          talk_id, answer_id, user_id, talk_info, state, prase_count, createtime
-        from xiaomai.t_talk
+          talk_id, answer_id, user_id, talk_info, state, prase_count, createtime,
+          id,userName,show_id,show_name
+        from xiaomai.t_talk ta,xiaomai.t_user tu,xiaomai.t_show ts
+        where ta.user_id=tu.id and ta.answer_id=ts.show_id
     </select>
     <select id="queryByuserid" resultType="com.admin.pojo.TTalk">
         select
