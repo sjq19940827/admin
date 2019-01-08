@@ -67,14 +67,14 @@ public class CityController {
 
     @RequestMapping(value = "insert",method = RequestMethod.POST)
     @ApiOperation(value = "新增城市信息",notes = "相应结果")
-    public String insert(@RequestBody City city){
+    public String insert(City city){
         String insert = cityService.insert(city);
         return insert;
     }
 
     @RequestMapping(value = "update",method = RequestMethod.POST)
     @ApiOperation(value = "修改城市信息",notes = "相应结果")
-    public String update(@ApiParam(required = true, name ="city", value ="城市对象") @RequestBody City city){
+    public String update(@ApiParam(required = true, name ="city", value ="城市对象")City city){
         String insert = cityService.update(city);
         return insert;
     }

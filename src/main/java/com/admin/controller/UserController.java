@@ -97,7 +97,7 @@ public class UserController {
 
     @RequestMapping(value = "update",method = RequestMethod.POST)
     @ApiOperation(value = "动态修改个人信息" , notes = "相应修改返回值")
-    public String update(@RequestBody T_User t_user){
+    public String update(T_User t_user){
         String updateuser = userservice.updateuser(t_user);
         return updateuser;
     }

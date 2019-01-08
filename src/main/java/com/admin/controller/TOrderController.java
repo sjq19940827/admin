@@ -53,7 +53,7 @@ public class TOrderController {
     @ResponseBody
     @RequestMapping(value = "update",method = RequestMethod.POST)
     @ApiOperation(value="修改订单信息",notes="返回相应结果")
-    public String update(@ApiParam(required = true, name ="tOrder", value ="订单对象")@RequestBody TOrder tOrder){
+    public String update(@ApiParam(required = true, name ="tOrder", value ="订单对象") TOrder tOrder){
         String update = tOrderService.update(tOrder);
         return update;
     }

@@ -54,14 +54,14 @@ public class TShowController {
 
     @RequestMapping(value = "update",method = RequestMethod.POST)
     @ApiOperation(value = "动态修改商品信息",notes = "返回商品对象json")
-    public String update(@RequestBody T_Show t_show){
+    public String update( T_Show t_show){
         String update = tShowService.update(t_show);
         return update;
     }
 
     @RequestMapping(value = "insert",method = RequestMethod.POST)
     @ApiOperation(value = "新增商品信息",httpMethod = "GET",notes = "相应结果")
-    public String insert(@RequestBody T_Show t_show){
+    public String insert( T_Show t_show){
         String insert = tShowService.insert(t_show);
         return insert;
     }

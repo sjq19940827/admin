@@ -67,14 +67,14 @@ public class TProblemController {
 
     @RequestMapping(value = "insert",method = RequestMethod.POST)
     @ApiOperation(value = "新增问题信息",notes = "相应结果")
-    public String insert(@RequestBody TProblem tProblem){
+    public String insert( TProblem tProblem){
         String insert = tProblemService.insert(tProblem);
         return insert;
     }
 
     @RequestMapping(value = "update",method = RequestMethod.POST)
     @ApiOperation(value = "修改问题信息",notes = "相应结果")
-    public String update(@ApiParam(required = true, name ="问题对象", value ="tproblem") @RequestBody TProblem tProblem){
+    public String update(@ApiParam(required = true, name ="问题对象", value ="tproblem") TProblem tProblem){
         String insert = tProblemService.update(tProblem);
         return insert;
     }

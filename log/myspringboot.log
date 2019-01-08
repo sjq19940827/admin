@@ -224,3 +224,1041 @@
 2019-01-08 09:36:58.501  INFO 5248 --- [http-nio-8080-exec-1] o.s.web.servlet.DispatcherServlet        : Initializing Servlet 'dispatcherServlet'
 2019-01-08 09:36:58.520  INFO 5248 --- [http-nio-8080-exec-1] o.s.web.servlet.DispatcherServlet        : Completed initialization in 19 ms
 2019-01-08 10:59:44.880  WARN 5248 --- [http-nio-8080-exec-8] .w.s.m.s.DefaultHandlerExceptionResolver : Resolved [org.springframework.web.bind.MissingServletRequestParameterException: Required int parameter 'page' is not present]
+2019-01-08 11:10:50.461  INFO 7608 --- [main] com.admin.AdminApplication               : Starting AdminApplication on WIN-MFNRLAVRVCB with PID 7608 (E:\ideaWorkSpace\admin\target\classes started by Administrator in E:\ideaWorkSpace\admin)
+2019-01-08 11:10:50.496  INFO 7608 --- [main] com.admin.AdminApplication               : The following profiles are active: dev
+2019-01-08 11:10:59.635  INFO 7608 --- [main] .s.d.r.c.RepositoryConfigurationDelegate : Multiple Spring Data modules found, entering strict repository configuration mode!
+2019-01-08 11:10:59.665  INFO 7608 --- [main] .s.d.r.c.RepositoryConfigurationDelegate : Bootstrapping Spring Data repositories in DEFAULT mode.
+2019-01-08 11:10:59.819  INFO 7608 --- [main] .s.d.r.c.RepositoryConfigurationDelegate : Finished Spring Data repository scanning in 27ms. Found 0 repository interfaces.
+2019-01-08 11:11:00.843  INFO 7608 --- [main] trationDelegate$BeanPostProcessorChecker : Bean 'com.alibaba.druid.spring.boot.autoconfigure.stat.DruidSpringAopConfiguration' of type [com.alibaba.druid.spring.boot.autoconfigure.stat.DruidSpringAopConfiguration] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2019-01-08 11:11:00.882  INFO 7608 --- [main] trationDelegate$BeanPostProcessorChecker : Bean 'org.springframework.transaction.annotation.ProxyTransactionManagementConfiguration' of type [org.springframework.transaction.annotation.ProxyTransactionManagementConfiguration$$EnhancerBySpringCGLIB$$eb70431a] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2019-01-08 11:11:00.909  INFO 7608 --- [main] trationDelegate$BeanPostProcessorChecker : Bean 'spring.datasource.druid-com.alibaba.druid.spring.boot.autoconfigure.properties.DruidStatProperties' of type [com.alibaba.druid.spring.boot.autoconfigure.properties.DruidStatProperties] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2019-01-08 11:11:00.986  INFO 7608 --- [main] trationDelegate$BeanPostProcessorChecker : Bean 'advisor' of type [org.springframework.aop.support.RegexpMethodPointcutAdvisor] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2019-01-08 11:11:05.642  INFO 7608 --- [main] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat initialized with port(s): 8080 (http)
+2019-01-08 11:11:05.796  INFO 7608 --- [main] o.apache.catalina.core.StandardService   : Starting service [Tomcat]
+2019-01-08 11:11:05.796  INFO 7608 --- [main] org.apache.catalina.core.StandardEngine  : Starting Servlet Engine: Apache Tomcat/9.0.13
+2019-01-08 11:11:05.891  INFO 7608 --- [main] o.a.catalina.core.AprLifecycleListener   : The APR based Apache Tomcat Native library which allows optimal performance in production environments was not found on the java.library.path: [C:\Program Files\Java\jdk1.8.0_181\bin;C:\Windows\Sun\Java\bin;C:\Windows\system32;C:\Windows;C:\Program Files (x86)\Common Files\Oracle\Java\javapath;C:\Program Files\Java\jdk1.8.0_181\bin;C:\Program Files\MySQL\MySQL Server 5.5\bin；%CALTALINA_HOME%\bin;;CATALINA_HOME%\bin;E:\sdlihdroighdlghdf\MyEclipse 10\File\New\Web Project\tomcat\lib;D:\Maven\apache-maven-3.5.4\bin;C:\Program Files\TortoiseSVN\bin;D:\新建文件夹\;D:\G;t\cmd;D:\Git\cmd;C:\Program Files\erl7.1\bin;C:\Windows/system32;C:\Windows;D:\gradle\gradle-5.0\bin;C:\Users\Administrator\AppData\Roaming\npm;.]
+2019-01-08 11:11:06.645  INFO 7608 --- [main] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring embedded WebApplicationContext
+2019-01-08 11:11:06.646  INFO 7608 --- [main] o.s.web.context.ContextLoader            : Root WebApplicationContext: initialization completed in 15122 ms
+2019-01-08 11:11:07.070  INFO 7608 --- [main] c.a.d.s.b.a.DruidDataSourceAutoConfigure : Init DruidDataSource
+2019-01-08 11:11:07.639  INFO 7608 --- [main] com.alibaba.druid.pool.DruidDataSource   : {dataSource-1} inited
+2019-01-08 11:11:09.945  INFO 7608 --- [main] o.s.s.concurrent.ThreadPoolTaskExecutor  : Initializing ExecutorService 'applicationTaskExecutor'
+2019-01-08 11:11:12.610  INFO 7608 --- [main] d.s.w.p.DocumentationPluginsBootstrapper : Context refreshed
+2019-01-08 11:11:12.656  INFO 7608 --- [main] d.s.w.p.DocumentationPluginsBootstrapper : Found 1 custom documentation plugin(s)
+2019-01-08 11:11:12.673  INFO 7608 --- [main] s.d.s.w.s.ApiListingReferenceScanner     : Scanning for api listing references
+2019-01-08 11:11:13.080  INFO 7608 --- [main] .d.s.w.r.o.CachingOperationNameGenerator : Generating unique operation named: delUsingGET_1
+2019-01-08 11:11:13.087  INFO 7608 --- [main] .d.s.w.r.o.CachingOperationNameGenerator : Generating unique operation named: getallUsingGET_1
+2019-01-08 11:11:13.095  INFO 7608 --- [main] .d.s.w.r.o.CachingOperationNameGenerator : Generating unique operation named: insertUsingPOST_1
+2019-01-08 11:11:13.111  INFO 7608 --- [main] .d.s.w.r.o.CachingOperationNameGenerator : Generating unique operation named: selectOneUsingGET_1
+2019-01-08 11:11:13.115  INFO 7608 --- [main] .d.s.w.r.o.CachingOperationNameGenerator : Generating unique operation named: updateUsingPOST_1
+2019-01-08 11:11:13.130  INFO 7608 --- [main] .d.s.w.r.o.CachingOperationNameGenerator : Generating unique operation named: getallUsingGET_2
+2019-01-08 11:11:13.136  INFO 7608 --- [main] .d.s.w.r.o.CachingOperationNameGenerator : Generating unique operation named: insertUsingPOST_2
+2019-01-08 11:11:13.141  INFO 7608 --- [main] .d.s.w.r.o.CachingOperationNameGenerator : Generating unique operation named: selectOneUsingGET_2
+2019-01-08 11:11:13.144  INFO 7608 --- [main] .d.s.w.r.o.CachingOperationNameGenerator : Generating unique operation named: updateUsingPOST_2
+2019-01-08 11:11:13.149  INFO 7608 --- [main] .d.s.w.r.o.CachingOperationNameGenerator : Generating unique operation named: delUsingGET_2
+2019-01-08 11:11:13.153  INFO 7608 --- [main] .d.s.w.r.o.CachingOperationNameGenerator : Generating unique operation named: getallUsingGET_3
+2019-01-08 11:11:13.159  INFO 7608 --- [main] .d.s.w.r.o.CachingOperationNameGenerator : Generating unique operation named: insertUsingPOST_3
+2019-01-08 11:11:13.163  INFO 7608 --- [main] .d.s.w.r.o.CachingOperationNameGenerator : Generating unique operation named: selectOneUsingGET_3
+2019-01-08 11:11:13.167  INFO 7608 --- [main] .d.s.w.r.o.CachingOperationNameGenerator : Generating unique operation named: selectOnebynameUsingGET_1
+2019-01-08 11:11:13.172  INFO 7608 --- [main] .d.s.w.r.o.CachingOperationNameGenerator : Generating unique operation named: updateUsingPOST_3
+2019-01-08 11:11:13.178  INFO 7608 --- [main] .d.s.w.r.o.CachingOperationNameGenerator : Generating unique operation named: delUsingGET_3
+2019-01-08 11:11:13.183  INFO 7608 --- [main] .d.s.w.r.o.CachingOperationNameGenerator : Generating unique operation named: getallUsingGET_4
+2019-01-08 11:11:13.193  INFO 7608 --- [main] .d.s.w.r.o.CachingOperationNameGenerator : Generating unique operation named: selectOneUsingGET_4
+2019-01-08 11:11:13.200  INFO 7608 --- [main] .d.s.w.r.o.CachingOperationNameGenerator : Generating unique operation named: updateUsingPOST_4
+2019-01-08 11:11:13.205  INFO 7608 --- [main] .d.s.w.r.o.CachingOperationNameGenerator : Generating unique operation named: delUsingGET_4
+2019-01-08 11:11:13.208  INFO 7608 --- [main] .d.s.w.r.o.CachingOperationNameGenerator : Generating unique operation named: getallUsingGET_5
+2019-01-08 11:11:13.212  INFO 7608 --- [main] .d.s.w.r.o.CachingOperationNameGenerator : Generating unique operation named: insertUsingPOST_4
+2019-01-08 11:11:13.216  INFO 7608 --- [main] .d.s.w.r.o.CachingOperationNameGenerator : Generating unique operation named: selectOneUsingGET_5
+2019-01-08 11:11:13.219  INFO 7608 --- [main] .d.s.w.r.o.CachingOperationNameGenerator : Generating unique operation named: selectOnebynameUsingGET_2
+2019-01-08 11:11:13.222  INFO 7608 --- [main] .d.s.w.r.o.CachingOperationNameGenerator : Generating unique operation named: updateUsingPOST_5
+2019-01-08 11:11:13.226  INFO 7608 --- [main] .d.s.w.r.o.CachingOperationNameGenerator : Generating unique operation named: delUsingGET_5
+2019-01-08 11:11:13.229  INFO 7608 --- [main] .d.s.w.r.o.CachingOperationNameGenerator : Generating unique operation named: getallUsingGET_6
+2019-01-08 11:11:13.233  INFO 7608 --- [main] .d.s.w.r.o.CachingOperationNameGenerator : Generating unique operation named: insertUsingPOST_5
+2019-01-08 11:11:13.236  INFO 7608 --- [main] .d.s.w.r.o.CachingOperationNameGenerator : Generating unique operation named: selectOneUsingGET_6
+2019-01-08 11:11:13.238  INFO 7608 --- [main] .d.s.w.r.o.CachingOperationNameGenerator : Generating unique operation named: selectOnebynameUsingGET_3
+2019-01-08 11:11:13.250  INFO 7608 --- [main] .d.s.w.r.o.CachingOperationNameGenerator : Generating unique operation named: updateUsingPOST_6
+2019-01-08 11:11:13.253  INFO 7608 --- [main] .d.s.w.r.o.CachingOperationNameGenerator : Generating unique operation named: delUsingPOST_1
+2019-01-08 11:11:13.277  INFO 7608 --- [main] .d.s.w.r.o.CachingOperationNameGenerator : Generating unique operation named: selectOneUsingGET_7
+2019-01-08 11:11:13.279  INFO 7608 --- [main] .d.s.w.r.o.CachingOperationNameGenerator : Generating unique operation named: updateUsingPOST_7
+2019-01-08 11:11:13.380  INFO 7608 --- [main] .d.s.w.r.o.CachingOperationNameGenerator : Generating unique operation named: getaddUsingPOST_1
+2019-01-08 11:11:13.383  INFO 7608 --- [main] .d.s.w.r.o.CachingOperationNameGenerator : Generating unique operation named: getaddUsingPOST_2
+2019-01-08 11:11:13.386  INFO 7608 --- [main] .d.s.w.r.o.CachingOperationNameGenerator : Generating unique operation named: getaddUsingPOST_3
+2019-01-08 11:11:13.388  INFO 7608 --- [main] .d.s.w.r.o.CachingOperationNameGenerator : Generating unique operation named: getaddUsingPOST_4
+2019-01-08 11:11:13.391  INFO 7608 --- [main] .d.s.w.r.o.CachingOperationNameGenerator : Generating unique operation named: getaddUsingPOST_5
+2019-01-08 11:11:13.394  INFO 7608 --- [main] .d.s.w.r.o.CachingOperationNameGenerator : Generating unique operation named: getaddUsingPOST_6
+2019-01-08 11:11:13.396  INFO 7608 --- [main] .d.s.w.r.o.CachingOperationNameGenerator : Generating unique operation named: getaddUsingPOST_7
+2019-01-08 11:11:13.402  INFO 7608 --- [main] .d.s.w.r.o.CachingOperationNameGenerator : Generating unique operation named: getuserUsingPOST_1
+2019-01-08 11:11:13.405  INFO 7608 --- [main] .d.s.w.r.o.CachingOperationNameGenerator : Generating unique operation named: getuserUsingPOST_2
+2019-01-08 11:11:13.408  INFO 7608 --- [main] .d.s.w.r.o.CachingOperationNameGenerator : Generating unique operation named: getuserUsingPOST_3
+2019-01-08 11:11:13.410  INFO 7608 --- [main] .d.s.w.r.o.CachingOperationNameGenerator : Generating unique operation named: getuserUsingPOST_4
+2019-01-08 11:11:13.413  INFO 7608 --- [main] .d.s.w.r.o.CachingOperationNameGenerator : Generating unique operation named: getuserUsingPOST_5
+2019-01-08 11:11:13.416  INFO 7608 --- [main] .d.s.w.r.o.CachingOperationNameGenerator : Generating unique operation named: getuserUsingPOST_6
+2019-01-08 11:11:13.418  INFO 7608 --- [main] .d.s.w.r.o.CachingOperationNameGenerator : Generating unique operation named: getuserUsingPOST_7
+2019-01-08 11:11:13.432  INFO 7608 --- [main] .d.s.w.r.o.CachingOperationNameGenerator : Generating unique operation named: updateUsingPOST_8
+2019-01-08 11:11:13.588  INFO 7608 --- [main] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat started on port(s): 8080 (http) with context path ''
+2019-01-08 11:11:13.592  INFO 7608 --- [main] com.admin.AdminApplication               : Started AdminApplication in 26.294 seconds (JVM running for 33.62)
+2019-01-08 11:19:04.902  INFO 7608 --- [http-nio-8080-exec-1] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring DispatcherServlet 'dispatcherServlet'
+2019-01-08 11:19:04.902  INFO 7608 --- [http-nio-8080-exec-1] o.s.web.servlet.DispatcherServlet        : Initializing Servlet 'dispatcherServlet'
+2019-01-08 11:19:04.959  INFO 7608 --- [http-nio-8080-exec-1] o.s.web.servlet.DispatcherServlet        : Completed initialization in 57 ms
+2019-01-08 11:23:49.480  WARN 7608 --- [http-nio-8080-exec-10] .w.s.m.s.DefaultHandlerExceptionResolver : Resolved [org.springframework.web.bind.MissingServletRequestParameterException: Required Integer parameter 'aid' is not present]
+2019-01-08 11:27:31.417  INFO 7132 --- [main] com.admin.AdminApplication               : Starting AdminApplication on WIN-MFNRLAVRVCB with PID 7132 (E:\ideaWorkSpace\admin\target\classes started by Administrator in E:\ideaWorkSpace\admin)
+2019-01-08 11:27:31.421  INFO 7132 --- [main] com.admin.AdminApplication               : The following profiles are active: dev
+2019-01-08 11:27:33.955  INFO 7132 --- [main] .s.d.r.c.RepositoryConfigurationDelegate : Multiple Spring Data modules found, entering strict repository configuration mode!
+2019-01-08 11:27:33.959  INFO 7132 --- [main] .s.d.r.c.RepositoryConfigurationDelegate : Bootstrapping Spring Data repositories in DEFAULT mode.
+2019-01-08 11:27:34.015  INFO 7132 --- [main] .s.d.r.c.RepositoryConfigurationDelegate : Finished Spring Data repository scanning in 31ms. Found 0 repository interfaces.
+2019-01-08 11:27:34.527  INFO 7132 --- [main] trationDelegate$BeanPostProcessorChecker : Bean 'com.alibaba.druid.spring.boot.autoconfigure.stat.DruidSpringAopConfiguration' of type [com.alibaba.druid.spring.boot.autoconfigure.stat.DruidSpringAopConfiguration] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2019-01-08 11:27:34.583  INFO 7132 --- [main] trationDelegate$BeanPostProcessorChecker : Bean 'org.springframework.transaction.annotation.ProxyTransactionManagementConfiguration' of type [org.springframework.transaction.annotation.ProxyTransactionManagementConfiguration$$EnhancerBySpringCGLIB$$de0383d2] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2019-01-08 11:27:34.636  INFO 7132 --- [main] trationDelegate$BeanPostProcessorChecker : Bean 'spring.datasource.druid-com.alibaba.druid.spring.boot.autoconfigure.properties.DruidStatProperties' of type [com.alibaba.druid.spring.boot.autoconfigure.properties.DruidStatProperties] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2019-01-08 11:27:34.644  INFO 7132 --- [main] trationDelegate$BeanPostProcessorChecker : Bean 'advisor' of type [org.springframework.aop.support.RegexpMethodPointcutAdvisor] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2019-01-08 11:27:35.111  INFO 7132 --- [main] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat initialized with port(s): 8080 (http)
+2019-01-08 11:27:35.135  INFO 7132 --- [main] o.apache.catalina.core.StandardService   : Starting service [Tomcat]
+2019-01-08 11:27:35.135  INFO 7132 --- [main] org.apache.catalina.core.StandardEngine  : Starting Servlet Engine: Apache Tomcat/9.0.13
+2019-01-08 11:27:35.142  INFO 7132 --- [main] o.a.catalina.core.AprLifecycleListener   : The APR based Apache Tomcat Native library which allows optimal performance in production environments was not found on the java.library.path: [C:\Program Files\Java\jdk1.8.0_181\bin;C:\Windows\Sun\Java\bin;C:\Windows\system32;C:\Windows;C:\Program Files (x86)\Common Files\Oracle\Java\javapath;C:\Program Files\Java\jdk1.8.0_181\bin;C:\Program Files\MySQL\MySQL Server 5.5\bin；%CALTALINA_HOME%\bin;;CATALINA_HOME%\bin;E:\sdlihdroighdlghdf\MyEclipse 10\File\New\Web Project\tomcat\lib;D:\Maven\apache-maven-3.5.4\bin;C:\Program Files\TortoiseSVN\bin;D:\新建文件夹\;D:\G;t\cmd;D:\Git\cmd;C:\Program Files\erl7.1\bin;C:\Windows/system32;C:\Windows;D:\gradle\gradle-5.0\bin;C:\Users\Administrator\AppData\Roaming\npm;.]
+2019-01-08 11:27:35.242  INFO 7132 --- [main] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring embedded WebApplicationContext
+2019-01-08 11:27:35.243  INFO 7132 --- [main] o.s.web.context.ContextLoader            : Root WebApplicationContext: initialization completed in 3755 ms
+2019-01-08 11:27:35.359  INFO 7132 --- [main] c.a.d.s.b.a.DruidDataSourceAutoConfigure : Init DruidDataSource
+2019-01-08 11:27:35.708  INFO 7132 --- [main] com.alibaba.druid.pool.DruidDataSource   : {dataSource-1} inited
+2019-01-08 11:27:36.805  INFO 7132 --- [main] o.s.s.concurrent.ThreadPoolTaskExecutor  : Initializing ExecutorService 'applicationTaskExecutor'
+2019-01-08 11:27:37.337  INFO 7132 --- [main] d.s.w.p.DocumentationPluginsBootstrapper : Context refreshed
+2019-01-08 11:27:37.352  INFO 7132 --- [main] d.s.w.p.DocumentationPluginsBootstrapper : Found 1 custom documentation plugin(s)
+2019-01-08 11:27:37.364  INFO 7132 --- [main] s.d.s.w.s.ApiListingReferenceScanner     : Scanning for api listing references
+2019-01-08 11:27:37.519  INFO 7132 --- [main] .d.s.w.r.o.CachingOperationNameGenerator : Generating unique operation named: delUsingGET_1
+2019-01-08 11:27:37.525  INFO 7132 --- [main] .d.s.w.r.o.CachingOperationNameGenerator : Generating unique operation named: getallUsingGET_1
+2019-01-08 11:27:37.533  INFO 7132 --- [main] .d.s.w.r.o.CachingOperationNameGenerator : Generating unique operation named: insertUsingPOST_1
+2019-01-08 11:27:37.551  INFO 7132 --- [main] .d.s.w.r.o.CachingOperationNameGenerator : Generating unique operation named: selectOneUsingGET_1
+2019-01-08 11:27:37.557  INFO 7132 --- [main] .d.s.w.r.o.CachingOperationNameGenerator : Generating unique operation named: updateUsingPOST_1
+2019-01-08 11:27:37.575  INFO 7132 --- [main] .d.s.w.r.o.CachingOperationNameGenerator : Generating unique operation named: getallUsingGET_2
+2019-01-08 11:27:37.583  INFO 7132 --- [main] .d.s.w.r.o.CachingOperationNameGenerator : Generating unique operation named: insertUsingPOST_2
+2019-01-08 11:27:37.589  INFO 7132 --- [main] .d.s.w.r.o.CachingOperationNameGenerator : Generating unique operation named: selectOneUsingGET_2
+2019-01-08 11:27:37.596  INFO 7132 --- [main] .d.s.w.r.o.CachingOperationNameGenerator : Generating unique operation named: updateUsingPOST_2
+2019-01-08 11:27:37.603  INFO 7132 --- [main] .d.s.w.r.o.CachingOperationNameGenerator : Generating unique operation named: delUsingGET_2
+2019-01-08 11:27:37.608  INFO 7132 --- [main] .d.s.w.r.o.CachingOperationNameGenerator : Generating unique operation named: getallUsingGET_3
+2019-01-08 11:27:37.614  INFO 7132 --- [main] .d.s.w.r.o.CachingOperationNameGenerator : Generating unique operation named: insertUsingPOST_3
+2019-01-08 11:27:37.618  INFO 7132 --- [main] .d.s.w.r.o.CachingOperationNameGenerator : Generating unique operation named: selectOneUsingGET_3
+2019-01-08 11:27:37.623  INFO 7132 --- [main] .d.s.w.r.o.CachingOperationNameGenerator : Generating unique operation named: selectOnebynameUsingGET_1
+2019-01-08 11:27:37.627  INFO 7132 --- [main] .d.s.w.r.o.CachingOperationNameGenerator : Generating unique operation named: updateUsingPOST_3
+2019-01-08 11:27:37.634  INFO 7132 --- [main] .d.s.w.r.o.CachingOperationNameGenerator : Generating unique operation named: delUsingGET_3
+2019-01-08 11:27:37.638  INFO 7132 --- [main] .d.s.w.r.o.CachingOperationNameGenerator : Generating unique operation named: getallUsingGET_4
+2019-01-08 11:27:37.646  INFO 7132 --- [main] .d.s.w.r.o.CachingOperationNameGenerator : Generating unique operation named: selectOneUsingGET_4
+2019-01-08 11:27:37.655  INFO 7132 --- [main] .d.s.w.r.o.CachingOperationNameGenerator : Generating unique operation named: updateUsingPOST_4
+2019-01-08 11:27:37.658  INFO 7132 --- [main] .d.s.w.r.o.CachingOperationNameGenerator : Generating unique operation named: delUsingGET_4
+2019-01-08 11:27:37.661  INFO 7132 --- [main] .d.s.w.r.o.CachingOperationNameGenerator : Generating unique operation named: getallUsingGET_5
+2019-01-08 11:27:37.667  INFO 7132 --- [main] .d.s.w.r.o.CachingOperationNameGenerator : Generating unique operation named: insertUsingPOST_4
+2019-01-08 11:27:37.671  INFO 7132 --- [main] .d.s.w.r.o.CachingOperationNameGenerator : Generating unique operation named: selectOneUsingGET_5
+2019-01-08 11:27:37.675  INFO 7132 --- [main] .d.s.w.r.o.CachingOperationNameGenerator : Generating unique operation named: selectOnebynameUsingGET_2
+2019-01-08 11:27:37.678  INFO 7132 --- [main] .d.s.w.r.o.CachingOperationNameGenerator : Generating unique operation named: updateUsingPOST_5
+2019-01-08 11:27:37.683  INFO 7132 --- [main] .d.s.w.r.o.CachingOperationNameGenerator : Generating unique operation named: delUsingGET_5
+2019-01-08 11:27:37.686  INFO 7132 --- [main] .d.s.w.r.o.CachingOperationNameGenerator : Generating unique operation named: getallUsingGET_6
+2019-01-08 11:27:37.691  INFO 7132 --- [main] .d.s.w.r.o.CachingOperationNameGenerator : Generating unique operation named: insertUsingPOST_5
+2019-01-08 11:27:37.694  INFO 7132 --- [main] .d.s.w.r.o.CachingOperationNameGenerator : Generating unique operation named: selectOneUsingGET_6
+2019-01-08 11:27:37.697  INFO 7132 --- [main] .d.s.w.r.o.CachingOperationNameGenerator : Generating unique operation named: selectOnebynameUsingGET_3
+2019-01-08 11:27:37.709  INFO 7132 --- [main] .d.s.w.r.o.CachingOperationNameGenerator : Generating unique operation named: updateUsingPOST_6
+2019-01-08 11:27:37.714  INFO 7132 --- [main] .d.s.w.r.o.CachingOperationNameGenerator : Generating unique operation named: delUsingPOST_1
+2019-01-08 11:27:37.745  INFO 7132 --- [main] .d.s.w.r.o.CachingOperationNameGenerator : Generating unique operation named: selectOneUsingGET_7
+2019-01-08 11:27:37.749  INFO 7132 --- [main] .d.s.w.r.o.CachingOperationNameGenerator : Generating unique operation named: updateUsingPOST_7
+2019-01-08 11:27:37.808  INFO 7132 --- [main] .d.s.w.r.o.CachingOperationNameGenerator : Generating unique operation named: getaddUsingPOST_1
+2019-01-08 11:27:37.810  INFO 7132 --- [main] .d.s.w.r.o.CachingOperationNameGenerator : Generating unique operation named: getaddUsingPOST_2
+2019-01-08 11:27:37.812  INFO 7132 --- [main] .d.s.w.r.o.CachingOperationNameGenerator : Generating unique operation named: getaddUsingPOST_3
+2019-01-08 11:27:37.815  INFO 7132 --- [main] .d.s.w.r.o.CachingOperationNameGenerator : Generating unique operation named: getaddUsingPOST_4
+2019-01-08 11:27:37.817  INFO 7132 --- [main] .d.s.w.r.o.CachingOperationNameGenerator : Generating unique operation named: getaddUsingPOST_5
+2019-01-08 11:27:37.820  INFO 7132 --- [main] .d.s.w.r.o.CachingOperationNameGenerator : Generating unique operation named: getaddUsingPOST_6
+2019-01-08 11:27:37.822  INFO 7132 --- [main] .d.s.w.r.o.CachingOperationNameGenerator : Generating unique operation named: getaddUsingPOST_7
+2019-01-08 11:27:37.828  INFO 7132 --- [main] .d.s.w.r.o.CachingOperationNameGenerator : Generating unique operation named: getuserUsingPOST_1
+2019-01-08 11:27:37.832  INFO 7132 --- [main] .d.s.w.r.o.CachingOperationNameGenerator : Generating unique operation named: getuserUsingPOST_2
+2019-01-08 11:27:37.835  INFO 7132 --- [main] .d.s.w.r.o.CachingOperationNameGenerator : Generating unique operation named: getuserUsingPOST_3
+2019-01-08 11:27:37.837  INFO 7132 --- [main] .d.s.w.r.o.CachingOperationNameGenerator : Generating unique operation named: getuserUsingPOST_4
+2019-01-08 11:27:37.840  INFO 7132 --- [main] .d.s.w.r.o.CachingOperationNameGenerator : Generating unique operation named: getuserUsingPOST_5
+2019-01-08 11:27:37.842  INFO 7132 --- [main] .d.s.w.r.o.CachingOperationNameGenerator : Generating unique operation named: getuserUsingPOST_6
+2019-01-08 11:27:37.845  INFO 7132 --- [main] .d.s.w.r.o.CachingOperationNameGenerator : Generating unique operation named: getuserUsingPOST_7
+2019-01-08 11:27:37.854  INFO 7132 --- [main] .d.s.w.r.o.CachingOperationNameGenerator : Generating unique operation named: updateUsingPOST_8
+2019-01-08 11:27:37.907  INFO 7132 --- [main] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat started on port(s): 8080 (http) with context path ''
+2019-01-08 11:27:37.911  INFO 7132 --- [main] com.admin.AdminApplication               : Started AdminApplication in 7.112 seconds (JVM running for 8.574)
+2019-01-08 11:27:54.614  INFO 7132 --- [http-nio-8080-exec-1] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring DispatcherServlet 'dispatcherServlet'
+2019-01-08 11:27:54.615  INFO 7132 --- [http-nio-8080-exec-1] o.s.web.servlet.DispatcherServlet        : Initializing Servlet 'dispatcherServlet'
+2019-01-08 11:27:54.623  INFO 7132 --- [http-nio-8080-exec-1] o.s.web.servlet.DispatcherServlet        : Completed initialization in 8 ms
+2019-01-08 11:27:59.265  WARN 7132 --- [http-nio-8080-exec-9] .w.s.m.s.DefaultHandlerExceptionResolver : Resolved [org.springframework.web.bind.MissingServletRequestParameterException: Required Integer parameter 'aid' is not present]
+2019-01-08 11:42:36.572  WARN 7132 --- [http-nio-8080-exec-3] .w.s.m.s.DefaultHandlerExceptionResolver : Resolved [org.springframework.web.bind.MissingServletRequestParameterException: Required int parameter 'page' is not present]
+2019-01-08 14:05:09.153  INFO 6600 --- [main] com.admin.AdminApplication               : Starting AdminApplication on WIN-MFNRLAVRVCB with PID 6600 (E:\ideaWorkSpace\admin\target\classes started by Administrator in E:\ideaWorkSpace\admin)
+2019-01-08 14:05:09.158  INFO 6600 --- [main] com.admin.AdminApplication               : The following profiles are active: dev
+2019-01-08 14:05:14.574  INFO 6600 --- [main] .s.d.r.c.RepositoryConfigurationDelegate : Multiple Spring Data modules found, entering strict repository configuration mode!
+2019-01-08 14:05:14.604  INFO 6600 --- [main] .s.d.r.c.RepositoryConfigurationDelegate : Bootstrapping Spring Data repositories in DEFAULT mode.
+2019-01-08 14:05:14.915  INFO 6600 --- [main] .s.d.r.c.RepositoryConfigurationDelegate : Finished Spring Data repository scanning in 62ms. Found 0 repository interfaces.
+2019-01-08 14:05:16.148  INFO 6600 --- [main] trationDelegate$BeanPostProcessorChecker : Bean 'com.alibaba.druid.spring.boot.autoconfigure.stat.DruidSpringAopConfiguration' of type [com.alibaba.druid.spring.boot.autoconfigure.stat.DruidSpringAopConfiguration] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2019-01-08 14:05:16.191  INFO 6600 --- [main] trationDelegate$BeanPostProcessorChecker : Bean 'org.springframework.transaction.annotation.ProxyTransactionManagementConfiguration' of type [org.springframework.transaction.annotation.ProxyTransactionManagementConfiguration$$EnhancerBySpringCGLIB$$c2806b5b] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2019-01-08 14:05:16.222  INFO 6600 --- [main] trationDelegate$BeanPostProcessorChecker : Bean 'spring.datasource.druid-com.alibaba.druid.spring.boot.autoconfigure.properties.DruidStatProperties' of type [com.alibaba.druid.spring.boot.autoconfigure.properties.DruidStatProperties] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2019-01-08 14:05:16.260  INFO 6600 --- [main] trationDelegate$BeanPostProcessorChecker : Bean 'advisor' of type [org.springframework.aop.support.RegexpMethodPointcutAdvisor] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2019-01-08 14:05:17.582  INFO 6600 --- [main] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat initialized with port(s): 8080 (http)
+2019-01-08 14:05:17.770  INFO 6600 --- [main] o.apache.catalina.core.StandardService   : Starting service [Tomcat]
+2019-01-08 14:05:17.770  INFO 6600 --- [main] org.apache.catalina.core.StandardEngine  : Starting Servlet Engine: Apache Tomcat/9.0.13
+2019-01-08 14:05:17.816  INFO 6600 --- [main] o.a.catalina.core.AprLifecycleListener   : The APR based Apache Tomcat Native library which allows optimal performance in production environments was not found on the java.library.path: [C:\Program Files\Java\jdk1.8.0_181\bin;C:\Windows\Sun\Java\bin;C:\Windows\system32;C:\Windows;C:\Program Files (x86)\Common Files\Oracle\Java\javapath;C:\Program Files\Java\jdk1.8.0_181\bin;C:\Program Files\MySQL\MySQL Server 5.5\bin；%CALTALINA_HOME%\bin;;CATALINA_HOME%\bin;E:\sdlihdroighdlghdf\MyEclipse 10\File\New\Web Project\tomcat\lib;D:\Maven\apache-maven-3.5.4\bin;C:\Program Files\TortoiseSVN\bin;D:\新建文件夹\;D:\G;t\cmd;D:\Git\cmd;C:\Program Files\erl7.1\bin;C:\Windows/system32;C:\Windows;D:\gradle\gradle-5.0\bin;C:\Users\Administrator\AppData\Roaming\npm;.]
+2019-01-08 14:05:18.179  INFO 6600 --- [main] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring embedded WebApplicationContext
+2019-01-08 14:05:18.179  INFO 6600 --- [main] o.s.web.context.ContextLoader            : Root WebApplicationContext: initialization completed in 8434 ms
+2019-01-08 14:05:18.507  INFO 6600 --- [main] c.a.d.s.b.a.DruidDataSourceAutoConfigure : Init DruidDataSource
+2019-01-08 14:05:18.993  INFO 6600 --- [main] com.alibaba.druid.pool.DruidDataSource   : {dataSource-1} inited
+2019-01-08 14:05:23.519  INFO 6600 --- [main] o.s.s.concurrent.ThreadPoolTaskExecutor  : Initializing ExecutorService 'applicationTaskExecutor'
+2019-01-08 14:05:35.633  INFO 6600 --- [main] d.s.w.p.DocumentationPluginsBootstrapper : Context refreshed
+2019-01-08 14:05:35.684  INFO 6600 --- [main] d.s.w.p.DocumentationPluginsBootstrapper : Found 1 custom documentation plugin(s)
+2019-01-08 14:05:35.701  INFO 6600 --- [main] s.d.s.w.s.ApiListingReferenceScanner     : Scanning for api listing references
+2019-01-08 14:05:36.016  INFO 6600 --- [main] .d.s.w.r.o.CachingOperationNameGenerator : Generating unique operation named: delUsingGET_1
+2019-01-08 14:05:36.021  INFO 6600 --- [main] .d.s.w.r.o.CachingOperationNameGenerator : Generating unique operation named: getallUsingGET_1
+2019-01-08 14:05:36.029  INFO 6600 --- [main] .d.s.w.r.o.CachingOperationNameGenerator : Generating unique operation named: insertUsingPOST_1
+2019-01-08 14:05:36.044  INFO 6600 --- [main] .d.s.w.r.o.CachingOperationNameGenerator : Generating unique operation named: selectOneUsingGET_1
+2019-01-08 14:05:36.049  INFO 6600 --- [main] .d.s.w.r.o.CachingOperationNameGenerator : Generating unique operation named: updateUsingPOST_1
+2019-01-08 14:05:36.061  INFO 6600 --- [main] .d.s.w.r.o.CachingOperationNameGenerator : Generating unique operation named: getallUsingGET_2
+2019-01-08 14:05:36.066  INFO 6600 --- [main] .d.s.w.r.o.CachingOperationNameGenerator : Generating unique operation named: insertUsingPOST_2
+2019-01-08 14:05:36.071  INFO 6600 --- [main] .d.s.w.r.o.CachingOperationNameGenerator : Generating unique operation named: selectOneUsingGET_2
+2019-01-08 14:05:36.074  INFO 6600 --- [main] .d.s.w.r.o.CachingOperationNameGenerator : Generating unique operation named: updateUsingPOST_2
+2019-01-08 14:05:36.079  INFO 6600 --- [main] .d.s.w.r.o.CachingOperationNameGenerator : Generating unique operation named: delUsingGET_2
+2019-01-08 14:05:36.083  INFO 6600 --- [main] .d.s.w.r.o.CachingOperationNameGenerator : Generating unique operation named: getallUsingGET_3
+2019-01-08 14:05:36.088  INFO 6600 --- [main] .d.s.w.r.o.CachingOperationNameGenerator : Generating unique operation named: insertUsingPOST_3
+2019-01-08 14:05:36.091  INFO 6600 --- [main] .d.s.w.r.o.CachingOperationNameGenerator : Generating unique operation named: selectOneUsingGET_3
+2019-01-08 14:05:36.095  INFO 6600 --- [main] .d.s.w.r.o.CachingOperationNameGenerator : Generating unique operation named: selectOnebynameUsingGET_1
+2019-01-08 14:05:36.098  INFO 6600 --- [main] .d.s.w.r.o.CachingOperationNameGenerator : Generating unique operation named: updateUsingPOST_3
+2019-01-08 14:05:36.102  INFO 6600 --- [main] .d.s.w.r.o.CachingOperationNameGenerator : Generating unique operation named: delUsingGET_3
+2019-01-08 14:05:36.105  INFO 6600 --- [main] .d.s.w.r.o.CachingOperationNameGenerator : Generating unique operation named: getallUsingGET_4
+2019-01-08 14:05:36.113  INFO 6600 --- [main] .d.s.w.r.o.CachingOperationNameGenerator : Generating unique operation named: selectOneUsingGET_4
+2019-01-08 14:05:36.119  INFO 6600 --- [main] .d.s.w.r.o.CachingOperationNameGenerator : Generating unique operation named: updateUsingPOST_4
+2019-01-08 14:05:36.123  INFO 6600 --- [main] .d.s.w.r.o.CachingOperationNameGenerator : Generating unique operation named: delUsingGET_4
+2019-01-08 14:05:36.126  INFO 6600 --- [main] .d.s.w.r.o.CachingOperationNameGenerator : Generating unique operation named: getallUsingGET_5
+2019-01-08 14:05:36.131  INFO 6600 --- [main] .d.s.w.r.o.CachingOperationNameGenerator : Generating unique operation named: insertUsingPOST_4
+2019-01-08 14:05:36.135  INFO 6600 --- [main] .d.s.w.r.o.CachingOperationNameGenerator : Generating unique operation named: selectOneUsingGET_5
+2019-01-08 14:05:36.140  INFO 6600 --- [main] .d.s.w.r.o.CachingOperationNameGenerator : Generating unique operation named: selectOnebynameUsingGET_2
+2019-01-08 14:05:36.144  INFO 6600 --- [main] .d.s.w.r.o.CachingOperationNameGenerator : Generating unique operation named: updateUsingPOST_5
+2019-01-08 14:05:36.148  INFO 6600 --- [main] .d.s.w.r.o.CachingOperationNameGenerator : Generating unique operation named: delUsingGET_5
+2019-01-08 14:05:36.151  INFO 6600 --- [main] .d.s.w.r.o.CachingOperationNameGenerator : Generating unique operation named: getallUsingGET_6
+2019-01-08 14:05:36.155  INFO 6600 --- [main] .d.s.w.r.o.CachingOperationNameGenerator : Generating unique operation named: insertUsingPOST_5
+2019-01-08 14:05:36.157  INFO 6600 --- [main] .d.s.w.r.o.CachingOperationNameGenerator : Generating unique operation named: selectOneUsingGET_6
+2019-01-08 14:05:36.159  INFO 6600 --- [main] .d.s.w.r.o.CachingOperationNameGenerator : Generating unique operation named: selectOnebynameUsingGET_3
+2019-01-08 14:05:36.172  INFO 6600 --- [main] .d.s.w.r.o.CachingOperationNameGenerator : Generating unique operation named: updateUsingPOST_6
+2019-01-08 14:05:36.175  INFO 6600 --- [main] .d.s.w.r.o.CachingOperationNameGenerator : Generating unique operation named: delUsingPOST_1
+2019-01-08 14:05:36.198  INFO 6600 --- [main] .d.s.w.r.o.CachingOperationNameGenerator : Generating unique operation named: selectOneUsingGET_7
+2019-01-08 14:05:36.201  INFO 6600 --- [main] .d.s.w.r.o.CachingOperationNameGenerator : Generating unique operation named: updateUsingPOST_7
+2019-01-08 14:05:36.254  INFO 6600 --- [main] .d.s.w.r.o.CachingOperationNameGenerator : Generating unique operation named: getaddUsingPOST_1
+2019-01-08 14:05:36.255  INFO 6600 --- [main] .d.s.w.r.o.CachingOperationNameGenerator : Generating unique operation named: getaddUsingPOST_2
+2019-01-08 14:05:36.257  INFO 6600 --- [main] .d.s.w.r.o.CachingOperationNameGenerator : Generating unique operation named: getaddUsingPOST_3
+2019-01-08 14:05:36.258  INFO 6600 --- [main] .d.s.w.r.o.CachingOperationNameGenerator : Generating unique operation named: getaddUsingPOST_4
+2019-01-08 14:05:36.260  INFO 6600 --- [main] .d.s.w.r.o.CachingOperationNameGenerator : Generating unique operation named: getaddUsingPOST_5
+2019-01-08 14:05:36.262  INFO 6600 --- [main] .d.s.w.r.o.CachingOperationNameGenerator : Generating unique operation named: getaddUsingPOST_6
+2019-01-08 14:05:36.263  INFO 6600 --- [main] .d.s.w.r.o.CachingOperationNameGenerator : Generating unique operation named: getaddUsingPOST_7
+2019-01-08 14:05:36.267  INFO 6600 --- [main] .d.s.w.r.o.CachingOperationNameGenerator : Generating unique operation named: getuserUsingPOST_1
+2019-01-08 14:05:36.268  INFO 6600 --- [main] .d.s.w.r.o.CachingOperationNameGenerator : Generating unique operation named: getuserUsingPOST_2
+2019-01-08 14:05:36.270  INFO 6600 --- [main] .d.s.w.r.o.CachingOperationNameGenerator : Generating unique operation named: getuserUsingPOST_3
+2019-01-08 14:05:36.272  INFO 6600 --- [main] .d.s.w.r.o.CachingOperationNameGenerator : Generating unique operation named: getuserUsingPOST_4
+2019-01-08 14:05:36.273  INFO 6600 --- [main] .d.s.w.r.o.CachingOperationNameGenerator : Generating unique operation named: getuserUsingPOST_5
+2019-01-08 14:05:36.275  INFO 6600 --- [main] .d.s.w.r.o.CachingOperationNameGenerator : Generating unique operation named: getuserUsingPOST_6
+2019-01-08 14:05:36.277  INFO 6600 --- [main] .d.s.w.r.o.CachingOperationNameGenerator : Generating unique operation named: getuserUsingPOST_7
+2019-01-08 14:05:36.285  INFO 6600 --- [main] .d.s.w.r.o.CachingOperationNameGenerator : Generating unique operation named: updateUsingPOST_8
+2019-01-08 14:05:36.504  INFO 6600 --- [main] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat started on port(s): 8080 (http) with context path ''
+2019-01-08 14:05:36.509  INFO 6600 --- [main] com.admin.AdminApplication               : Started AdminApplication in 29.766 seconds (JVM running for 34.625)
+2019-01-08 14:06:15.691  INFO 6600 --- [http-nio-8080-exec-1] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring DispatcherServlet 'dispatcherServlet'
+2019-01-08 14:06:15.692  INFO 6600 --- [http-nio-8080-exec-1] o.s.web.servlet.DispatcherServlet        : Initializing Servlet 'dispatcherServlet'
+2019-01-08 14:06:15.747  INFO 6600 --- [http-nio-8080-exec-1] o.s.web.servlet.DispatcherServlet        : Completed initialization in 55 ms
+2019-01-08 15:26:27.554 ERROR 6600 --- [http-nio-8080-exec-2] o.a.c.c.C.[.[.[/].[dispatcherServlet]    : Servlet.service() for servlet [dispatcherServlet] in context with path [] threw exception [Request processing failed; nested exception is org.springframework.jdbc.BadSqlGrammarException: 
+### Error updating database.  Cause: com.mysql.jdbc.exceptions.jdbc4.MySQLSyntaxErrorException: You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near 'where admin_id = null' at line 3
+### The error may involve defaultParameterMap
+### The error occurred while setting parameters
+### SQL: update xiaomai.t_admin                    where admin_id = ?
+### Cause: com.mysql.jdbc.exceptions.jdbc4.MySQLSyntaxErrorException: You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near 'where admin_id = null' at line 3
+; bad SQL grammar []; nested exception is com.mysql.jdbc.exceptions.jdbc4.MySQLSyntaxErrorException: You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near 'where admin_id = null' at line 3] with root cause
+
+com.mysql.jdbc.exceptions.jdbc4.MySQLSyntaxErrorException: You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near 'where admin_id = null' at line 3
+	at sun.reflect.NativeConstructorAccessorImpl.newInstance0(Native Method) ~[na:1.8.0_181]
+	at sun.reflect.NativeConstructorAccessorImpl.newInstance(NativeConstructorAccessorImpl.java:62) ~[na:1.8.0_181]
+	at sun.reflect.DelegatingConstructorAccessorImpl.newInstance(DelegatingConstructorAccessorImpl.java:45) ~[na:1.8.0_181]
+	at java.lang.reflect.Constructor.newInstance(Constructor.java:423) ~[na:1.8.0_181]
+	at com.mysql.jdbc.Util.handleNewInstance(Util.java:409) ~[mysql-connector-java-5.1.30.jar:na]
+	at com.mysql.jdbc.Util.getInstance(Util.java:384) ~[mysql-connector-java-5.1.30.jar:na]
+	at com.mysql.jdbc.SQLError.createSQLException(SQLError.java:1052) ~[mysql-connector-java-5.1.30.jar:na]
+	at com.mysql.jdbc.MysqlIO.checkErrorPacket(MysqlIO.java:4232) ~[mysql-connector-java-5.1.30.jar:na]
+	at com.mysql.jdbc.MysqlIO.checkErrorPacket(MysqlIO.java:4164) ~[mysql-connector-java-5.1.30.jar:na]
+	at com.mysql.jdbc.MysqlIO.sendCommand(MysqlIO.java:2615) ~[mysql-connector-java-5.1.30.jar:na]
+	at com.mysql.jdbc.MysqlIO.sqlQueryDirect(MysqlIO.java:2776) ~[mysql-connector-java-5.1.30.jar:na]
+	at com.mysql.jdbc.ConnectionImpl.execSQL(ConnectionImpl.java:2838) ~[mysql-connector-java-5.1.30.jar:na]
+	at com.mysql.jdbc.PreparedStatement.executeInternal(PreparedStatement.java:2082) ~[mysql-connector-java-5.1.30.jar:na]
+	at com.mysql.jdbc.PreparedStatement.execute(PreparedStatement.java:1307) ~[mysql-connector-java-5.1.30.jar:na]
+	at com.alibaba.druid.filter.FilterChainImpl.preparedStatement_execute(FilterChainImpl.java:3051) ~[druid-1.1.3.jar:1.1.3]
+	at com.alibaba.druid.filter.FilterEventAdapter.preparedStatement_execute(FilterEventAdapter.java:440) ~[druid-1.1.3.jar:1.1.3]
+	at com.alibaba.druid.filter.FilterChainImpl.preparedStatement_execute(FilterChainImpl.java:3049) ~[druid-1.1.3.jar:1.1.3]
+	at com.alibaba.druid.proxy.jdbc.PreparedStatementProxyImpl.execute(PreparedStatementProxyImpl.java:168) ~[druid-1.1.3.jar:1.1.3]
+	at com.alibaba.druid.pool.DruidPooledPreparedStatement.execute(DruidPooledPreparedStatement.java:494) ~[druid-1.1.3.jar:1.1.3]
+	at org.apache.ibatis.executor.statement.PreparedStatementHandler.update(PreparedStatementHandler.java:46) ~[mybatis-3.4.6.jar:3.4.6]
+	at org.apache.ibatis.executor.statement.RoutingStatementHandler.update(RoutingStatementHandler.java:74) ~[mybatis-3.4.6.jar:3.4.6]
+	at org.apache.ibatis.executor.SimpleExecutor.doUpdate(SimpleExecutor.java:50) ~[mybatis-3.4.6.jar:3.4.6]
+	at org.apache.ibatis.executor.BaseExecutor.update(BaseExecutor.java:117) ~[mybatis-3.4.6.jar:3.4.6]
+	at org.apache.ibatis.executor.CachingExecutor.update(CachingExecutor.java:76) ~[mybatis-3.4.6.jar:3.4.6]
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method) ~[na:1.8.0_181]
+	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62) ~[na:1.8.0_181]
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43) ~[na:1.8.0_181]
+	at java.lang.reflect.Method.invoke(Method.java:498) ~[na:1.8.0_181]
+	at org.apache.ibatis.plugin.Plugin.invoke(Plugin.java:63) ~[mybatis-3.4.6.jar:3.4.6]
+	at com.sun.proxy.$Proxy113.update(Unknown Source) ~[na:na]
+	at org.apache.ibatis.session.defaults.DefaultSqlSession.update(DefaultSqlSession.java:198) ~[mybatis-3.4.6.jar:3.4.6]
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method) ~[na:1.8.0_181]
+	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62) ~[na:1.8.0_181]
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43) ~[na:1.8.0_181]
+	at java.lang.reflect.Method.invoke(Method.java:498) ~[na:1.8.0_181]
+	at org.mybatis.spring.SqlSessionTemplate$SqlSessionInterceptor.invoke(SqlSessionTemplate.java:433) ~[mybatis-spring-1.3.2.jar:1.3.2]
+	at com.sun.proxy.$Proxy70.update(Unknown Source) ~[na:na]
+	at org.mybatis.spring.SqlSessionTemplate.update(SqlSessionTemplate.java:294) ~[mybatis-spring-1.3.2.jar:1.3.2]
+	at org.apache.ibatis.binding.MapperMethod.execute(MapperMethod.java:63) ~[mybatis-3.4.6.jar:3.4.6]
+	at org.apache.ibatis.binding.MapperProxy.invoke(MapperProxy.java:59) ~[mybatis-3.4.6.jar:3.4.6]
+	at com.sun.proxy.$Proxy76.update(Unknown Source) ~[na:na]
+	at com.admin.service.impl.TAdminServiceImpl.update(TAdminServiceImpl.java:88) ~[classes/:na]
+	at com.admin.controller.TAdminController.update(TAdminController.java:67) ~[classes/:na]
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method) ~[na:1.8.0_181]
+	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62) ~[na:1.8.0_181]
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43) ~[na:1.8.0_181]
+	at java.lang.reflect.Method.invoke(Method.java:498) ~[na:1.8.0_181]
+	at org.springframework.web.method.support.InvocableHandlerMethod.doInvoke(InvocableHandlerMethod.java:189) ~[spring-web-5.1.3.RELEASE.jar:5.1.3.RELEASE]
+	at org.springframework.web.method.support.InvocableHandlerMethod.invokeForRequest(InvocableHandlerMethod.java:138) ~[spring-web-5.1.3.RELEASE.jar:5.1.3.RELEASE]
+	at org.springframework.web.servlet.mvc.method.annotation.ServletInvocableHandlerMethod.invokeAndHandle(ServletInvocableHandlerMethod.java:102) ~[spring-webmvc-5.1.3.RELEASE.jar:5.1.3.RELEASE]
+	at org.springframework.web.servlet.mvc.method.annotation.RequestMappingHandlerAdapter.invokeHandlerMethod(RequestMappingHandlerAdapter.java:895) ~[spring-webmvc-5.1.3.RELEASE.jar:5.1.3.RELEASE]
+	at org.springframework.web.servlet.mvc.method.annotation.RequestMappingHandlerAdapter.handleInternal(RequestMappingHandlerAdapter.java:800) ~[spring-webmvc-5.1.3.RELEASE.jar:5.1.3.RELEASE]
+	at org.springframework.web.servlet.mvc.method.AbstractHandlerMethodAdapter.handle(AbstractHandlerMethodAdapter.java:87) ~[spring-webmvc-5.1.3.RELEASE.jar:5.1.3.RELEASE]
+	at org.springframework.web.servlet.DispatcherServlet.doDispatch(DispatcherServlet.java:1038) ~[spring-webmvc-5.1.3.RELEASE.jar:5.1.3.RELEASE]
+	at org.springframework.web.servlet.DispatcherServlet.doService(DispatcherServlet.java:942) ~[spring-webmvc-5.1.3.RELEASE.jar:5.1.3.RELEASE]
+	at org.springframework.web.servlet.FrameworkServlet.processRequest(FrameworkServlet.java:1005) ~[spring-webmvc-5.1.3.RELEASE.jar:5.1.3.RELEASE]
+	at org.springframework.web.servlet.FrameworkServlet.doPost(FrameworkServlet.java:908) ~[spring-webmvc-5.1.3.RELEASE.jar:5.1.3.RELEASE]
+	at javax.servlet.http.HttpServlet.service(HttpServlet.java:660) ~[tomcat-embed-core-9.0.13.jar:9.0.13]
+	at org.springframework.web.servlet.FrameworkServlet.service(FrameworkServlet.java:882) ~[spring-webmvc-5.1.3.RELEASE.jar:5.1.3.RELEASE]
+	at javax.servlet.http.HttpServlet.service(HttpServlet.java:741) ~[tomcat-embed-core-9.0.13.jar:9.0.13]
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:231) ~[tomcat-embed-core-9.0.13.jar:9.0.13]
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:166) ~[tomcat-embed-core-9.0.13.jar:9.0.13]
+	at org.apache.tomcat.websocket.server.WsFilter.doFilter(WsFilter.java:53) ~[tomcat-embed-websocket-9.0.13.jar:9.0.13]
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:193) ~[tomcat-embed-core-9.0.13.jar:9.0.13]
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:166) ~[tomcat-embed-core-9.0.13.jar:9.0.13]
+	at org.springframework.web.filter.CorsFilter.doFilterInternal(CorsFilter.java:96) ~[spring-web-5.1.3.RELEASE.jar:5.1.3.RELEASE]
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:107) ~[spring-web-5.1.3.RELEASE.jar:5.1.3.RELEASE]
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:193) ~[tomcat-embed-core-9.0.13.jar:9.0.13]
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:166) ~[tomcat-embed-core-9.0.13.jar:9.0.13]
+	at com.alibaba.druid.support.http.WebStatFilter.doFilter(WebStatFilter.java:123) ~[druid-1.1.3.jar:1.1.3]
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:193) ~[tomcat-embed-core-9.0.13.jar:9.0.13]
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:166) ~[tomcat-embed-core-9.0.13.jar:9.0.13]
+	at org.springframework.web.filter.RequestContextFilter.doFilterInternal(RequestContextFilter.java:99) ~[spring-web-5.1.3.RELEASE.jar:5.1.3.RELEASE]
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:107) ~[spring-web-5.1.3.RELEASE.jar:5.1.3.RELEASE]
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:193) ~[tomcat-embed-core-9.0.13.jar:9.0.13]
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:166) ~[tomcat-embed-core-9.0.13.jar:9.0.13]
+	at org.springframework.web.filter.FormContentFilter.doFilterInternal(FormContentFilter.java:92) ~[spring-web-5.1.3.RELEASE.jar:5.1.3.RELEASE]
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:107) ~[spring-web-5.1.3.RELEASE.jar:5.1.3.RELEASE]
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:193) ~[tomcat-embed-core-9.0.13.jar:9.0.13]
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:166) ~[tomcat-embed-core-9.0.13.jar:9.0.13]
+	at org.springframework.web.filter.HiddenHttpMethodFilter.doFilterInternal(HiddenHttpMethodFilter.java:93) ~[spring-web-5.1.3.RELEASE.jar:5.1.3.RELEASE]
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:107) ~[spring-web-5.1.3.RELEASE.jar:5.1.3.RELEASE]
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:193) ~[tomcat-embed-core-9.0.13.jar:9.0.13]
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:166) ~[tomcat-embed-core-9.0.13.jar:9.0.13]
+	at org.springframework.web.filter.CharacterEncodingFilter.doFilterInternal(CharacterEncodingFilter.java:200) ~[spring-web-5.1.3.RELEASE.jar:5.1.3.RELEASE]
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:107) ~[spring-web-5.1.3.RELEASE.jar:5.1.3.RELEASE]
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:193) ~[tomcat-embed-core-9.0.13.jar:9.0.13]
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:166) ~[tomcat-embed-core-9.0.13.jar:9.0.13]
+	at org.apache.catalina.core.StandardWrapperValve.invoke(StandardWrapperValve.java:199) ~[tomcat-embed-core-9.0.13.jar:9.0.13]
+	at org.apache.catalina.core.StandardContextValve.invoke(StandardContextValve.java:96) [tomcat-embed-core-9.0.13.jar:9.0.13]
+	at org.apache.catalina.authenticator.AuthenticatorBase.invoke(AuthenticatorBase.java:490) [tomcat-embed-core-9.0.13.jar:9.0.13]
+	at org.apache.catalina.core.StandardHostValve.invoke(StandardHostValve.java:139) [tomcat-embed-core-9.0.13.jar:9.0.13]
+	at org.apache.catalina.valves.ErrorReportValve.invoke(ErrorReportValve.java:92) [tomcat-embed-core-9.0.13.jar:9.0.13]
+	at org.apache.catalina.core.StandardEngineValve.invoke(StandardEngineValve.java:74) [tomcat-embed-core-9.0.13.jar:9.0.13]
+	at org.apache.catalina.connector.CoyoteAdapter.service(CoyoteAdapter.java:343) [tomcat-embed-core-9.0.13.jar:9.0.13]
+	at org.apache.coyote.http11.Http11Processor.service(Http11Processor.java:408) [tomcat-embed-core-9.0.13.jar:9.0.13]
+	at org.apache.coyote.AbstractProcessorLight.process(AbstractProcessorLight.java:66) [tomcat-embed-core-9.0.13.jar:9.0.13]
+	at org.apache.coyote.AbstractProtocol$ConnectionHandler.process(AbstractProtocol.java:791) [tomcat-embed-core-9.0.13.jar:9.0.13]
+	at org.apache.tomcat.util.net.NioEndpoint$SocketProcessor.doRun(NioEndpoint.java:1417) [tomcat-embed-core-9.0.13.jar:9.0.13]
+	at org.apache.tomcat.util.net.SocketProcessorBase.run(SocketProcessorBase.java:49) [tomcat-embed-core-9.0.13.jar:9.0.13]
+	at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1149) [na:1.8.0_181]
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:624) [na:1.8.0_181]
+	at org.apache.tomcat.util.threads.TaskThread$WrappingRunnable.run(TaskThread.java:61) [tomcat-embed-core-9.0.13.jar:9.0.13]
+	at java.lang.Thread.run(Thread.java:748) [na:1.8.0_181]
+
+2019-01-08 15:28:10.420 ERROR 6600 --- [http-nio-8080-exec-5] o.a.c.c.C.[.[.[/].[dispatcherServlet]    : Servlet.service() for servlet [dispatcherServlet] in context with path [] threw exception [Request processing failed; nested exception is org.springframework.jdbc.BadSqlGrammarException: 
+### Error updating database.  Cause: com.mysql.jdbc.exceptions.jdbc4.MySQLSyntaxErrorException: You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near 'where admin_id = null' at line 3
+### The error may involve defaultParameterMap
+### The error occurred while setting parameters
+### SQL: update xiaomai.t_admin                    where admin_id = ?
+### Cause: com.mysql.jdbc.exceptions.jdbc4.MySQLSyntaxErrorException: You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near 'where admin_id = null' at line 3
+; bad SQL grammar []; nested exception is com.mysql.jdbc.exceptions.jdbc4.MySQLSyntaxErrorException: You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near 'where admin_id = null' at line 3] with root cause
+
+com.mysql.jdbc.exceptions.jdbc4.MySQLSyntaxErrorException: You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near 'where admin_id = null' at line 3
+	at sun.reflect.NativeConstructorAccessorImpl.newInstance0(Native Method) ~[na:1.8.0_181]
+	at sun.reflect.NativeConstructorAccessorImpl.newInstance(NativeConstructorAccessorImpl.java:62) ~[na:1.8.0_181]
+	at sun.reflect.DelegatingConstructorAccessorImpl.newInstance(DelegatingConstructorAccessorImpl.java:45) ~[na:1.8.0_181]
+	at java.lang.reflect.Constructor.newInstance(Constructor.java:423) ~[na:1.8.0_181]
+	at com.mysql.jdbc.Util.handleNewInstance(Util.java:409) ~[mysql-connector-java-5.1.30.jar:na]
+	at com.mysql.jdbc.Util.getInstance(Util.java:384) ~[mysql-connector-java-5.1.30.jar:na]
+	at com.mysql.jdbc.SQLError.createSQLException(SQLError.java:1052) ~[mysql-connector-java-5.1.30.jar:na]
+	at com.mysql.jdbc.MysqlIO.checkErrorPacket(MysqlIO.java:4232) ~[mysql-connector-java-5.1.30.jar:na]
+	at com.mysql.jdbc.MysqlIO.checkErrorPacket(MysqlIO.java:4164) ~[mysql-connector-java-5.1.30.jar:na]
+	at com.mysql.jdbc.MysqlIO.sendCommand(MysqlIO.java:2615) ~[mysql-connector-java-5.1.30.jar:na]
+	at com.mysql.jdbc.MysqlIO.sqlQueryDirect(MysqlIO.java:2776) ~[mysql-connector-java-5.1.30.jar:na]
+	at com.mysql.jdbc.ConnectionImpl.execSQL(ConnectionImpl.java:2838) ~[mysql-connector-java-5.1.30.jar:na]
+	at com.mysql.jdbc.PreparedStatement.executeInternal(PreparedStatement.java:2082) ~[mysql-connector-java-5.1.30.jar:na]
+	at com.mysql.jdbc.PreparedStatement.execute(PreparedStatement.java:1307) ~[mysql-connector-java-5.1.30.jar:na]
+	at com.alibaba.druid.filter.FilterChainImpl.preparedStatement_execute(FilterChainImpl.java:3051) ~[druid-1.1.3.jar:1.1.3]
+	at com.alibaba.druid.filter.FilterEventAdapter.preparedStatement_execute(FilterEventAdapter.java:440) ~[druid-1.1.3.jar:1.1.3]
+	at com.alibaba.druid.filter.FilterChainImpl.preparedStatement_execute(FilterChainImpl.java:3049) ~[druid-1.1.3.jar:1.1.3]
+	at com.alibaba.druid.proxy.jdbc.PreparedStatementProxyImpl.execute(PreparedStatementProxyImpl.java:168) ~[druid-1.1.3.jar:1.1.3]
+	at com.alibaba.druid.pool.DruidPooledPreparedStatement.execute(DruidPooledPreparedStatement.java:494) ~[druid-1.1.3.jar:1.1.3]
+	at org.apache.ibatis.executor.statement.PreparedStatementHandler.update(PreparedStatementHandler.java:46) ~[mybatis-3.4.6.jar:3.4.6]
+	at org.apache.ibatis.executor.statement.RoutingStatementHandler.update(RoutingStatementHandler.java:74) ~[mybatis-3.4.6.jar:3.4.6]
+	at org.apache.ibatis.executor.SimpleExecutor.doUpdate(SimpleExecutor.java:50) ~[mybatis-3.4.6.jar:3.4.6]
+	at org.apache.ibatis.executor.BaseExecutor.update(BaseExecutor.java:117) ~[mybatis-3.4.6.jar:3.4.6]
+	at org.apache.ibatis.executor.CachingExecutor.update(CachingExecutor.java:76) ~[mybatis-3.4.6.jar:3.4.6]
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method) ~[na:1.8.0_181]
+	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62) ~[na:1.8.0_181]
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43) ~[na:1.8.0_181]
+	at java.lang.reflect.Method.invoke(Method.java:498) ~[na:1.8.0_181]
+	at org.apache.ibatis.plugin.Plugin.invoke(Plugin.java:63) ~[mybatis-3.4.6.jar:3.4.6]
+	at com.sun.proxy.$Proxy113.update(Unknown Source) ~[na:na]
+	at org.apache.ibatis.session.defaults.DefaultSqlSession.update(DefaultSqlSession.java:198) ~[mybatis-3.4.6.jar:3.4.6]
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method) ~[na:1.8.0_181]
+	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62) ~[na:1.8.0_181]
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43) ~[na:1.8.0_181]
+	at java.lang.reflect.Method.invoke(Method.java:498) ~[na:1.8.0_181]
+	at org.mybatis.spring.SqlSessionTemplate$SqlSessionInterceptor.invoke(SqlSessionTemplate.java:433) ~[mybatis-spring-1.3.2.jar:1.3.2]
+	at com.sun.proxy.$Proxy70.update(Unknown Source) ~[na:na]
+	at org.mybatis.spring.SqlSessionTemplate.update(SqlSessionTemplate.java:294) ~[mybatis-spring-1.3.2.jar:1.3.2]
+	at org.apache.ibatis.binding.MapperMethod.execute(MapperMethod.java:63) ~[mybatis-3.4.6.jar:3.4.6]
+	at org.apache.ibatis.binding.MapperProxy.invoke(MapperProxy.java:59) ~[mybatis-3.4.6.jar:3.4.6]
+	at com.sun.proxy.$Proxy76.update(Unknown Source) ~[na:na]
+	at com.admin.service.impl.TAdminServiceImpl.update(TAdminServiceImpl.java:88) ~[classes/:na]
+	at com.admin.controller.TAdminController.update(TAdminController.java:67) ~[classes/:na]
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method) ~[na:1.8.0_181]
+	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62) ~[na:1.8.0_181]
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43) ~[na:1.8.0_181]
+	at java.lang.reflect.Method.invoke(Method.java:498) ~[na:1.8.0_181]
+	at org.springframework.web.method.support.InvocableHandlerMethod.doInvoke(InvocableHandlerMethod.java:189) ~[spring-web-5.1.3.RELEASE.jar:5.1.3.RELEASE]
+	at org.springframework.web.method.support.InvocableHandlerMethod.invokeForRequest(InvocableHandlerMethod.java:138) ~[spring-web-5.1.3.RELEASE.jar:5.1.3.RELEASE]
+	at org.springframework.web.servlet.mvc.method.annotation.ServletInvocableHandlerMethod.invokeAndHandle(ServletInvocableHandlerMethod.java:102) ~[spring-webmvc-5.1.3.RELEASE.jar:5.1.3.RELEASE]
+	at org.springframework.web.servlet.mvc.method.annotation.RequestMappingHandlerAdapter.invokeHandlerMethod(RequestMappingHandlerAdapter.java:895) ~[spring-webmvc-5.1.3.RELEASE.jar:5.1.3.RELEASE]
+	at org.springframework.web.servlet.mvc.method.annotation.RequestMappingHandlerAdapter.handleInternal(RequestMappingHandlerAdapter.java:800) ~[spring-webmvc-5.1.3.RELEASE.jar:5.1.3.RELEASE]
+	at org.springframework.web.servlet.mvc.method.AbstractHandlerMethodAdapter.handle(AbstractHandlerMethodAdapter.java:87) ~[spring-webmvc-5.1.3.RELEASE.jar:5.1.3.RELEASE]
+	at org.springframework.web.servlet.DispatcherServlet.doDispatch(DispatcherServlet.java:1038) ~[spring-webmvc-5.1.3.RELEASE.jar:5.1.3.RELEASE]
+	at org.springframework.web.servlet.DispatcherServlet.doService(DispatcherServlet.java:942) ~[spring-webmvc-5.1.3.RELEASE.jar:5.1.3.RELEASE]
+	at org.springframework.web.servlet.FrameworkServlet.processRequest(FrameworkServlet.java:1005) ~[spring-webmvc-5.1.3.RELEASE.jar:5.1.3.RELEASE]
+	at org.springframework.web.servlet.FrameworkServlet.doPost(FrameworkServlet.java:908) ~[spring-webmvc-5.1.3.RELEASE.jar:5.1.3.RELEASE]
+	at javax.servlet.http.HttpServlet.service(HttpServlet.java:660) ~[tomcat-embed-core-9.0.13.jar:9.0.13]
+	at org.springframework.web.servlet.FrameworkServlet.service(FrameworkServlet.java:882) ~[spring-webmvc-5.1.3.RELEASE.jar:5.1.3.RELEASE]
+	at javax.servlet.http.HttpServlet.service(HttpServlet.java:741) ~[tomcat-embed-core-9.0.13.jar:9.0.13]
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:231) ~[tomcat-embed-core-9.0.13.jar:9.0.13]
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:166) ~[tomcat-embed-core-9.0.13.jar:9.0.13]
+	at org.apache.tomcat.websocket.server.WsFilter.doFilter(WsFilter.java:53) ~[tomcat-embed-websocket-9.0.13.jar:9.0.13]
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:193) ~[tomcat-embed-core-9.0.13.jar:9.0.13]
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:166) ~[tomcat-embed-core-9.0.13.jar:9.0.13]
+	at org.springframework.web.filter.CorsFilter.doFilterInternal(CorsFilter.java:96) ~[spring-web-5.1.3.RELEASE.jar:5.1.3.RELEASE]
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:107) ~[spring-web-5.1.3.RELEASE.jar:5.1.3.RELEASE]
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:193) ~[tomcat-embed-core-9.0.13.jar:9.0.13]
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:166) ~[tomcat-embed-core-9.0.13.jar:9.0.13]
+	at com.alibaba.druid.support.http.WebStatFilter.doFilter(WebStatFilter.java:123) ~[druid-1.1.3.jar:1.1.3]
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:193) ~[tomcat-embed-core-9.0.13.jar:9.0.13]
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:166) ~[tomcat-embed-core-9.0.13.jar:9.0.13]
+	at org.springframework.web.filter.RequestContextFilter.doFilterInternal(RequestContextFilter.java:99) ~[spring-web-5.1.3.RELEASE.jar:5.1.3.RELEASE]
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:107) ~[spring-web-5.1.3.RELEASE.jar:5.1.3.RELEASE]
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:193) ~[tomcat-embed-core-9.0.13.jar:9.0.13]
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:166) ~[tomcat-embed-core-9.0.13.jar:9.0.13]
+	at org.springframework.web.filter.FormContentFilter.doFilterInternal(FormContentFilter.java:92) ~[spring-web-5.1.3.RELEASE.jar:5.1.3.RELEASE]
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:107) ~[spring-web-5.1.3.RELEASE.jar:5.1.3.RELEASE]
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:193) ~[tomcat-embed-core-9.0.13.jar:9.0.13]
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:166) ~[tomcat-embed-core-9.0.13.jar:9.0.13]
+	at org.springframework.web.filter.HiddenHttpMethodFilter.doFilterInternal(HiddenHttpMethodFilter.java:93) ~[spring-web-5.1.3.RELEASE.jar:5.1.3.RELEASE]
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:107) ~[spring-web-5.1.3.RELEASE.jar:5.1.3.RELEASE]
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:193) ~[tomcat-embed-core-9.0.13.jar:9.0.13]
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:166) ~[tomcat-embed-core-9.0.13.jar:9.0.13]
+	at org.springframework.web.filter.CharacterEncodingFilter.doFilterInternal(CharacterEncodingFilter.java:200) ~[spring-web-5.1.3.RELEASE.jar:5.1.3.RELEASE]
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:107) ~[spring-web-5.1.3.RELEASE.jar:5.1.3.RELEASE]
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:193) ~[tomcat-embed-core-9.0.13.jar:9.0.13]
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:166) ~[tomcat-embed-core-9.0.13.jar:9.0.13]
+	at org.apache.catalina.core.StandardWrapperValve.invoke(StandardWrapperValve.java:199) ~[tomcat-embed-core-9.0.13.jar:9.0.13]
+	at org.apache.catalina.core.StandardContextValve.invoke(StandardContextValve.java:96) [tomcat-embed-core-9.0.13.jar:9.0.13]
+	at org.apache.catalina.authenticator.AuthenticatorBase.invoke(AuthenticatorBase.java:490) [tomcat-embed-core-9.0.13.jar:9.0.13]
+	at org.apache.catalina.core.StandardHostValve.invoke(StandardHostValve.java:139) [tomcat-embed-core-9.0.13.jar:9.0.13]
+	at org.apache.catalina.valves.ErrorReportValve.invoke(ErrorReportValve.java:92) [tomcat-embed-core-9.0.13.jar:9.0.13]
+	at org.apache.catalina.core.StandardEngineValve.invoke(StandardEngineValve.java:74) [tomcat-embed-core-9.0.13.jar:9.0.13]
+	at org.apache.catalina.connector.CoyoteAdapter.service(CoyoteAdapter.java:343) [tomcat-embed-core-9.0.13.jar:9.0.13]
+	at org.apache.coyote.http11.Http11Processor.service(Http11Processor.java:408) [tomcat-embed-core-9.0.13.jar:9.0.13]
+	at org.apache.coyote.AbstractProcessorLight.process(AbstractProcessorLight.java:66) [tomcat-embed-core-9.0.13.jar:9.0.13]
+	at org.apache.coyote.AbstractProtocol$ConnectionHandler.process(AbstractProtocol.java:791) [tomcat-embed-core-9.0.13.jar:9.0.13]
+	at org.apache.tomcat.util.net.NioEndpoint$SocketProcessor.doRun(NioEndpoint.java:1417) [tomcat-embed-core-9.0.13.jar:9.0.13]
+	at org.apache.tomcat.util.net.SocketProcessorBase.run(SocketProcessorBase.java:49) [tomcat-embed-core-9.0.13.jar:9.0.13]
+	at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1149) [na:1.8.0_181]
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:624) [na:1.8.0_181]
+	at org.apache.tomcat.util.threads.TaskThread$WrappingRunnable.run(TaskThread.java:61) [tomcat-embed-core-9.0.13.jar:9.0.13]
+	at java.lang.Thread.run(Thread.java:748) [na:1.8.0_181]
+
+2019-01-08 15:28:24.622 ERROR 6600 --- [http-nio-8080-exec-8] o.a.c.c.C.[.[.[/].[dispatcherServlet]    : Servlet.service() for servlet [dispatcherServlet] in context with path [] threw exception [Request processing failed; nested exception is org.springframework.jdbc.BadSqlGrammarException: 
+### Error updating database.  Cause: com.mysql.jdbc.exceptions.jdbc4.MySQLSyntaxErrorException: You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near 'where admin_id = null' at line 3
+### The error may involve defaultParameterMap
+### The error occurred while setting parameters
+### SQL: update xiaomai.t_admin                    where admin_id = ?
+### Cause: com.mysql.jdbc.exceptions.jdbc4.MySQLSyntaxErrorException: You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near 'where admin_id = null' at line 3
+; bad SQL grammar []; nested exception is com.mysql.jdbc.exceptions.jdbc4.MySQLSyntaxErrorException: You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near 'where admin_id = null' at line 3] with root cause
+
+com.mysql.jdbc.exceptions.jdbc4.MySQLSyntaxErrorException: You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near 'where admin_id = null' at line 3
+	at sun.reflect.NativeConstructorAccessorImpl.newInstance0(Native Method) ~[na:1.8.0_181]
+	at sun.reflect.NativeConstructorAccessorImpl.newInstance(NativeConstructorAccessorImpl.java:62) ~[na:1.8.0_181]
+	at sun.reflect.DelegatingConstructorAccessorImpl.newInstance(DelegatingConstructorAccessorImpl.java:45) ~[na:1.8.0_181]
+	at java.lang.reflect.Constructor.newInstance(Constructor.java:423) ~[na:1.8.0_181]
+	at com.mysql.jdbc.Util.handleNewInstance(Util.java:409) ~[mysql-connector-java-5.1.30.jar:na]
+	at com.mysql.jdbc.Util.getInstance(Util.java:384) ~[mysql-connector-java-5.1.30.jar:na]
+	at com.mysql.jdbc.SQLError.createSQLException(SQLError.java:1052) ~[mysql-connector-java-5.1.30.jar:na]
+	at com.mysql.jdbc.MysqlIO.checkErrorPacket(MysqlIO.java:4232) ~[mysql-connector-java-5.1.30.jar:na]
+	at com.mysql.jdbc.MysqlIO.checkErrorPacket(MysqlIO.java:4164) ~[mysql-connector-java-5.1.30.jar:na]
+	at com.mysql.jdbc.MysqlIO.sendCommand(MysqlIO.java:2615) ~[mysql-connector-java-5.1.30.jar:na]
+	at com.mysql.jdbc.MysqlIO.sqlQueryDirect(MysqlIO.java:2776) ~[mysql-connector-java-5.1.30.jar:na]
+	at com.mysql.jdbc.ConnectionImpl.execSQL(ConnectionImpl.java:2838) ~[mysql-connector-java-5.1.30.jar:na]
+	at com.mysql.jdbc.PreparedStatement.executeInternal(PreparedStatement.java:2082) ~[mysql-connector-java-5.1.30.jar:na]
+	at com.mysql.jdbc.PreparedStatement.execute(PreparedStatement.java:1307) ~[mysql-connector-java-5.1.30.jar:na]
+	at com.alibaba.druid.filter.FilterChainImpl.preparedStatement_execute(FilterChainImpl.java:3051) ~[druid-1.1.3.jar:1.1.3]
+	at com.alibaba.druid.filter.FilterEventAdapter.preparedStatement_execute(FilterEventAdapter.java:440) ~[druid-1.1.3.jar:1.1.3]
+	at com.alibaba.druid.filter.FilterChainImpl.preparedStatement_execute(FilterChainImpl.java:3049) ~[druid-1.1.3.jar:1.1.3]
+	at com.alibaba.druid.proxy.jdbc.PreparedStatementProxyImpl.execute(PreparedStatementProxyImpl.java:168) ~[druid-1.1.3.jar:1.1.3]
+	at com.alibaba.druid.pool.DruidPooledPreparedStatement.execute(DruidPooledPreparedStatement.java:494) ~[druid-1.1.3.jar:1.1.3]
+	at org.apache.ibatis.executor.statement.PreparedStatementHandler.update(PreparedStatementHandler.java:46) ~[mybatis-3.4.6.jar:3.4.6]
+	at org.apache.ibatis.executor.statement.RoutingStatementHandler.update(RoutingStatementHandler.java:74) ~[mybatis-3.4.6.jar:3.4.6]
+	at org.apache.ibatis.executor.SimpleExecutor.doUpdate(SimpleExecutor.java:50) ~[mybatis-3.4.6.jar:3.4.6]
+	at org.apache.ibatis.executor.BaseExecutor.update(BaseExecutor.java:117) ~[mybatis-3.4.6.jar:3.4.6]
+	at org.apache.ibatis.executor.CachingExecutor.update(CachingExecutor.java:76) ~[mybatis-3.4.6.jar:3.4.6]
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method) ~[na:1.8.0_181]
+	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62) ~[na:1.8.0_181]
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43) ~[na:1.8.0_181]
+	at java.lang.reflect.Method.invoke(Method.java:498) ~[na:1.8.0_181]
+	at org.apache.ibatis.plugin.Plugin.invoke(Plugin.java:63) ~[mybatis-3.4.6.jar:3.4.6]
+	at com.sun.proxy.$Proxy113.update(Unknown Source) ~[na:na]
+	at org.apache.ibatis.session.defaults.DefaultSqlSession.update(DefaultSqlSession.java:198) ~[mybatis-3.4.6.jar:3.4.6]
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method) ~[na:1.8.0_181]
+	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62) ~[na:1.8.0_181]
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43) ~[na:1.8.0_181]
+	at java.lang.reflect.Method.invoke(Method.java:498) ~[na:1.8.0_181]
+	at org.mybatis.spring.SqlSessionTemplate$SqlSessionInterceptor.invoke(SqlSessionTemplate.java:433) ~[mybatis-spring-1.3.2.jar:1.3.2]
+	at com.sun.proxy.$Proxy70.update(Unknown Source) ~[na:na]
+	at org.mybatis.spring.SqlSessionTemplate.update(SqlSessionTemplate.java:294) ~[mybatis-spring-1.3.2.jar:1.3.2]
+	at org.apache.ibatis.binding.MapperMethod.execute(MapperMethod.java:63) ~[mybatis-3.4.6.jar:3.4.6]
+	at org.apache.ibatis.binding.MapperProxy.invoke(MapperProxy.java:59) ~[mybatis-3.4.6.jar:3.4.6]
+	at com.sun.proxy.$Proxy76.update(Unknown Source) ~[na:na]
+	at com.admin.service.impl.TAdminServiceImpl.update(TAdminServiceImpl.java:88) ~[classes/:na]
+	at com.admin.controller.TAdminController.update(TAdminController.java:67) ~[classes/:na]
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method) ~[na:1.8.0_181]
+	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62) ~[na:1.8.0_181]
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43) ~[na:1.8.0_181]
+	at java.lang.reflect.Method.invoke(Method.java:498) ~[na:1.8.0_181]
+	at org.springframework.web.method.support.InvocableHandlerMethod.doInvoke(InvocableHandlerMethod.java:189) ~[spring-web-5.1.3.RELEASE.jar:5.1.3.RELEASE]
+	at org.springframework.web.method.support.InvocableHandlerMethod.invokeForRequest(InvocableHandlerMethod.java:138) ~[spring-web-5.1.3.RELEASE.jar:5.1.3.RELEASE]
+	at org.springframework.web.servlet.mvc.method.annotation.ServletInvocableHandlerMethod.invokeAndHandle(ServletInvocableHandlerMethod.java:102) ~[spring-webmvc-5.1.3.RELEASE.jar:5.1.3.RELEASE]
+	at org.springframework.web.servlet.mvc.method.annotation.RequestMappingHandlerAdapter.invokeHandlerMethod(RequestMappingHandlerAdapter.java:895) ~[spring-webmvc-5.1.3.RELEASE.jar:5.1.3.RELEASE]
+	at org.springframework.web.servlet.mvc.method.annotation.RequestMappingHandlerAdapter.handleInternal(RequestMappingHandlerAdapter.java:800) ~[spring-webmvc-5.1.3.RELEASE.jar:5.1.3.RELEASE]
+	at org.springframework.web.servlet.mvc.method.AbstractHandlerMethodAdapter.handle(AbstractHandlerMethodAdapter.java:87) ~[spring-webmvc-5.1.3.RELEASE.jar:5.1.3.RELEASE]
+	at org.springframework.web.servlet.DispatcherServlet.doDispatch(DispatcherServlet.java:1038) ~[spring-webmvc-5.1.3.RELEASE.jar:5.1.3.RELEASE]
+	at org.springframework.web.servlet.DispatcherServlet.doService(DispatcherServlet.java:942) ~[spring-webmvc-5.1.3.RELEASE.jar:5.1.3.RELEASE]
+	at org.springframework.web.servlet.FrameworkServlet.processRequest(FrameworkServlet.java:1005) ~[spring-webmvc-5.1.3.RELEASE.jar:5.1.3.RELEASE]
+	at org.springframework.web.servlet.FrameworkServlet.doPost(FrameworkServlet.java:908) ~[spring-webmvc-5.1.3.RELEASE.jar:5.1.3.RELEASE]
+	at javax.servlet.http.HttpServlet.service(HttpServlet.java:660) ~[tomcat-embed-core-9.0.13.jar:9.0.13]
+	at org.springframework.web.servlet.FrameworkServlet.service(FrameworkServlet.java:882) ~[spring-webmvc-5.1.3.RELEASE.jar:5.1.3.RELEASE]
+	at javax.servlet.http.HttpServlet.service(HttpServlet.java:741) ~[tomcat-embed-core-9.0.13.jar:9.0.13]
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:231) ~[tomcat-embed-core-9.0.13.jar:9.0.13]
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:166) ~[tomcat-embed-core-9.0.13.jar:9.0.13]
+	at org.apache.tomcat.websocket.server.WsFilter.doFilter(WsFilter.java:53) ~[tomcat-embed-websocket-9.0.13.jar:9.0.13]
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:193) ~[tomcat-embed-core-9.0.13.jar:9.0.13]
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:166) ~[tomcat-embed-core-9.0.13.jar:9.0.13]
+	at org.springframework.web.filter.CorsFilter.doFilterInternal(CorsFilter.java:96) ~[spring-web-5.1.3.RELEASE.jar:5.1.3.RELEASE]
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:107) ~[spring-web-5.1.3.RELEASE.jar:5.1.3.RELEASE]
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:193) ~[tomcat-embed-core-9.0.13.jar:9.0.13]
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:166) ~[tomcat-embed-core-9.0.13.jar:9.0.13]
+	at com.alibaba.druid.support.http.WebStatFilter.doFilter(WebStatFilter.java:123) ~[druid-1.1.3.jar:1.1.3]
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:193) ~[tomcat-embed-core-9.0.13.jar:9.0.13]
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:166) ~[tomcat-embed-core-9.0.13.jar:9.0.13]
+	at org.springframework.web.filter.RequestContextFilter.doFilterInternal(RequestContextFilter.java:99) ~[spring-web-5.1.3.RELEASE.jar:5.1.3.RELEASE]
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:107) ~[spring-web-5.1.3.RELEASE.jar:5.1.3.RELEASE]
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:193) ~[tomcat-embed-core-9.0.13.jar:9.0.13]
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:166) ~[tomcat-embed-core-9.0.13.jar:9.0.13]
+	at org.springframework.web.filter.FormContentFilter.doFilterInternal(FormContentFilter.java:92) ~[spring-web-5.1.3.RELEASE.jar:5.1.3.RELEASE]
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:107) ~[spring-web-5.1.3.RELEASE.jar:5.1.3.RELEASE]
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:193) ~[tomcat-embed-core-9.0.13.jar:9.0.13]
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:166) ~[tomcat-embed-core-9.0.13.jar:9.0.13]
+	at org.springframework.web.filter.HiddenHttpMethodFilter.doFilterInternal(HiddenHttpMethodFilter.java:93) ~[spring-web-5.1.3.RELEASE.jar:5.1.3.RELEASE]
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:107) ~[spring-web-5.1.3.RELEASE.jar:5.1.3.RELEASE]
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:193) ~[tomcat-embed-core-9.0.13.jar:9.0.13]
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:166) ~[tomcat-embed-core-9.0.13.jar:9.0.13]
+	at org.springframework.web.filter.CharacterEncodingFilter.doFilterInternal(CharacterEncodingFilter.java:200) ~[spring-web-5.1.3.RELEASE.jar:5.1.3.RELEASE]
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:107) ~[spring-web-5.1.3.RELEASE.jar:5.1.3.RELEASE]
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:193) ~[tomcat-embed-core-9.0.13.jar:9.0.13]
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:166) ~[tomcat-embed-core-9.0.13.jar:9.0.13]
+	at org.apache.catalina.core.StandardWrapperValve.invoke(StandardWrapperValve.java:199) ~[tomcat-embed-core-9.0.13.jar:9.0.13]
+	at org.apache.catalina.core.StandardContextValve.invoke(StandardContextValve.java:96) [tomcat-embed-core-9.0.13.jar:9.0.13]
+	at org.apache.catalina.authenticator.AuthenticatorBase.invoke(AuthenticatorBase.java:490) [tomcat-embed-core-9.0.13.jar:9.0.13]
+	at org.apache.catalina.core.StandardHostValve.invoke(StandardHostValve.java:139) [tomcat-embed-core-9.0.13.jar:9.0.13]
+	at org.apache.catalina.valves.ErrorReportValve.invoke(ErrorReportValve.java:92) [tomcat-embed-core-9.0.13.jar:9.0.13]
+	at org.apache.catalina.core.StandardEngineValve.invoke(StandardEngineValve.java:74) [tomcat-embed-core-9.0.13.jar:9.0.13]
+	at org.apache.catalina.connector.CoyoteAdapter.service(CoyoteAdapter.java:343) [tomcat-embed-core-9.0.13.jar:9.0.13]
+	at org.apache.coyote.http11.Http11Processor.service(Http11Processor.java:408) [tomcat-embed-core-9.0.13.jar:9.0.13]
+	at org.apache.coyote.AbstractProcessorLight.process(AbstractProcessorLight.java:66) [tomcat-embed-core-9.0.13.jar:9.0.13]
+	at org.apache.coyote.AbstractProtocol$ConnectionHandler.process(AbstractProtocol.java:791) [tomcat-embed-core-9.0.13.jar:9.0.13]
+	at org.apache.tomcat.util.net.NioEndpoint$SocketProcessor.doRun(NioEndpoint.java:1417) [tomcat-embed-core-9.0.13.jar:9.0.13]
+	at org.apache.tomcat.util.net.SocketProcessorBase.run(SocketProcessorBase.java:49) [tomcat-embed-core-9.0.13.jar:9.0.13]
+	at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1149) [na:1.8.0_181]
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:624) [na:1.8.0_181]
+	at org.apache.tomcat.util.threads.TaskThread$WrappingRunnable.run(TaskThread.java:61) [tomcat-embed-core-9.0.13.jar:9.0.13]
+	at java.lang.Thread.run(Thread.java:748) [na:1.8.0_181]
+
+2019-01-08 15:29:47.019 ERROR 6600 --- [http-nio-8080-exec-3] o.a.c.c.C.[.[.[/].[dispatcherServlet]    : Servlet.service() for servlet [dispatcherServlet] in context with path [] threw exception [Request processing failed; nested exception is org.springframework.jdbc.BadSqlGrammarException: 
+### Error updating database.  Cause: com.mysql.jdbc.exceptions.jdbc4.MySQLSyntaxErrorException: You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near 'where admin_id = null' at line 3
+### The error may involve defaultParameterMap
+### The error occurred while setting parameters
+### SQL: update xiaomai.t_admin                    where admin_id = ?
+### Cause: com.mysql.jdbc.exceptions.jdbc4.MySQLSyntaxErrorException: You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near 'where admin_id = null' at line 3
+; bad SQL grammar []; nested exception is com.mysql.jdbc.exceptions.jdbc4.MySQLSyntaxErrorException: You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near 'where admin_id = null' at line 3] with root cause
+
+com.mysql.jdbc.exceptions.jdbc4.MySQLSyntaxErrorException: You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near 'where admin_id = null' at line 3
+	at sun.reflect.NativeConstructorAccessorImpl.newInstance0(Native Method) ~[na:1.8.0_181]
+	at sun.reflect.NativeConstructorAccessorImpl.newInstance(NativeConstructorAccessorImpl.java:62) ~[na:1.8.0_181]
+	at sun.reflect.DelegatingConstructorAccessorImpl.newInstance(DelegatingConstructorAccessorImpl.java:45) ~[na:1.8.0_181]
+	at java.lang.reflect.Constructor.newInstance(Constructor.java:423) ~[na:1.8.0_181]
+	at com.mysql.jdbc.Util.handleNewInstance(Util.java:409) ~[mysql-connector-java-5.1.30.jar:na]
+	at com.mysql.jdbc.Util.getInstance(Util.java:384) ~[mysql-connector-java-5.1.30.jar:na]
+	at com.mysql.jdbc.SQLError.createSQLException(SQLError.java:1052) ~[mysql-connector-java-5.1.30.jar:na]
+	at com.mysql.jdbc.MysqlIO.checkErrorPacket(MysqlIO.java:4232) ~[mysql-connector-java-5.1.30.jar:na]
+	at com.mysql.jdbc.MysqlIO.checkErrorPacket(MysqlIO.java:4164) ~[mysql-connector-java-5.1.30.jar:na]
+	at com.mysql.jdbc.MysqlIO.sendCommand(MysqlIO.java:2615) ~[mysql-connector-java-5.1.30.jar:na]
+	at com.mysql.jdbc.MysqlIO.sqlQueryDirect(MysqlIO.java:2776) ~[mysql-connector-java-5.1.30.jar:na]
+	at com.mysql.jdbc.ConnectionImpl.execSQL(ConnectionImpl.java:2838) ~[mysql-connector-java-5.1.30.jar:na]
+	at com.mysql.jdbc.PreparedStatement.executeInternal(PreparedStatement.java:2082) ~[mysql-connector-java-5.1.30.jar:na]
+	at com.mysql.jdbc.PreparedStatement.execute(PreparedStatement.java:1307) ~[mysql-connector-java-5.1.30.jar:na]
+	at com.alibaba.druid.filter.FilterChainImpl.preparedStatement_execute(FilterChainImpl.java:3051) ~[druid-1.1.3.jar:1.1.3]
+	at com.alibaba.druid.filter.FilterEventAdapter.preparedStatement_execute(FilterEventAdapter.java:440) ~[druid-1.1.3.jar:1.1.3]
+	at com.alibaba.druid.filter.FilterChainImpl.preparedStatement_execute(FilterChainImpl.java:3049) ~[druid-1.1.3.jar:1.1.3]
+	at com.alibaba.druid.proxy.jdbc.PreparedStatementProxyImpl.execute(PreparedStatementProxyImpl.java:168) ~[druid-1.1.3.jar:1.1.3]
+	at com.alibaba.druid.pool.DruidPooledPreparedStatement.execute(DruidPooledPreparedStatement.java:494) ~[druid-1.1.3.jar:1.1.3]
+	at org.apache.ibatis.executor.statement.PreparedStatementHandler.update(PreparedStatementHandler.java:46) ~[mybatis-3.4.6.jar:3.4.6]
+	at org.apache.ibatis.executor.statement.RoutingStatementHandler.update(RoutingStatementHandler.java:74) ~[mybatis-3.4.6.jar:3.4.6]
+	at org.apache.ibatis.executor.SimpleExecutor.doUpdate(SimpleExecutor.java:50) ~[mybatis-3.4.6.jar:3.4.6]
+	at org.apache.ibatis.executor.BaseExecutor.update(BaseExecutor.java:117) ~[mybatis-3.4.6.jar:3.4.6]
+	at org.apache.ibatis.executor.CachingExecutor.update(CachingExecutor.java:76) ~[mybatis-3.4.6.jar:3.4.6]
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method) ~[na:1.8.0_181]
+	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62) ~[na:1.8.0_181]
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43) ~[na:1.8.0_181]
+	at java.lang.reflect.Method.invoke(Method.java:498) ~[na:1.8.0_181]
+	at org.apache.ibatis.plugin.Plugin.invoke(Plugin.java:63) ~[mybatis-3.4.6.jar:3.4.6]
+	at com.sun.proxy.$Proxy113.update(Unknown Source) ~[na:na]
+	at org.apache.ibatis.session.defaults.DefaultSqlSession.update(DefaultSqlSession.java:198) ~[mybatis-3.4.6.jar:3.4.6]
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method) ~[na:1.8.0_181]
+	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62) ~[na:1.8.0_181]
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43) ~[na:1.8.0_181]
+	at java.lang.reflect.Method.invoke(Method.java:498) ~[na:1.8.0_181]
+	at org.mybatis.spring.SqlSessionTemplate$SqlSessionInterceptor.invoke(SqlSessionTemplate.java:433) ~[mybatis-spring-1.3.2.jar:1.3.2]
+	at com.sun.proxy.$Proxy70.update(Unknown Source) ~[na:na]
+	at org.mybatis.spring.SqlSessionTemplate.update(SqlSessionTemplate.java:294) ~[mybatis-spring-1.3.2.jar:1.3.2]
+	at org.apache.ibatis.binding.MapperMethod.execute(MapperMethod.java:63) ~[mybatis-3.4.6.jar:3.4.6]
+	at org.apache.ibatis.binding.MapperProxy.invoke(MapperProxy.java:59) ~[mybatis-3.4.6.jar:3.4.6]
+	at com.sun.proxy.$Proxy76.update(Unknown Source) ~[na:na]
+	at com.admin.service.impl.TAdminServiceImpl.update(TAdminServiceImpl.java:88) ~[classes/:na]
+	at com.admin.controller.TAdminController.update(TAdminController.java:67) ~[classes/:na]
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method) ~[na:1.8.0_181]
+	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62) ~[na:1.8.0_181]
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43) ~[na:1.8.0_181]
+	at java.lang.reflect.Method.invoke(Method.java:498) ~[na:1.8.0_181]
+	at org.springframework.web.method.support.InvocableHandlerMethod.doInvoke(InvocableHandlerMethod.java:189) ~[spring-web-5.1.3.RELEASE.jar:5.1.3.RELEASE]
+	at org.springframework.web.method.support.InvocableHandlerMethod.invokeForRequest(InvocableHandlerMethod.java:138) ~[spring-web-5.1.3.RELEASE.jar:5.1.3.RELEASE]
+	at org.springframework.web.servlet.mvc.method.annotation.ServletInvocableHandlerMethod.invokeAndHandle(ServletInvocableHandlerMethod.java:102) ~[spring-webmvc-5.1.3.RELEASE.jar:5.1.3.RELEASE]
+	at org.springframework.web.servlet.mvc.method.annotation.RequestMappingHandlerAdapter.invokeHandlerMethod(RequestMappingHandlerAdapter.java:895) ~[spring-webmvc-5.1.3.RELEASE.jar:5.1.3.RELEASE]
+	at org.springframework.web.servlet.mvc.method.annotation.RequestMappingHandlerAdapter.handleInternal(RequestMappingHandlerAdapter.java:800) ~[spring-webmvc-5.1.3.RELEASE.jar:5.1.3.RELEASE]
+	at org.springframework.web.servlet.mvc.method.AbstractHandlerMethodAdapter.handle(AbstractHandlerMethodAdapter.java:87) ~[spring-webmvc-5.1.3.RELEASE.jar:5.1.3.RELEASE]
+	at org.springframework.web.servlet.DispatcherServlet.doDispatch(DispatcherServlet.java:1038) ~[spring-webmvc-5.1.3.RELEASE.jar:5.1.3.RELEASE]
+	at org.springframework.web.servlet.DispatcherServlet.doService(DispatcherServlet.java:942) ~[spring-webmvc-5.1.3.RELEASE.jar:5.1.3.RELEASE]
+	at org.springframework.web.servlet.FrameworkServlet.processRequest(FrameworkServlet.java:1005) ~[spring-webmvc-5.1.3.RELEASE.jar:5.1.3.RELEASE]
+	at org.springframework.web.servlet.FrameworkServlet.doPost(FrameworkServlet.java:908) ~[spring-webmvc-5.1.3.RELEASE.jar:5.1.3.RELEASE]
+	at javax.servlet.http.HttpServlet.service(HttpServlet.java:660) ~[tomcat-embed-core-9.0.13.jar:9.0.13]
+	at org.springframework.web.servlet.FrameworkServlet.service(FrameworkServlet.java:882) ~[spring-webmvc-5.1.3.RELEASE.jar:5.1.3.RELEASE]
+	at javax.servlet.http.HttpServlet.service(HttpServlet.java:741) ~[tomcat-embed-core-9.0.13.jar:9.0.13]
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:231) ~[tomcat-embed-core-9.0.13.jar:9.0.13]
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:166) ~[tomcat-embed-core-9.0.13.jar:9.0.13]
+	at org.apache.tomcat.websocket.server.WsFilter.doFilter(WsFilter.java:53) ~[tomcat-embed-websocket-9.0.13.jar:9.0.13]
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:193) ~[tomcat-embed-core-9.0.13.jar:9.0.13]
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:166) ~[tomcat-embed-core-9.0.13.jar:9.0.13]
+	at org.springframework.web.filter.CorsFilter.doFilterInternal(CorsFilter.java:96) ~[spring-web-5.1.3.RELEASE.jar:5.1.3.RELEASE]
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:107) ~[spring-web-5.1.3.RELEASE.jar:5.1.3.RELEASE]
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:193) ~[tomcat-embed-core-9.0.13.jar:9.0.13]
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:166) ~[tomcat-embed-core-9.0.13.jar:9.0.13]
+	at com.alibaba.druid.support.http.WebStatFilter.doFilter(WebStatFilter.java:123) ~[druid-1.1.3.jar:1.1.3]
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:193) ~[tomcat-embed-core-9.0.13.jar:9.0.13]
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:166) ~[tomcat-embed-core-9.0.13.jar:9.0.13]
+	at org.springframework.web.filter.RequestContextFilter.doFilterInternal(RequestContextFilter.java:99) ~[spring-web-5.1.3.RELEASE.jar:5.1.3.RELEASE]
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:107) ~[spring-web-5.1.3.RELEASE.jar:5.1.3.RELEASE]
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:193) ~[tomcat-embed-core-9.0.13.jar:9.0.13]
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:166) ~[tomcat-embed-core-9.0.13.jar:9.0.13]
+	at org.springframework.web.filter.FormContentFilter.doFilterInternal(FormContentFilter.java:92) ~[spring-web-5.1.3.RELEASE.jar:5.1.3.RELEASE]
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:107) ~[spring-web-5.1.3.RELEASE.jar:5.1.3.RELEASE]
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:193) ~[tomcat-embed-core-9.0.13.jar:9.0.13]
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:166) ~[tomcat-embed-core-9.0.13.jar:9.0.13]
+	at org.springframework.web.filter.HiddenHttpMethodFilter.doFilterInternal(HiddenHttpMethodFilter.java:93) ~[spring-web-5.1.3.RELEASE.jar:5.1.3.RELEASE]
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:107) ~[spring-web-5.1.3.RELEASE.jar:5.1.3.RELEASE]
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:193) ~[tomcat-embed-core-9.0.13.jar:9.0.13]
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:166) ~[tomcat-embed-core-9.0.13.jar:9.0.13]
+	at org.springframework.web.filter.CharacterEncodingFilter.doFilterInternal(CharacterEncodingFilter.java:200) ~[spring-web-5.1.3.RELEASE.jar:5.1.3.RELEASE]
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:107) ~[spring-web-5.1.3.RELEASE.jar:5.1.3.RELEASE]
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:193) ~[tomcat-embed-core-9.0.13.jar:9.0.13]
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:166) ~[tomcat-embed-core-9.0.13.jar:9.0.13]
+	at org.apache.catalina.core.StandardWrapperValve.invoke(StandardWrapperValve.java:199) ~[tomcat-embed-core-9.0.13.jar:9.0.13]
+	at org.apache.catalina.core.StandardContextValve.invoke(StandardContextValve.java:96) [tomcat-embed-core-9.0.13.jar:9.0.13]
+	at org.apache.catalina.authenticator.AuthenticatorBase.invoke(AuthenticatorBase.java:490) [tomcat-embed-core-9.0.13.jar:9.0.13]
+	at org.apache.catalina.core.StandardHostValve.invoke(StandardHostValve.java:139) [tomcat-embed-core-9.0.13.jar:9.0.13]
+	at org.apache.catalina.valves.ErrorReportValve.invoke(ErrorReportValve.java:92) [tomcat-embed-core-9.0.13.jar:9.0.13]
+	at org.apache.catalina.core.StandardEngineValve.invoke(StandardEngineValve.java:74) [tomcat-embed-core-9.0.13.jar:9.0.13]
+	at org.apache.catalina.connector.CoyoteAdapter.service(CoyoteAdapter.java:343) [tomcat-embed-core-9.0.13.jar:9.0.13]
+	at org.apache.coyote.http11.Http11Processor.service(Http11Processor.java:408) [tomcat-embed-core-9.0.13.jar:9.0.13]
+	at org.apache.coyote.AbstractProcessorLight.process(AbstractProcessorLight.java:66) [tomcat-embed-core-9.0.13.jar:9.0.13]
+	at org.apache.coyote.AbstractProtocol$ConnectionHandler.process(AbstractProtocol.java:791) [tomcat-embed-core-9.0.13.jar:9.0.13]
+	at org.apache.tomcat.util.net.NioEndpoint$SocketProcessor.doRun(NioEndpoint.java:1417) [tomcat-embed-core-9.0.13.jar:9.0.13]
+	at org.apache.tomcat.util.net.SocketProcessorBase.run(SocketProcessorBase.java:49) [tomcat-embed-core-9.0.13.jar:9.0.13]
+	at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1149) [na:1.8.0_181]
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:624) [na:1.8.0_181]
+	at org.apache.tomcat.util.threads.TaskThread$WrappingRunnable.run(TaskThread.java:61) [tomcat-embed-core-9.0.13.jar:9.0.13]
+	at java.lang.Thread.run(Thread.java:748) [na:1.8.0_181]
+
+2019-01-08 15:30:49.655 ERROR 6600 --- [http-nio-8080-exec-7] o.a.c.c.C.[.[.[/].[dispatcherServlet]    : Servlet.service() for servlet [dispatcherServlet] in context with path [] threw exception [Request processing failed; nested exception is org.springframework.jdbc.BadSqlGrammarException: 
+### Error updating database.  Cause: com.mysql.jdbc.exceptions.jdbc4.MySQLSyntaxErrorException: You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near 'where admin_id = null' at line 3
+### The error may involve defaultParameterMap
+### The error occurred while setting parameters
+### SQL: update xiaomai.t_admin                    where admin_id = ?
+### Cause: com.mysql.jdbc.exceptions.jdbc4.MySQLSyntaxErrorException: You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near 'where admin_id = null' at line 3
+; bad SQL grammar []; nested exception is com.mysql.jdbc.exceptions.jdbc4.MySQLSyntaxErrorException: You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near 'where admin_id = null' at line 3] with root cause
+
+com.mysql.jdbc.exceptions.jdbc4.MySQLSyntaxErrorException: You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near 'where admin_id = null' at line 3
+	at sun.reflect.NativeConstructorAccessorImpl.newInstance0(Native Method) ~[na:1.8.0_181]
+	at sun.reflect.NativeConstructorAccessorImpl.newInstance(NativeConstructorAccessorImpl.java:62) ~[na:1.8.0_181]
+	at sun.reflect.DelegatingConstructorAccessorImpl.newInstance(DelegatingConstructorAccessorImpl.java:45) ~[na:1.8.0_181]
+	at java.lang.reflect.Constructor.newInstance(Constructor.java:423) ~[na:1.8.0_181]
+	at com.mysql.jdbc.Util.handleNewInstance(Util.java:409) ~[mysql-connector-java-5.1.30.jar:na]
+	at com.mysql.jdbc.Util.getInstance(Util.java:384) ~[mysql-connector-java-5.1.30.jar:na]
+	at com.mysql.jdbc.SQLError.createSQLException(SQLError.java:1052) ~[mysql-connector-java-5.1.30.jar:na]
+	at com.mysql.jdbc.MysqlIO.checkErrorPacket(MysqlIO.java:4232) ~[mysql-connector-java-5.1.30.jar:na]
+	at com.mysql.jdbc.MysqlIO.checkErrorPacket(MysqlIO.java:4164) ~[mysql-connector-java-5.1.30.jar:na]
+	at com.mysql.jdbc.MysqlIO.sendCommand(MysqlIO.java:2615) ~[mysql-connector-java-5.1.30.jar:na]
+	at com.mysql.jdbc.MysqlIO.sqlQueryDirect(MysqlIO.java:2776) ~[mysql-connector-java-5.1.30.jar:na]
+	at com.mysql.jdbc.ConnectionImpl.execSQL(ConnectionImpl.java:2838) ~[mysql-connector-java-5.1.30.jar:na]
+	at com.mysql.jdbc.PreparedStatement.executeInternal(PreparedStatement.java:2082) ~[mysql-connector-java-5.1.30.jar:na]
+	at com.mysql.jdbc.PreparedStatement.execute(PreparedStatement.java:1307) ~[mysql-connector-java-5.1.30.jar:na]
+	at com.alibaba.druid.filter.FilterChainImpl.preparedStatement_execute(FilterChainImpl.java:3051) ~[druid-1.1.3.jar:1.1.3]
+	at com.alibaba.druid.filter.FilterEventAdapter.preparedStatement_execute(FilterEventAdapter.java:440) ~[druid-1.1.3.jar:1.1.3]
+	at com.alibaba.druid.filter.FilterChainImpl.preparedStatement_execute(FilterChainImpl.java:3049) ~[druid-1.1.3.jar:1.1.3]
+	at com.alibaba.druid.proxy.jdbc.PreparedStatementProxyImpl.execute(PreparedStatementProxyImpl.java:168) ~[druid-1.1.3.jar:1.1.3]
+	at com.alibaba.druid.pool.DruidPooledPreparedStatement.execute(DruidPooledPreparedStatement.java:494) ~[druid-1.1.3.jar:1.1.3]
+	at org.apache.ibatis.executor.statement.PreparedStatementHandler.update(PreparedStatementHandler.java:46) ~[mybatis-3.4.6.jar:3.4.6]
+	at org.apache.ibatis.executor.statement.RoutingStatementHandler.update(RoutingStatementHandler.java:74) ~[mybatis-3.4.6.jar:3.4.6]
+	at org.apache.ibatis.executor.SimpleExecutor.doUpdate(SimpleExecutor.java:50) ~[mybatis-3.4.6.jar:3.4.6]
+	at org.apache.ibatis.executor.BaseExecutor.update(BaseExecutor.java:117) ~[mybatis-3.4.6.jar:3.4.6]
+	at org.apache.ibatis.executor.CachingExecutor.update(CachingExecutor.java:76) ~[mybatis-3.4.6.jar:3.4.6]
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method) ~[na:1.8.0_181]
+	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62) ~[na:1.8.0_181]
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43) ~[na:1.8.0_181]
+	at java.lang.reflect.Method.invoke(Method.java:498) ~[na:1.8.0_181]
+	at org.apache.ibatis.plugin.Plugin.invoke(Plugin.java:63) ~[mybatis-3.4.6.jar:3.4.6]
+	at com.sun.proxy.$Proxy113.update(Unknown Source) ~[na:na]
+	at org.apache.ibatis.session.defaults.DefaultSqlSession.update(DefaultSqlSession.java:198) ~[mybatis-3.4.6.jar:3.4.6]
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method) ~[na:1.8.0_181]
+	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62) ~[na:1.8.0_181]
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43) ~[na:1.8.0_181]
+	at java.lang.reflect.Method.invoke(Method.java:498) ~[na:1.8.0_181]
+	at org.mybatis.spring.SqlSessionTemplate$SqlSessionInterceptor.invoke(SqlSessionTemplate.java:433) ~[mybatis-spring-1.3.2.jar:1.3.2]
+	at com.sun.proxy.$Proxy70.update(Unknown Source) ~[na:na]
+	at org.mybatis.spring.SqlSessionTemplate.update(SqlSessionTemplate.java:294) ~[mybatis-spring-1.3.2.jar:1.3.2]
+	at org.apache.ibatis.binding.MapperMethod.execute(MapperMethod.java:63) ~[mybatis-3.4.6.jar:3.4.6]
+	at org.apache.ibatis.binding.MapperProxy.invoke(MapperProxy.java:59) ~[mybatis-3.4.6.jar:3.4.6]
+	at com.sun.proxy.$Proxy76.update(Unknown Source) ~[na:na]
+	at com.admin.service.impl.TAdminServiceImpl.update(TAdminServiceImpl.java:88) ~[classes/:na]
+	at com.admin.controller.TAdminController.update(TAdminController.java:67) ~[classes/:na]
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method) ~[na:1.8.0_181]
+	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62) ~[na:1.8.0_181]
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43) ~[na:1.8.0_181]
+	at java.lang.reflect.Method.invoke(Method.java:498) ~[na:1.8.0_181]
+	at org.springframework.web.method.support.InvocableHandlerMethod.doInvoke(InvocableHandlerMethod.java:189) ~[spring-web-5.1.3.RELEASE.jar:5.1.3.RELEASE]
+	at org.springframework.web.method.support.InvocableHandlerMethod.invokeForRequest(InvocableHandlerMethod.java:138) ~[spring-web-5.1.3.RELEASE.jar:5.1.3.RELEASE]
+	at org.springframework.web.servlet.mvc.method.annotation.ServletInvocableHandlerMethod.invokeAndHandle(ServletInvocableHandlerMethod.java:102) ~[spring-webmvc-5.1.3.RELEASE.jar:5.1.3.RELEASE]
+	at org.springframework.web.servlet.mvc.method.annotation.RequestMappingHandlerAdapter.invokeHandlerMethod(RequestMappingHandlerAdapter.java:895) ~[spring-webmvc-5.1.3.RELEASE.jar:5.1.3.RELEASE]
+	at org.springframework.web.servlet.mvc.method.annotation.RequestMappingHandlerAdapter.handleInternal(RequestMappingHandlerAdapter.java:800) ~[spring-webmvc-5.1.3.RELEASE.jar:5.1.3.RELEASE]
+	at org.springframework.web.servlet.mvc.method.AbstractHandlerMethodAdapter.handle(AbstractHandlerMethodAdapter.java:87) ~[spring-webmvc-5.1.3.RELEASE.jar:5.1.3.RELEASE]
+	at org.springframework.web.servlet.DispatcherServlet.doDispatch(DispatcherServlet.java:1038) ~[spring-webmvc-5.1.3.RELEASE.jar:5.1.3.RELEASE]
+	at org.springframework.web.servlet.DispatcherServlet.doService(DispatcherServlet.java:942) ~[spring-webmvc-5.1.3.RELEASE.jar:5.1.3.RELEASE]
+	at org.springframework.web.servlet.FrameworkServlet.processRequest(FrameworkServlet.java:1005) ~[spring-webmvc-5.1.3.RELEASE.jar:5.1.3.RELEASE]
+	at org.springframework.web.servlet.FrameworkServlet.doPost(FrameworkServlet.java:908) ~[spring-webmvc-5.1.3.RELEASE.jar:5.1.3.RELEASE]
+	at javax.servlet.http.HttpServlet.service(HttpServlet.java:660) ~[tomcat-embed-core-9.0.13.jar:9.0.13]
+	at org.springframework.web.servlet.FrameworkServlet.service(FrameworkServlet.java:882) ~[spring-webmvc-5.1.3.RELEASE.jar:5.1.3.RELEASE]
+	at javax.servlet.http.HttpServlet.service(HttpServlet.java:741) ~[tomcat-embed-core-9.0.13.jar:9.0.13]
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:231) ~[tomcat-embed-core-9.0.13.jar:9.0.13]
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:166) ~[tomcat-embed-core-9.0.13.jar:9.0.13]
+	at org.apache.tomcat.websocket.server.WsFilter.doFilter(WsFilter.java:53) ~[tomcat-embed-websocket-9.0.13.jar:9.0.13]
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:193) ~[tomcat-embed-core-9.0.13.jar:9.0.13]
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:166) ~[tomcat-embed-core-9.0.13.jar:9.0.13]
+	at org.springframework.web.filter.CorsFilter.doFilterInternal(CorsFilter.java:96) ~[spring-web-5.1.3.RELEASE.jar:5.1.3.RELEASE]
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:107) ~[spring-web-5.1.3.RELEASE.jar:5.1.3.RELEASE]
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:193) ~[tomcat-embed-core-9.0.13.jar:9.0.13]
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:166) ~[tomcat-embed-core-9.0.13.jar:9.0.13]
+	at com.alibaba.druid.support.http.WebStatFilter.doFilter(WebStatFilter.java:123) ~[druid-1.1.3.jar:1.1.3]
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:193) ~[tomcat-embed-core-9.0.13.jar:9.0.13]
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:166) ~[tomcat-embed-core-9.0.13.jar:9.0.13]
+	at org.springframework.web.filter.RequestContextFilter.doFilterInternal(RequestContextFilter.java:99) ~[spring-web-5.1.3.RELEASE.jar:5.1.3.RELEASE]
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:107) ~[spring-web-5.1.3.RELEASE.jar:5.1.3.RELEASE]
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:193) ~[tomcat-embed-core-9.0.13.jar:9.0.13]
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:166) ~[tomcat-embed-core-9.0.13.jar:9.0.13]
+	at org.springframework.web.filter.FormContentFilter.doFilterInternal(FormContentFilter.java:92) ~[spring-web-5.1.3.RELEASE.jar:5.1.3.RELEASE]
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:107) ~[spring-web-5.1.3.RELEASE.jar:5.1.3.RELEASE]
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:193) ~[tomcat-embed-core-9.0.13.jar:9.0.13]
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:166) ~[tomcat-embed-core-9.0.13.jar:9.0.13]
+	at org.springframework.web.filter.HiddenHttpMethodFilter.doFilterInternal(HiddenHttpMethodFilter.java:93) ~[spring-web-5.1.3.RELEASE.jar:5.1.3.RELEASE]
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:107) ~[spring-web-5.1.3.RELEASE.jar:5.1.3.RELEASE]
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:193) ~[tomcat-embed-core-9.0.13.jar:9.0.13]
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:166) ~[tomcat-embed-core-9.0.13.jar:9.0.13]
+	at org.springframework.web.filter.CharacterEncodingFilter.doFilterInternal(CharacterEncodingFilter.java:200) ~[spring-web-5.1.3.RELEASE.jar:5.1.3.RELEASE]
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:107) ~[spring-web-5.1.3.RELEASE.jar:5.1.3.RELEASE]
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:193) ~[tomcat-embed-core-9.0.13.jar:9.0.13]
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:166) ~[tomcat-embed-core-9.0.13.jar:9.0.13]
+	at org.apache.catalina.core.StandardWrapperValve.invoke(StandardWrapperValve.java:199) ~[tomcat-embed-core-9.0.13.jar:9.0.13]
+	at org.apache.catalina.core.StandardContextValve.invoke(StandardContextValve.java:96) [tomcat-embed-core-9.0.13.jar:9.0.13]
+	at org.apache.catalina.authenticator.AuthenticatorBase.invoke(AuthenticatorBase.java:490) [tomcat-embed-core-9.0.13.jar:9.0.13]
+	at org.apache.catalina.core.StandardHostValve.invoke(StandardHostValve.java:139) [tomcat-embed-core-9.0.13.jar:9.0.13]
+	at org.apache.catalina.valves.ErrorReportValve.invoke(ErrorReportValve.java:92) [tomcat-embed-core-9.0.13.jar:9.0.13]
+	at org.apache.catalina.core.StandardEngineValve.invoke(StandardEngineValve.java:74) [tomcat-embed-core-9.0.13.jar:9.0.13]
+	at org.apache.catalina.connector.CoyoteAdapter.service(CoyoteAdapter.java:343) [tomcat-embed-core-9.0.13.jar:9.0.13]
+	at org.apache.coyote.http11.Http11Processor.service(Http11Processor.java:408) [tomcat-embed-core-9.0.13.jar:9.0.13]
+	at org.apache.coyote.AbstractProcessorLight.process(AbstractProcessorLight.java:66) [tomcat-embed-core-9.0.13.jar:9.0.13]
+	at org.apache.coyote.AbstractProtocol$ConnectionHandler.process(AbstractProtocol.java:791) [tomcat-embed-core-9.0.13.jar:9.0.13]
+	at org.apache.tomcat.util.net.NioEndpoint$SocketProcessor.doRun(NioEndpoint.java:1417) [tomcat-embed-core-9.0.13.jar:9.0.13]
+	at org.apache.tomcat.util.net.SocketProcessorBase.run(SocketProcessorBase.java:49) [tomcat-embed-core-9.0.13.jar:9.0.13]
+	at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1149) [na:1.8.0_181]
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:624) [na:1.8.0_181]
+	at org.apache.tomcat.util.threads.TaskThread$WrappingRunnable.run(TaskThread.java:61) [tomcat-embed-core-9.0.13.jar:9.0.13]
+	at java.lang.Thread.run(Thread.java:748) [na:1.8.0_181]
+
+2019-01-08 16:13:48.767  WARN 6600 --- [http-nio-8080-exec-9] .w.s.m.s.DefaultHandlerExceptionResolver : Resolved [org.springframework.web.HttpMediaTypeNotSupportedException: Content type 'application/x-www-form-urlencoded;charset=UTF-8' not supported]
+2019-01-08 16:24:22.000  WARN 6600 --- [http-nio-8080-exec-2] .w.s.m.s.DefaultHandlerExceptionResolver : Resolved [org.springframework.web.HttpMediaTypeNotSupportedException: Content type 'application/x-www-form-urlencoded;charset=UTF-8' not supported]
+2019-01-08 16:28:38.227  WARN 6600 --- [http-nio-8080-exec-1] .w.s.m.s.DefaultHandlerExceptionResolver : Resolved [org.springframework.web.HttpMediaTypeNotSupportedException: Content type 'application/x-www-form-urlencoded;charset=UTF-8' not supported]
+2019-01-08 16:29:26.675  WARN 6600 --- [http-nio-8080-exec-2] .w.s.m.s.DefaultHandlerExceptionResolver : Resolved [org.springframework.web.HttpRequestMethodNotSupportedException: Request method 'GET' not supported]
+2019-01-08 16:30:04.242  WARN 6600 --- [http-nio-8080-exec-5] .w.s.m.s.DefaultHandlerExceptionResolver : Resolved [org.springframework.web.HttpRequestMethodNotSupportedException: Request method 'GET' not supported]
+2019-01-08 16:31:16.102  INFO 5408 --- [main] com.admin.AdminApplication               : Starting AdminApplication on WIN-MFNRLAVRVCB with PID 5408 (E:\ideaWorkSpace\admin\target\classes started by Administrator in E:\ideaWorkSpace\admin)
+2019-01-08 16:31:16.126  INFO 5408 --- [main] com.admin.AdminApplication               : The following profiles are active: dev
+2019-01-08 16:31:20.194  INFO 5408 --- [main] .s.d.r.c.RepositoryConfigurationDelegate : Multiple Spring Data modules found, entering strict repository configuration mode!
+2019-01-08 16:31:20.224  INFO 5408 --- [main] .s.d.r.c.RepositoryConfigurationDelegate : Bootstrapping Spring Data repositories in DEFAULT mode.
+2019-01-08 16:31:20.448  INFO 5408 --- [main] .s.d.r.c.RepositoryConfigurationDelegate : Finished Spring Data repository scanning in 52ms. Found 0 repository interfaces.
+2019-01-08 16:31:21.491  INFO 5408 --- [main] trationDelegate$BeanPostProcessorChecker : Bean 'com.alibaba.druid.spring.boot.autoconfigure.stat.DruidSpringAopConfiguration' of type [com.alibaba.druid.spring.boot.autoconfigure.stat.DruidSpringAopConfiguration] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2019-01-08 16:31:21.549  INFO 5408 --- [main] trationDelegate$BeanPostProcessorChecker : Bean 'org.springframework.transaction.annotation.ProxyTransactionManagementConfiguration' of type [org.springframework.transaction.annotation.ProxyTransactionManagementConfiguration$$EnhancerBySpringCGLIB$$c0fca43d] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2019-01-08 16:31:21.592  INFO 5408 --- [main] trationDelegate$BeanPostProcessorChecker : Bean 'spring.datasource.druid-com.alibaba.druid.spring.boot.autoconfigure.properties.DruidStatProperties' of type [com.alibaba.druid.spring.boot.autoconfigure.properties.DruidStatProperties] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2019-01-08 16:31:21.648  INFO 5408 --- [main] trationDelegate$BeanPostProcessorChecker : Bean 'advisor' of type [org.springframework.aop.support.RegexpMethodPointcutAdvisor] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2019-01-08 16:31:22.937  INFO 5408 --- [main] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat initialized with port(s): 8080 (http)
+2019-01-08 16:31:23.047  INFO 5408 --- [main] o.apache.catalina.core.StandardService   : Starting service [Tomcat]
+2019-01-08 16:31:23.048  INFO 5408 --- [main] org.apache.catalina.core.StandardEngine  : Starting Servlet Engine: Apache Tomcat/9.0.13
+2019-01-08 16:31:23.070  INFO 5408 --- [main] o.a.catalina.core.AprLifecycleListener   : The APR based Apache Tomcat Native library which allows optimal performance in production environments was not found on the java.library.path: [C:\Program Files\Java\jdk1.8.0_181\bin;C:\Windows\Sun\Java\bin;C:\Windows\system32;C:\Windows;C:\Program Files (x86)\Common Files\Oracle\Java\javapath;C:\Program Files\Java\jdk1.8.0_181\bin;C:\Program Files\MySQL\MySQL Server 5.5\bin；%CALTALINA_HOME%\bin;;CATALINA_HOME%\bin;E:\sdlihdroighdlghdf\MyEclipse 10\File\New\Web Project\tomcat\lib;D:\Maven\apache-maven-3.5.4\bin;C:\Program Files\TortoiseSVN\bin;D:\新建文件夹\;D:\G;t\cmd;D:\Git\cmd;C:\Program Files\erl7.1\bin;C:\Windows/system32;C:\Windows;D:\gradle\gradle-5.0\bin;C:\Users\Administrator\AppData\Roaming\npm;.]
+2019-01-08 16:31:23.476  INFO 5408 --- [main] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring embedded WebApplicationContext
+2019-01-08 16:31:23.477  INFO 5408 --- [main] o.s.web.context.ContextLoader            : Root WebApplicationContext: initialization completed in 6756 ms
+2019-01-08 16:31:23.792  INFO 5408 --- [main] c.a.d.s.b.a.DruidDataSourceAutoConfigure : Init DruidDataSource
+2019-01-08 16:31:24.297  INFO 5408 --- [main] com.alibaba.druid.pool.DruidDataSource   : {dataSource-1} inited
+2019-01-08 16:31:26.932  INFO 5408 --- [main] o.s.s.concurrent.ThreadPoolTaskExecutor  : Initializing ExecutorService 'applicationTaskExecutor'
+2019-01-08 16:31:29.153  INFO 5408 --- [main] d.s.w.p.DocumentationPluginsBootstrapper : Context refreshed
+2019-01-08 16:31:29.196  INFO 5408 --- [main] d.s.w.p.DocumentationPluginsBootstrapper : Found 1 custom documentation plugin(s)
+2019-01-08 16:31:29.213  INFO 5408 --- [main] s.d.s.w.s.ApiListingReferenceScanner     : Scanning for api listing references
+2019-01-08 16:31:29.494  INFO 5408 --- [main] .d.s.w.r.o.CachingOperationNameGenerator : Generating unique operation named: delUsingGET_1
+2019-01-08 16:31:29.501  INFO 5408 --- [main] .d.s.w.r.o.CachingOperationNameGenerator : Generating unique operation named: getallUsingGET_1
+2019-01-08 16:31:29.507  INFO 5408 --- [main] .d.s.w.r.o.CachingOperationNameGenerator : Generating unique operation named: insertUsingPOST_1
+2019-01-08 16:31:29.519  INFO 5408 --- [main] .d.s.w.r.o.CachingOperationNameGenerator : Generating unique operation named: selectOneUsingGET_1
+2019-01-08 16:31:29.535  INFO 5408 --- [main] .d.s.w.r.o.CachingOperationNameGenerator : Generating unique operation named: getallUsingGET_2
+2019-01-08 16:31:29.540  INFO 5408 --- [main] .d.s.w.r.o.CachingOperationNameGenerator : Generating unique operation named: insertUsingPOST_2
+2019-01-08 16:31:29.544  INFO 5408 --- [main] .d.s.w.r.o.CachingOperationNameGenerator : Generating unique operation named: selectOneUsingGET_2
+2019-01-08 16:31:29.548  INFO 5408 --- [main] .d.s.w.r.o.CachingOperationNameGenerator : Generating unique operation named: updateUsingPOST_1
+2019-01-08 16:31:29.552  INFO 5408 --- [main] .d.s.w.r.o.CachingOperationNameGenerator : Generating unique operation named: delUsingGET_2
+2019-01-08 16:31:29.557  INFO 5408 --- [main] .d.s.w.r.o.CachingOperationNameGenerator : Generating unique operation named: getallUsingGET_3
+2019-01-08 16:31:29.561  INFO 5408 --- [main] .d.s.w.r.o.CachingOperationNameGenerator : Generating unique operation named: insertUsingPOST_3
+2019-01-08 16:31:29.564  INFO 5408 --- [main] .d.s.w.r.o.CachingOperationNameGenerator : Generating unique operation named: selectOneUsingGET_3
+2019-01-08 16:31:29.568  INFO 5408 --- [main] .d.s.w.r.o.CachingOperationNameGenerator : Generating unique operation named: selectOnebynameUsingGET_1
+2019-01-08 16:31:29.571  INFO 5408 --- [main] .d.s.w.r.o.CachingOperationNameGenerator : Generating unique operation named: updateUsingPOST_2
+2019-01-08 16:31:29.575  INFO 5408 --- [main] .d.s.w.r.o.CachingOperationNameGenerator : Generating unique operation named: delUsingGET_3
+2019-01-08 16:31:29.579  INFO 5408 --- [main] .d.s.w.r.o.CachingOperationNameGenerator : Generating unique operation named: getallUsingGET_4
+2019-01-08 16:31:29.587  INFO 5408 --- [main] .d.s.w.r.o.CachingOperationNameGenerator : Generating unique operation named: selectOneUsingGET_4
+2019-01-08 16:31:29.596  INFO 5408 --- [main] .d.s.w.r.o.CachingOperationNameGenerator : Generating unique operation named: updateUsingPOST_3
+2019-01-08 16:31:29.600  INFO 5408 --- [main] .d.s.w.r.o.CachingOperationNameGenerator : Generating unique operation named: delUsingGET_4
+2019-01-08 16:31:29.604  INFO 5408 --- [main] .d.s.w.r.o.CachingOperationNameGenerator : Generating unique operation named: getallUsingGET_5
+2019-01-08 16:31:29.610  INFO 5408 --- [main] .d.s.w.r.o.CachingOperationNameGenerator : Generating unique operation named: insertUsingPOST_4
+2019-01-08 16:31:29.614  INFO 5408 --- [main] .d.s.w.r.o.CachingOperationNameGenerator : Generating unique operation named: selectOneUsingGET_5
+2019-01-08 16:31:29.617  INFO 5408 --- [main] .d.s.w.r.o.CachingOperationNameGenerator : Generating unique operation named: selectOnebynameUsingGET_2
+2019-01-08 16:31:29.620  INFO 5408 --- [main] .d.s.w.r.o.CachingOperationNameGenerator : Generating unique operation named: updateUsingPOST_4
+2019-01-08 16:31:29.624  INFO 5408 --- [main] .d.s.w.r.o.CachingOperationNameGenerator : Generating unique operation named: delUsingGET_5
+2019-01-08 16:31:29.628  INFO 5408 --- [main] .d.s.w.r.o.CachingOperationNameGenerator : Generating unique operation named: getallUsingGET_6
+2019-01-08 16:31:29.633  INFO 5408 --- [main] .d.s.w.r.o.CachingOperationNameGenerator : Generating unique operation named: insertUsingPOST_5
+2019-01-08 16:31:29.636  INFO 5408 --- [main] .d.s.w.r.o.CachingOperationNameGenerator : Generating unique operation named: selectOneUsingGET_6
+2019-01-08 16:31:29.638  INFO 5408 --- [main] .d.s.w.r.o.CachingOperationNameGenerator : Generating unique operation named: selectOnebynameUsingGET_3
+2019-01-08 16:31:29.650  INFO 5408 --- [main] .d.s.w.r.o.CachingOperationNameGenerator : Generating unique operation named: updateUsingPOST_5
+2019-01-08 16:31:29.655  INFO 5408 --- [main] .d.s.w.r.o.CachingOperationNameGenerator : Generating unique operation named: delUsingPOST_1
+2019-01-08 16:31:29.685  INFO 5408 --- [main] .d.s.w.r.o.CachingOperationNameGenerator : Generating unique operation named: selectOneUsingGET_7
+2019-01-08 16:31:29.688  INFO 5408 --- [main] .d.s.w.r.o.CachingOperationNameGenerator : Generating unique operation named: updateUsingPOST_6
+2019-01-08 16:31:29.750  INFO 5408 --- [main] .d.s.w.r.o.CachingOperationNameGenerator : Generating unique operation named: getaddUsingPOST_1
+2019-01-08 16:31:29.753  INFO 5408 --- [main] .d.s.w.r.o.CachingOperationNameGenerator : Generating unique operation named: getaddUsingPOST_2
+2019-01-08 16:31:29.756  INFO 5408 --- [main] .d.s.w.r.o.CachingOperationNameGenerator : Generating unique operation named: getaddUsingPOST_3
+2019-01-08 16:31:29.758  INFO 5408 --- [main] .d.s.w.r.o.CachingOperationNameGenerator : Generating unique operation named: getaddUsingPOST_4
+2019-01-08 16:31:29.760  INFO 5408 --- [main] .d.s.w.r.o.CachingOperationNameGenerator : Generating unique operation named: getaddUsingPOST_5
+2019-01-08 16:31:29.762  INFO 5408 --- [main] .d.s.w.r.o.CachingOperationNameGenerator : Generating unique operation named: getaddUsingPOST_6
+2019-01-08 16:31:29.764  INFO 5408 --- [main] .d.s.w.r.o.CachingOperationNameGenerator : Generating unique operation named: getaddUsingPOST_7
+2019-01-08 16:31:29.771  INFO 5408 --- [main] .d.s.w.r.o.CachingOperationNameGenerator : Generating unique operation named: getuserUsingPOST_1
+2019-01-08 16:31:29.774  INFO 5408 --- [main] .d.s.w.r.o.CachingOperationNameGenerator : Generating unique operation named: getuserUsingPOST_2
+2019-01-08 16:31:29.776  INFO 5408 --- [main] .d.s.w.r.o.CachingOperationNameGenerator : Generating unique operation named: getuserUsingPOST_3
+2019-01-08 16:31:29.778  INFO 5408 --- [main] .d.s.w.r.o.CachingOperationNameGenerator : Generating unique operation named: getuserUsingPOST_4
+2019-01-08 16:31:29.780  INFO 5408 --- [main] .d.s.w.r.o.CachingOperationNameGenerator : Generating unique operation named: getuserUsingPOST_5
+2019-01-08 16:31:29.781  INFO 5408 --- [main] .d.s.w.r.o.CachingOperationNameGenerator : Generating unique operation named: getuserUsingPOST_6
+2019-01-08 16:31:29.783  INFO 5408 --- [main] .d.s.w.r.o.CachingOperationNameGenerator : Generating unique operation named: getuserUsingPOST_7
+2019-01-08 16:31:29.795  INFO 5408 --- [main] .d.s.w.r.o.CachingOperationNameGenerator : Generating unique operation named: updateUsingPOST_7
+2019-01-08 16:31:30.053  INFO 5408 --- [main] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat started on port(s): 8080 (http) with context path ''
+2019-01-08 16:31:30.057  INFO 5408 --- [main] com.admin.AdminApplication               : Started AdminApplication in 16.316 seconds (JVM running for 22.899)
+2019-01-08 16:31:59.670  INFO 5408 --- [http-nio-8080-exec-1] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring DispatcherServlet 'dispatcherServlet'
+2019-01-08 16:31:59.671  INFO 5408 --- [http-nio-8080-exec-1] o.s.web.servlet.DispatcherServlet        : Initializing Servlet 'dispatcherServlet'
+2019-01-08 16:31:59.695  INFO 5408 --- [http-nio-8080-exec-1] o.s.web.servlet.DispatcherServlet        : Completed initialization in 23 ms
+2019-01-08 16:31:59.822  WARN 5408 --- [http-nio-8080-exec-1] .w.s.m.s.DefaultHandlerExceptionResolver : Resolved [org.springframework.http.converter.HttpMessageNotReadableException: Required request body is missing: public java.lang.String com.admin.controller.TAdminController.update(com.admin.pojo.TAdmin)]
+2019-01-08 16:34:30.937  WARN 5408 --- [http-nio-8080-exec-9] .w.s.m.s.DefaultHandlerExceptionResolver : Resolved [org.springframework.http.converter.HttpMessageNotReadableException: Required request body is missing: public java.lang.String com.admin.controller.TAdminController.update(com.admin.pojo.TAdmin)]
+2019-01-08 16:37:56.639  INFO 1748 --- [main] com.admin.AdminApplication               : Starting AdminApplication on WIN-MFNRLAVRVCB with PID 1748 (E:\ideaWorkSpace\admin\target\classes started by Administrator in E:\ideaWorkSpace\admin)
+2019-01-08 16:37:56.649  INFO 1748 --- [main] com.admin.AdminApplication               : The following profiles are active: dev
+2019-01-08 16:37:58.731  INFO 1748 --- [main] .s.d.r.c.RepositoryConfigurationDelegate : Multiple Spring Data modules found, entering strict repository configuration mode!
+2019-01-08 16:37:58.733  INFO 1748 --- [main] .s.d.r.c.RepositoryConfigurationDelegate : Bootstrapping Spring Data repositories in DEFAULT mode.
+2019-01-08 16:37:58.765  INFO 1748 --- [main] .s.d.r.c.RepositoryConfigurationDelegate : Finished Spring Data repository scanning in 18ms. Found 0 repository interfaces.
+2019-01-08 16:37:59.070  INFO 1748 --- [main] trationDelegate$BeanPostProcessorChecker : Bean 'com.alibaba.druid.spring.boot.autoconfigure.stat.DruidSpringAopConfiguration' of type [com.alibaba.druid.spring.boot.autoconfigure.stat.DruidSpringAopConfiguration] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2019-01-08 16:37:59.105  INFO 1748 --- [main] trationDelegate$BeanPostProcessorChecker : Bean 'org.springframework.transaction.annotation.ProxyTransactionManagementConfiguration' of type [org.springframework.transaction.annotation.ProxyTransactionManagementConfiguration$$EnhancerBySpringCGLIB$$375ad512] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2019-01-08 16:37:59.139  INFO 1748 --- [main] trationDelegate$BeanPostProcessorChecker : Bean 'spring.datasource.druid-com.alibaba.druid.spring.boot.autoconfigure.properties.DruidStatProperties' of type [com.alibaba.druid.spring.boot.autoconfigure.properties.DruidStatProperties] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2019-01-08 16:37:59.144  INFO 1748 --- [main] trationDelegate$BeanPostProcessorChecker : Bean 'advisor' of type [org.springframework.aop.support.RegexpMethodPointcutAdvisor] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2019-01-08 16:37:59.483  INFO 1748 --- [main] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat initialized with port(s): 8080 (http)
+2019-01-08 16:37:59.506  INFO 1748 --- [main] o.apache.catalina.core.StandardService   : Starting service [Tomcat]
+2019-01-08 16:37:59.506  INFO 1748 --- [main] org.apache.catalina.core.StandardEngine  : Starting Servlet Engine: Apache Tomcat/9.0.13
+2019-01-08 16:37:59.513  INFO 1748 --- [main] o.a.catalina.core.AprLifecycleListener   : The APR based Apache Tomcat Native library which allows optimal performance in production environments was not found on the java.library.path: [C:\Program Files\Java\jdk1.8.0_181\bin;C:\Windows\Sun\Java\bin;C:\Windows\system32;C:\Windows;C:\Program Files (x86)\Common Files\Oracle\Java\javapath;C:\Program Files\Java\jdk1.8.0_181\bin;C:\Program Files\MySQL\MySQL Server 5.5\bin；%CALTALINA_HOME%\bin;;CATALINA_HOME%\bin;E:\sdlihdroighdlghdf\MyEclipse 10\File\New\Web Project\tomcat\lib;D:\Maven\apache-maven-3.5.4\bin;C:\Program Files\TortoiseSVN\bin;D:\新建文件夹\;D:\G;t\cmd;D:\Git\cmd;C:\Program Files\erl7.1\bin;C:\Windows/system32;C:\Windows;D:\gradle\gradle-5.0\bin;C:\Users\Administrator\AppData\Roaming\npm;.]
+2019-01-08 16:37:59.631  INFO 1748 --- [main] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring embedded WebApplicationContext
+2019-01-08 16:37:59.632  INFO 1748 --- [main] o.s.web.context.ContextLoader            : Root WebApplicationContext: initialization completed in 2138 ms
+2019-01-08 16:37:59.779  INFO 1748 --- [main] c.a.d.s.b.a.DruidDataSourceAutoConfigure : Init DruidDataSource
+2019-01-08 16:38:00.086  INFO 1748 --- [main] com.alibaba.druid.pool.DruidDataSource   : {dataSource-1} inited
+2019-01-08 16:38:01.018  INFO 1748 --- [main] o.s.s.concurrent.ThreadPoolTaskExecutor  : Initializing ExecutorService 'applicationTaskExecutor'
+2019-01-08 16:38:01.604  INFO 1748 --- [main] d.s.w.p.DocumentationPluginsBootstrapper : Context refreshed
+2019-01-08 16:38:01.619  INFO 1748 --- [main] d.s.w.p.DocumentationPluginsBootstrapper : Found 1 custom documentation plugin(s)
+2019-01-08 16:38:01.635  INFO 1748 --- [main] s.d.s.w.s.ApiListingReferenceScanner     : Scanning for api listing references
+2019-01-08 16:38:01.791  INFO 1748 --- [main] .d.s.w.r.o.CachingOperationNameGenerator : Generating unique operation named: delUsingGET_1
+2019-01-08 16:38:01.796  INFO 1748 --- [main] .d.s.w.r.o.CachingOperationNameGenerator : Generating unique operation named: getallUsingGET_1
+2019-01-08 16:38:01.802  INFO 1748 --- [main] .d.s.w.r.o.CachingOperationNameGenerator : Generating unique operation named: insertUsingPOST_1
+2019-01-08 16:38:01.818  INFO 1748 --- [main] .d.s.w.r.o.CachingOperationNameGenerator : Generating unique operation named: selectOneUsingGET_1
+2019-01-08 16:38:01.826  INFO 1748 --- [main] .d.s.w.r.o.CachingOperationNameGenerator : Generating unique operation named: updateUsingPOST_1
+2019-01-08 16:38:01.843  INFO 1748 --- [main] .d.s.w.r.o.CachingOperationNameGenerator : Generating unique operation named: getallUsingGET_2
+2019-01-08 16:38:01.850  INFO 1748 --- [main] .d.s.w.r.o.CachingOperationNameGenerator : Generating unique operation named: insertUsingPOST_2
+2019-01-08 16:38:01.857  INFO 1748 --- [main] .d.s.w.r.o.CachingOperationNameGenerator : Generating unique operation named: selectOneUsingGET_2
+2019-01-08 16:38:01.862  INFO 1748 --- [main] .d.s.w.r.o.CachingOperationNameGenerator : Generating unique operation named: updateUsingPOST_2
+2019-01-08 16:38:01.869  INFO 1748 --- [main] .d.s.w.r.o.CachingOperationNameGenerator : Generating unique operation named: delUsingGET_2
+2019-01-08 16:38:01.874  INFO 1748 --- [main] .d.s.w.r.o.CachingOperationNameGenerator : Generating unique operation named: getallUsingGET_3
+2019-01-08 16:38:01.881  INFO 1748 --- [main] .d.s.w.r.o.CachingOperationNameGenerator : Generating unique operation named: insertUsingPOST_3
+2019-01-08 16:38:01.886  INFO 1748 --- [main] .d.s.w.r.o.CachingOperationNameGenerator : Generating unique operation named: selectOneUsingGET_3
+2019-01-08 16:38:01.891  INFO 1748 --- [main] .d.s.w.r.o.CachingOperationNameGenerator : Generating unique operation named: selectOnebynameUsingGET_1
+2019-01-08 16:38:01.895  INFO 1748 --- [main] .d.s.w.r.o.CachingOperationNameGenerator : Generating unique operation named: updateUsingPOST_3
+2019-01-08 16:38:01.901  INFO 1748 --- [main] .d.s.w.r.o.CachingOperationNameGenerator : Generating unique operation named: delUsingGET_3
+2019-01-08 16:38:01.905  INFO 1748 --- [main] .d.s.w.r.o.CachingOperationNameGenerator : Generating unique operation named: getallUsingGET_4
+2019-01-08 16:38:01.917  INFO 1748 --- [main] .d.s.w.r.o.CachingOperationNameGenerator : Generating unique operation named: selectOneUsingGET_4
+2019-01-08 16:38:01.926  INFO 1748 --- [main] .d.s.w.r.o.CachingOperationNameGenerator : Generating unique operation named: updateUsingPOST_4
+2019-01-08 16:38:01.931  INFO 1748 --- [main] .d.s.w.r.o.CachingOperationNameGenerator : Generating unique operation named: delUsingGET_4
+2019-01-08 16:38:01.935  INFO 1748 --- [main] .d.s.w.r.o.CachingOperationNameGenerator : Generating unique operation named: getallUsingGET_5
+2019-01-08 16:38:01.940  INFO 1748 --- [main] .d.s.w.r.o.CachingOperationNameGenerator : Generating unique operation named: insertUsingPOST_4
+2019-01-08 16:38:01.945  INFO 1748 --- [main] .d.s.w.r.o.CachingOperationNameGenerator : Generating unique operation named: selectOneUsingGET_5
+2019-01-08 16:38:01.948  INFO 1748 --- [main] .d.s.w.r.o.CachingOperationNameGenerator : Generating unique operation named: selectOnebynameUsingGET_2
+2019-01-08 16:38:01.952  INFO 1748 --- [main] .d.s.w.r.o.CachingOperationNameGenerator : Generating unique operation named: updateUsingPOST_5
+2019-01-08 16:38:01.957  INFO 1748 --- [main] .d.s.w.r.o.CachingOperationNameGenerator : Generating unique operation named: delUsingGET_5
+2019-01-08 16:38:01.961  INFO 1748 --- [main] .d.s.w.r.o.CachingOperationNameGenerator : Generating unique operation named: getallUsingGET_6
+2019-01-08 16:38:01.967  INFO 1748 --- [main] .d.s.w.r.o.CachingOperationNameGenerator : Generating unique operation named: insertUsingPOST_5
+2019-01-08 16:38:01.969  INFO 1748 --- [main] .d.s.w.r.o.CachingOperationNameGenerator : Generating unique operation named: selectOneUsingGET_6
+2019-01-08 16:38:01.973  INFO 1748 --- [main] .d.s.w.r.o.CachingOperationNameGenerator : Generating unique operation named: selectOnebynameUsingGET_3
+2019-01-08 16:38:01.988  INFO 1748 --- [main] .d.s.w.r.o.CachingOperationNameGenerator : Generating unique operation named: updateUsingPOST_6
+2019-01-08 16:38:01.992  INFO 1748 --- [main] .d.s.w.r.o.CachingOperationNameGenerator : Generating unique operation named: delUsingPOST_1
+2019-01-08 16:38:02.021  INFO 1748 --- [main] .d.s.w.r.o.CachingOperationNameGenerator : Generating unique operation named: selectOneUsingGET_7
+2019-01-08 16:38:02.024  INFO 1748 --- [main] .d.s.w.r.o.CachingOperationNameGenerator : Generating unique operation named: updateUsingPOST_7
+2019-01-08 16:38:02.090  INFO 1748 --- [main] .d.s.w.r.o.CachingOperationNameGenerator : Generating unique operation named: getaddUsingPOST_1
+2019-01-08 16:38:02.092  INFO 1748 --- [main] .d.s.w.r.o.CachingOperationNameGenerator : Generating unique operation named: getaddUsingPOST_2
+2019-01-08 16:38:02.094  INFO 1748 --- [main] .d.s.w.r.o.CachingOperationNameGenerator : Generating unique operation named: getaddUsingPOST_3
+2019-01-08 16:38:02.095  INFO 1748 --- [main] .d.s.w.r.o.CachingOperationNameGenerator : Generating unique operation named: getaddUsingPOST_4
+2019-01-08 16:38:02.097  INFO 1748 --- [main] .d.s.w.r.o.CachingOperationNameGenerator : Generating unique operation named: getaddUsingPOST_5
+2019-01-08 16:38:02.099  INFO 1748 --- [main] .d.s.w.r.o.CachingOperationNameGenerator : Generating unique operation named: getaddUsingPOST_6
+2019-01-08 16:38:02.101  INFO 1748 --- [main] .d.s.w.r.o.CachingOperationNameGenerator : Generating unique operation named: getaddUsingPOST_7
+2019-01-08 16:38:02.106  INFO 1748 --- [main] .d.s.w.r.o.CachingOperationNameGenerator : Generating unique operation named: getuserUsingPOST_1
+2019-01-08 16:38:02.107  INFO 1748 --- [main] .d.s.w.r.o.CachingOperationNameGenerator : Generating unique operation named: getuserUsingPOST_2
+2019-01-08 16:38:02.109  INFO 1748 --- [main] .d.s.w.r.o.CachingOperationNameGenerator : Generating unique operation named: getuserUsingPOST_3
+2019-01-08 16:38:02.111  INFO 1748 --- [main] .d.s.w.r.o.CachingOperationNameGenerator : Generating unique operation named: getuserUsingPOST_4
+2019-01-08 16:38:02.112  INFO 1748 --- [main] .d.s.w.r.o.CachingOperationNameGenerator : Generating unique operation named: getuserUsingPOST_5
+2019-01-08 16:38:02.114  INFO 1748 --- [main] .d.s.w.r.o.CachingOperationNameGenerator : Generating unique operation named: getuserUsingPOST_6
+2019-01-08 16:38:02.115  INFO 1748 --- [main] .d.s.w.r.o.CachingOperationNameGenerator : Generating unique operation named: getuserUsingPOST_7
+2019-01-08 16:38:02.123  INFO 1748 --- [main] .d.s.w.r.o.CachingOperationNameGenerator : Generating unique operation named: updateUsingPOST_8
+2019-01-08 16:38:02.204  INFO 1748 --- [main] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat started on port(s): 8080 (http) with context path ''
+2019-01-08 16:38:02.207  INFO 1748 --- [main] com.admin.AdminApplication               : Started AdminApplication in 6.516 seconds (JVM running for 7.751)
+2019-01-08 16:38:08.118  INFO 1748 --- [http-nio-8080-exec-1] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring DispatcherServlet 'dispatcherServlet'
+2019-01-08 16:38:08.118  INFO 1748 --- [http-nio-8080-exec-1] o.s.web.servlet.DispatcherServlet        : Initializing Servlet 'dispatcherServlet'
+2019-01-08 16:38:08.128  INFO 1748 --- [http-nio-8080-exec-1] o.s.web.servlet.DispatcherServlet        : Completed initialization in 9 ms
+2019-01-08 16:40:16.585  WARN 1748 --- [http-nio-8080-exec-2] .w.s.m.s.DefaultHandlerExceptionResolver : Resolved [org.springframework.web.HttpMediaTypeNotSupportedException: Content type 'application/x-www-form-urlencoded;charset=UTF-8' not supported]
+2019-01-08 16:40:22.190  WARN 1748 --- [http-nio-8080-exec-3] .w.s.m.s.DefaultHandlerExceptionResolver : Resolved [org.springframework.web.HttpRequestMethodNotSupportedException: Request method 'GET' not supported]
+2019-01-08 16:44:44.631  WARN 1748 --- [http-nio-8080-exec-1] .w.s.m.s.DefaultHandlerExceptionResolver : Resolved [org.springframework.http.converter.HttpMessageNotReadableException: Required request body is missing: public java.lang.String com.admin.controller.TAdminController.update(com.admin.pojo.TAdmin)]
+2019-01-08 16:45:34.901  WARN 1748 --- [http-nio-8080-exec-4] .w.s.m.s.DefaultHandlerExceptionResolver : Resolved [org.springframework.http.converter.HttpMessageNotReadableException: Required request body is missing: public java.lang.String com.admin.controller.TAdminController.update(com.admin.pojo.TAdmin)]
+2019-01-08 16:46:47.475  WARN 1748 --- [http-nio-8080-exec-8] .w.s.m.s.DefaultHandlerExceptionResolver : Resolved [org.springframework.http.converter.HttpMessageNotReadableException: Required request body is missing: public java.lang.String com.admin.controller.TAdminController.update(com.admin.pojo.TAdmin)]
+2019-01-08 16:47:34.892  WARN 1748 --- [http-nio-8080-exec-6] .w.s.m.s.DefaultHandlerExceptionResolver : Resolved [org.springframework.http.converter.HttpMessageNotReadableException: Required request body is missing: public java.lang.String com.admin.controller.TAdminController.update(com.admin.pojo.TAdmin)]
+2019-01-08 16:47:46.395  WARN 1748 --- [http-nio-8080-exec-7] .w.s.m.s.DefaultHandlerExceptionResolver : Resolved [org.springframework.http.converter.HttpMessageNotReadableException: Required request body is missing: public java.lang.String com.admin.controller.TAdminController.update(com.admin.pojo.TAdmin)]
+2019-01-08 16:49:38.620  WARN 1748 --- [http-nio-8080-exec-9] .w.s.m.s.DefaultHandlerExceptionResolver : Resolved [org.springframework.web.HttpMediaTypeNotSupportedException: Content type 'multipart/form-data;boundary=----WebKitFormBoundarycGOd1usBeoaFGHnB;charset=UTF-8' not supported]
+2019-01-08 16:51:43.984  WARN 1748 --- [http-nio-8080-exec-1] .w.s.m.s.DefaultHandlerExceptionResolver : Resolved [org.springframework.http.converter.HttpMessageNotReadableException: Required request body is missing: public java.lang.String com.admin.controller.TAdminController.update(com.admin.pojo.TAdmin)]
+2019-01-08 16:52:58.338  INFO 7728 --- [main] com.admin.AdminApplication               : Starting AdminApplication on WIN-MFNRLAVRVCB with PID 7728 (E:\ideaWorkSpace\admin\target\classes started by Administrator in E:\ideaWorkSpace\admin)
+2019-01-08 16:52:58.342  INFO 7728 --- [main] com.admin.AdminApplication               : The following profiles are active: dev
+2019-01-08 16:53:00.472  INFO 7728 --- [main] .s.d.r.c.RepositoryConfigurationDelegate : Multiple Spring Data modules found, entering strict repository configuration mode!
+2019-01-08 16:53:00.474  INFO 7728 --- [main] .s.d.r.c.RepositoryConfigurationDelegate : Bootstrapping Spring Data repositories in DEFAULT mode.
+2019-01-08 16:53:00.505  INFO 7728 --- [main] .s.d.r.c.RepositoryConfigurationDelegate : Finished Spring Data repository scanning in 17ms. Found 0 repository interfaces.
+2019-01-08 16:53:00.788  INFO 7728 --- [main] trationDelegate$BeanPostProcessorChecker : Bean 'com.alibaba.druid.spring.boot.autoconfigure.stat.DruidSpringAopConfiguration' of type [com.alibaba.druid.spring.boot.autoconfigure.stat.DruidSpringAopConfiguration] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2019-01-08 16:53:00.821  INFO 7728 --- [main] trationDelegate$BeanPostProcessorChecker : Bean 'org.springframework.transaction.annotation.ProxyTransactionManagementConfiguration' of type [org.springframework.transaction.annotation.ProxyTransactionManagementConfiguration$$EnhancerBySpringCGLIB$$b1db6389] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2019-01-08 16:53:00.848  INFO 7728 --- [main] trationDelegate$BeanPostProcessorChecker : Bean 'spring.datasource.druid-com.alibaba.druid.spring.boot.autoconfigure.properties.DruidStatProperties' of type [com.alibaba.druid.spring.boot.autoconfigure.properties.DruidStatProperties] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2019-01-08 16:53:00.853  INFO 7728 --- [main] trationDelegate$BeanPostProcessorChecker : Bean 'advisor' of type [org.springframework.aop.support.RegexpMethodPointcutAdvisor] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2019-01-08 16:53:01.216  INFO 7728 --- [main] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat initialized with port(s): 8080 (http)
+2019-01-08 16:53:01.238  INFO 7728 --- [main] o.apache.catalina.core.StandardService   : Starting service [Tomcat]
+2019-01-08 16:53:01.239  INFO 7728 --- [main] org.apache.catalina.core.StandardEngine  : Starting Servlet Engine: Apache Tomcat/9.0.13
+2019-01-08 16:53:01.246  INFO 7728 --- [main] o.a.catalina.core.AprLifecycleListener   : The APR based Apache Tomcat Native library which allows optimal performance in production environments was not found on the java.library.path: [C:\Program Files\Java\jdk1.8.0_181\bin;C:\Windows\Sun\Java\bin;C:\Windows\system32;C:\Windows;C:\Program Files (x86)\Common Files\Oracle\Java\javapath;C:\Program Files\Java\jdk1.8.0_181\bin;C:\Program Files\MySQL\MySQL Server 5.5\bin；%CALTALINA_HOME%\bin;;CATALINA_HOME%\bin;E:\sdlihdroighdlghdf\MyEclipse 10\File\New\Web Project\tomcat\lib;D:\Maven\apache-maven-3.5.4\bin;C:\Program Files\TortoiseSVN\bin;D:\新建文件夹\;D:\G;t\cmd;D:\Git\cmd;C:\Program Files\erl7.1\bin;C:\Windows/system32;C:\Windows;D:\gradle\gradle-5.0\bin;C:\Users\Administrator\AppData\Roaming\npm;.]
+2019-01-08 16:53:01.366  INFO 7728 --- [main] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring embedded WebApplicationContext
+2019-01-08 16:53:01.367  INFO 7728 --- [main] o.s.web.context.ContextLoader            : Root WebApplicationContext: initialization completed in 2877 ms
+2019-01-08 16:53:01.487  INFO 7728 --- [main] c.a.d.s.b.a.DruidDataSourceAutoConfigure : Init DruidDataSource
+2019-01-08 16:53:01.817  INFO 7728 --- [main] com.alibaba.druid.pool.DruidDataSource   : {dataSource-1} inited
+2019-01-08 16:53:02.823  INFO 7728 --- [main] o.s.s.concurrent.ThreadPoolTaskExecutor  : Initializing ExecutorService 'applicationTaskExecutor'
+2019-01-08 16:53:03.314  INFO 7728 --- [main] d.s.w.p.DocumentationPluginsBootstrapper : Context refreshed
+2019-01-08 16:53:03.329  INFO 7728 --- [main] d.s.w.p.DocumentationPluginsBootstrapper : Found 1 custom documentation plugin(s)
+2019-01-08 16:53:03.343  INFO 7728 --- [main] s.d.s.w.s.ApiListingReferenceScanner     : Scanning for api listing references
+2019-01-08 16:53:03.490  INFO 7728 --- [main] .d.s.w.r.o.CachingOperationNameGenerator : Generating unique operation named: delUsingGET_1
+2019-01-08 16:53:03.495  INFO 7728 --- [main] .d.s.w.r.o.CachingOperationNameGenerator : Generating unique operation named: getallUsingGET_1
+2019-01-08 16:53:03.501  INFO 7728 --- [main] .d.s.w.r.o.CachingOperationNameGenerator : Generating unique operation named: insertUsingPOST_1
+2019-01-08 16:53:03.511  INFO 7728 --- [main] .d.s.w.r.o.CachingOperationNameGenerator : Generating unique operation named: selectOneUsingGET_1
+2019-01-08 16:53:03.525  INFO 7728 --- [main] .d.s.w.r.o.CachingOperationNameGenerator : Generating unique operation named: updateUsingPOST_1
+2019-01-08 16:53:03.538  INFO 7728 --- [main] .d.s.w.r.o.CachingOperationNameGenerator : Generating unique operation named: getallUsingGET_2
+2019-01-08 16:53:03.545  INFO 7728 --- [main] .d.s.w.r.o.CachingOperationNameGenerator : Generating unique operation named: insertUsingPOST_2
+2019-01-08 16:53:03.550  INFO 7728 --- [main] .d.s.w.r.o.CachingOperationNameGenerator : Generating unique operation named: selectOneUsingGET_2
+2019-01-08 16:53:03.554  INFO 7728 --- [main] .d.s.w.r.o.CachingOperationNameGenerator : Generating unique operation named: updateUsingPOST_2
+2019-01-08 16:53:03.558  INFO 7728 --- [main] .d.s.w.r.o.CachingOperationNameGenerator : Generating unique operation named: delUsingGET_2
+2019-01-08 16:53:03.562  INFO 7728 --- [main] .d.s.w.r.o.CachingOperationNameGenerator : Generating unique operation named: getallUsingGET_3
+2019-01-08 16:53:03.567  INFO 7728 --- [main] .d.s.w.r.o.CachingOperationNameGenerator : Generating unique operation named: insertUsingPOST_3
+2019-01-08 16:53:03.570  INFO 7728 --- [main] .d.s.w.r.o.CachingOperationNameGenerator : Generating unique operation named: selectOneUsingGET_3
+2019-01-08 16:53:03.573  INFO 7728 --- [main] .d.s.w.r.o.CachingOperationNameGenerator : Generating unique operation named: selectOnebynameUsingGET_1
+2019-01-08 16:53:03.576  INFO 7728 --- [main] .d.s.w.r.o.CachingOperationNameGenerator : Generating unique operation named: updateUsingPOST_3
+2019-01-08 16:53:03.580  INFO 7728 --- [main] .d.s.w.r.o.CachingOperationNameGenerator : Generating unique operation named: delUsingGET_3
+2019-01-08 16:53:03.583  INFO 7728 --- [main] .d.s.w.r.o.CachingOperationNameGenerator : Generating unique operation named: getallUsingGET_4
+2019-01-08 16:53:03.590  INFO 7728 --- [main] .d.s.w.r.o.CachingOperationNameGenerator : Generating unique operation named: selectOneUsingGET_4
+2019-01-08 16:53:03.597  INFO 7728 --- [main] .d.s.w.r.o.CachingOperationNameGenerator : Generating unique operation named: updateUsingPOST_4
+2019-01-08 16:53:03.601  INFO 7728 --- [main] .d.s.w.r.o.CachingOperationNameGenerator : Generating unique operation named: delUsingGET_4
+2019-01-08 16:53:03.604  INFO 7728 --- [main] .d.s.w.r.o.CachingOperationNameGenerator : Generating unique operation named: getallUsingGET_5
+2019-01-08 16:53:03.608  INFO 7728 --- [main] .d.s.w.r.o.CachingOperationNameGenerator : Generating unique operation named: insertUsingPOST_4
+2019-01-08 16:53:03.611  INFO 7728 --- [main] .d.s.w.r.o.CachingOperationNameGenerator : Generating unique operation named: selectOneUsingGET_5
+2019-01-08 16:53:03.614  INFO 7728 --- [main] .d.s.w.r.o.CachingOperationNameGenerator : Generating unique operation named: selectOnebynameUsingGET_2
+2019-01-08 16:53:03.618  INFO 7728 --- [main] .d.s.w.r.o.CachingOperationNameGenerator : Generating unique operation named: updateUsingPOST_5
+2019-01-08 16:53:03.621  INFO 7728 --- [main] .d.s.w.r.o.CachingOperationNameGenerator : Generating unique operation named: delUsingGET_5
+2019-01-08 16:53:03.625  INFO 7728 --- [main] .d.s.w.r.o.CachingOperationNameGenerator : Generating unique operation named: getallUsingGET_6
+2019-01-08 16:53:03.630  INFO 7728 --- [main] .d.s.w.r.o.CachingOperationNameGenerator : Generating unique operation named: insertUsingPOST_5
+2019-01-08 16:53:03.634  INFO 7728 --- [main] .d.s.w.r.o.CachingOperationNameGenerator : Generating unique operation named: selectOneUsingGET_6
+2019-01-08 16:53:03.637  INFO 7728 --- [main] .d.s.w.r.o.CachingOperationNameGenerator : Generating unique operation named: selectOnebynameUsingGET_3
+2019-01-08 16:53:03.641  INFO 7728 --- [main] .d.s.w.r.o.CachingOperationNameGenerator : Generating unique operation named: updateUsingPOST_6
+2019-01-08 16:53:03.645  INFO 7728 --- [main] .d.s.w.r.o.CachingOperationNameGenerator : Generating unique operation named: delUsingPOST_1
+2019-01-08 16:53:03.673  INFO 7728 --- [main] .d.s.w.r.o.CachingOperationNameGenerator : Generating unique operation named: selectOneUsingGET_7
+2019-01-08 16:53:03.676  INFO 7728 --- [main] .d.s.w.r.o.CachingOperationNameGenerator : Generating unique operation named: updateUsingPOST_7
+2019-01-08 16:53:03.744  INFO 7728 --- [main] .d.s.w.r.o.CachingOperationNameGenerator : Generating unique operation named: getaddUsingPOST_1
+2019-01-08 16:53:03.747  INFO 7728 --- [main] .d.s.w.r.o.CachingOperationNameGenerator : Generating unique operation named: getaddUsingPOST_2
+2019-01-08 16:53:03.749  INFO 7728 --- [main] .d.s.w.r.o.CachingOperationNameGenerator : Generating unique operation named: getaddUsingPOST_3
+2019-01-08 16:53:03.751  INFO 7728 --- [main] .d.s.w.r.o.CachingOperationNameGenerator : Generating unique operation named: getaddUsingPOST_4
+2019-01-08 16:53:03.753  INFO 7728 --- [main] .d.s.w.r.o.CachingOperationNameGenerator : Generating unique operation named: getaddUsingPOST_5
+2019-01-08 16:53:03.756  INFO 7728 --- [main] .d.s.w.r.o.CachingOperationNameGenerator : Generating unique operation named: getaddUsingPOST_6
+2019-01-08 16:53:03.758  INFO 7728 --- [main] .d.s.w.r.o.CachingOperationNameGenerator : Generating unique operation named: getaddUsingPOST_7
+2019-01-08 16:53:03.763  INFO 7728 --- [main] .d.s.w.r.o.CachingOperationNameGenerator : Generating unique operation named: getuserUsingPOST_1
+2019-01-08 16:53:03.770  INFO 7728 --- [main] .d.s.w.r.o.CachingOperationNameGenerator : Generating unique operation named: getuserUsingPOST_2
+2019-01-08 16:53:03.773  INFO 7728 --- [main] .d.s.w.r.o.CachingOperationNameGenerator : Generating unique operation named: getuserUsingPOST_3
+2019-01-08 16:53:03.776  INFO 7728 --- [main] .d.s.w.r.o.CachingOperationNameGenerator : Generating unique operation named: getuserUsingPOST_4
+2019-01-08 16:53:03.777  INFO 7728 --- [main] .d.s.w.r.o.CachingOperationNameGenerator : Generating unique operation named: getuserUsingPOST_5
+2019-01-08 16:53:03.779  INFO 7728 --- [main] .d.s.w.r.o.CachingOperationNameGenerator : Generating unique operation named: getuserUsingPOST_6
+2019-01-08 16:53:03.780  INFO 7728 --- [main] .d.s.w.r.o.CachingOperationNameGenerator : Generating unique operation named: getuserUsingPOST_7
+2019-01-08 16:53:03.788  INFO 7728 --- [main] .d.s.w.r.o.CachingOperationNameGenerator : Generating unique operation named: updateUsingPOST_8
+2019-01-08 16:53:03.834  INFO 7728 --- [main] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat started on port(s): 8080 (http) with context path ''
+2019-01-08 16:53:03.837  INFO 7728 --- [main] com.admin.AdminApplication               : Started AdminApplication in 6.313 seconds (JVM running for 7.867)
+2019-01-08 16:53:15.267  INFO 7728 --- [http-nio-8080-exec-1] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring DispatcherServlet 'dispatcherServlet'
+2019-01-08 16:53:15.267  INFO 7728 --- [http-nio-8080-exec-1] o.s.web.servlet.DispatcherServlet        : Initializing Servlet 'dispatcherServlet'
+2019-01-08 16:53:15.276  INFO 7728 --- [http-nio-8080-exec-1] o.s.web.servlet.DispatcherServlet        : Completed initialization in 9 ms

@@ -63,7 +63,7 @@ public interface TAdminDao {
      * @param adminId 主键
      * @return 影响行数
      */
-    int deleteById(Integer adminId);
+    int deleteById(@Param("adminId") Integer adminId);
 
     /**
      * 用户名登录

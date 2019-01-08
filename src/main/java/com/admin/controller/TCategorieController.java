@@ -53,14 +53,14 @@ public class TCategorieController {
 
     @RequestMapping(value = "update",method = RequestMethod.POST)
     @ApiOperation(value = "动态修改商品类别信息",notes = "返回商品类别对象json")
-    public String update(@ApiParam(required = true, name ="tCategorie", value ="商品类型名称")@RequestBody T_Categorie tCategorie){
+    public String update(@ApiParam(required = true, name ="tCategorie", value ="商品类型名称")T_Categorie tCategorie){
         String update = tCategorieService.update(tCategorie);
         return update;
     }
 
     @RequestMapping(value = "insert",method = RequestMethod.POST)
     @ApiOperation(value = "新增商品类别信息",notes = "相应结果")
-    public String insert(@ApiParam(required = true, name ="tCategorie", value ="商品类型名称")@RequestBody T_Categorie tCategorie){
+    public String insert(@ApiParam(required = true, name ="tCategorie", value ="商品类型名称")T_Categorie tCategorie){
         String insert = tCategorieService.insert(tCategorie);
         return insert;
     }

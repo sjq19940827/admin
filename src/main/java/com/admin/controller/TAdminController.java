@@ -63,7 +63,7 @@ public class TAdminController {
 
     @RequestMapping(value = "update",method = RequestMethod.POST)
     @ApiOperation(value = "修改管理员信息",notes = "相应结果")
-    public String update(@ApiParam(required = true, name ="管理员对象", value ="tadmin") @RequestBody TAdmin tAdmin){
+    public String update(TAdmin tAdmin){
         String insert = tAdminService.update(tAdmin);
         return insert;
     }
@@ -79,14 +79,14 @@ public class TAdminController {
     @ApiOperation(value = "修改管理员权限",notes = "相应结果")
     public String updatemark(@ApiParam(required = true, name ="管理员ID", value ="adminid") @RequestParam("adminid")int adminid,
                              @ApiParam(required = true, name ="管理员权限标记", value ="adminmark") @RequestParam("adminmark") int adminmark){
-        String i = tAdminService.updatemark(adminid,adminmark);
+            String i = tAdminService.updatemark(adminid,adminmark);
         return i;
     }
 
 
     @RequestMapping(value = "insert",method = RequestMethod.POST)
     @ApiOperation(value = "新增管理员",notes = "相应结果")
-    public String insert(@RequestBody TAdmin tAdmin){
+    public String insert(TAdmin tAdmin){
         String insert = tAdminService.insert(tAdmin);
         return insert;
     }

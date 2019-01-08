@@ -67,14 +67,14 @@ public class TFindController {
 
     @RequestMapping(value = "insert",method = RequestMethod.POST)
     @ApiOperation(value = "新增发现信息",notes = "相应结果")
-    public String insert(@RequestBody TFind tFind){
+    public String insert( TFind tFind){
         String insert = tFindService.insert(tFind);
         return insert;
     }
 
     @RequestMapping(value = "update",method = RequestMethod.POST)
     @ApiOperation(value = "修改发现信息",notes = "相应结果")
-    public String update(@RequestBody TFind tFind){
+    public String update( TFind tFind){
         String insert = tFindService.update(tFind);
         return insert;
     }

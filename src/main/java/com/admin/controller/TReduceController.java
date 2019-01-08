@@ -71,7 +71,7 @@ public class TReduceController {
 
     @RequestMapping(value = "insert",method = RequestMethod.POST)
     @ApiOperation(value = "新增优惠券信息",notes = "相应结果")
-    public String insert(@RequestBody TReduce tReduce){
+    public String insert( TReduce tReduce){
         TReduce insert = tReduceService.insert(tReduce);
         return JSON.toJSONString(insert);
     }
