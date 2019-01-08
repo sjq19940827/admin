@@ -21,7 +21,6 @@ import java.util.List;
  */
 @RestController
 @RequestMapping("tTalk")
-@Api(value = "tTalk/",description = "评论回复管理")
 public class TTalkController {
     /**
      * 评论
@@ -42,7 +41,6 @@ public class TTalkController {
      * @return 单条数据
      */
     @GetMapping("selectbyretalkid")
-    @ApiOperation(value = "根据回复Id查回复",notes = "回复对象")
     public TReplytalk selectreply(Integer id) {
         return this.tReplytalkService.queryById(id);
     }
@@ -55,7 +53,6 @@ public class TTalkController {
      * @return 单条数据
      */
     @GetMapping("selectbytalkid")
-    @ApiOperation(value = "根据评论ID查评论",notes = "评论对象")
     public TTalk selecttalk(Integer id) {
         return this.tTalkService.queryById(id);
     }
@@ -66,7 +63,6 @@ public class TTalkController {
      * @return
      */
     @GetMapping("selectrebyuserid")
-    @ApiOperation(value = "根据用户ID查回复",notes = "回复对象")
     public TReplytalk selectreplybyuserid(Integer userid){
         return tReplytalkService.queryByUserId(userid);
     }
@@ -76,13 +72,11 @@ public class TTalkController {
      * @return
      */
     @GetMapping("selectbyuserid")
-    @ApiOperation(value = "根据用户ID查评论",notes = "评论对象")
     public TTalk selectbyuserid(Integer userid){
         return tTalkService.queryByUserId(userid);
     }
 
     @GetMapping("getalltalk")
-    @ApiOperation(value = "分页查询全部评论",notes = "评论信息")
     public String getalltalk(@RequestParam("page")int page , @RequestParam("limit") int limit){
         List<TTalk> tTalks = tTalkService.queryAllByLimit(page, limit);
         JSONObject obj=new JSONObject();
@@ -93,7 +87,6 @@ public class TTalkController {
         return obj.toJSONString();
     }
     @GetMapping("getallreply")
-    @ApiOperation(value = "分页查询全部回复",notes = "回复信息")
     public String getallreply(@RequestParam("page")int page , @RequestParam("limit") int limit){
         List<TReplytalk> tReplytalks = tReplytalkService.queryAllByLimit(page, limit);
         JSONObject obj=new JSONObject();
@@ -105,14 +98,12 @@ public class TTalkController {
     }
 
     @GetMapping("deltalk")
-    @ApiOperation(value = "按评论ID删除评论信息",notes = "相应结果")
-    public String deltalk(@ApiParam(required = true, name ="talkid", value ="评论ID") @RequestParam("talkid") Integer talkid){
+    public String deltalk(@RequestParam("talkid") Integer talkid){
         String s = tTalkService.deleteById(talkid);
         return s;
     }
     @GetMapping("delreply")
-    @ApiOperation(value = "按回复ID删除回复信息",notes = "相应结果")
-    public String delreply(@ApiParam(required = true, name ="replyid", value ="回复ID") @RequestParam("replyid") Integer replyid){
+    public String delreply(@RequestParam("replyid") Integer replyid){
         String s = tReplytalkService.deleteById(replyid);
         return s;
     }

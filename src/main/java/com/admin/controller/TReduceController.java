@@ -20,7 +20,6 @@ import java.util.List;
  */
 @RestController
 @RequestMapping("tReduce")
-@Api(value = "tReduce/",description = "优惠券管理")
 public class TReduceController {
     /**
      * 服务对象
@@ -35,7 +34,6 @@ public class TReduceController {
      * @return 单条数据
      */
     @GetMapping("selectOne")
-    @ApiOperation(value = "按优惠券ID查询优惠券",notes = "优惠券json数组")
     public String selectOne(Integer id) {
         TReduce tReduce = this.tReduceService.queryById(id);
         return JSON.toJSONString(tReduce);
@@ -43,7 +41,6 @@ public class TReduceController {
 
 
     @GetMapping("selectbyname")
-    @ApiOperation(value = "按名字查询优惠券",notes = "优惠券json数组")
     public String selectOnebyname(String reducetot) {
         TReduce tReduce = tReduceService.queryByName(reducetot);
         System.out.println(JSON.toJSONString(tReduce));
@@ -51,7 +48,6 @@ public class TReduceController {
     }
 
     @GetMapping("getall")
-    @ApiOperation(value = "分页查询全部优惠券",notes = "优惠券信息")
     public String getall(@RequestParam("page")int page , @RequestParam("limit") int limit){
         List<TReduce> tReduces = tReduceService.queryAllByLimit(page, limit);
         JSONObject obj=new JSONObject();
@@ -63,21 +59,18 @@ public class TReduceController {
     }
 
     @GetMapping("del")
-    @ApiOperation(value = "删除优惠券信息",notes = "相应结果")
-    public String del(@ApiParam(required = true, name ="reduceId", value ="优惠券ID") @RequestParam("reduceId") Integer reduceId){
+    public String del(@RequestParam("reduceId") Integer reduceId){
         String s = tReduceService.deleteById(reduceId);
         return s;
     }
 
     @RequestMapping(value = "insert",method = RequestMethod.POST)
-    @ApiOperation(value = "新增优惠券信息",notes = "相应结果")
     public String insert( TReduce tReduce){
         TReduce insert = tReduceService.insert(tReduce);
         return JSON.toJSONString(insert);
     }
 
     @RequestMapping(value = "update",method = RequestMethod.POST)
-    @ApiOperation(value = "修改优惠券信息",notes = "相应结果")
     public String update( TReduce tReduce){
         String insert = tReduceService.update(tReduce);
         return insert;

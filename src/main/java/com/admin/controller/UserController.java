@@ -63,7 +63,6 @@ import java.util.List;
  */
 @RequestMapping("user/")
 @RestController
-@Api(value = "user/",description = "用户管理")
 public class UserController {
     @Autowired
     @Qualifier("usi")
@@ -76,7 +75,6 @@ public class UserController {
     }
     @ResponseBody
     @RequestMapping("getuser")
-    @ApiOperation(value = "分页查询所有用户信息" , httpMethod = "POST", notes = "返回所有用户信息数组")
     public String getuser(@RequestParam("page")int page , @RequestParam("limit") int limit){
         List<T_User> getuser = userservice.getuser(page, limit);
         JSONObject obj=new JSONObject();
@@ -89,14 +87,12 @@ public class UserController {
 
     @ResponseBody
     @RequestMapping("getadd")
-    @ApiOperation(value = "根据ID查询用户地址信息" , httpMethod = "POST", notes = "返回地址信息")
     public String getadd(@RequestParam("uid") Integer uid){
         String getadd = userservice.getadd(uid);
         return getadd;
     }
 
     @RequestMapping(value = "update",method = RequestMethod.POST)
-    @ApiOperation(value = "动态修改个人信息" , notes = "相应修改返回值")
     public String update(T_User t_user){
         String updateuser = userservice.updateuser(t_user);
         return updateuser;

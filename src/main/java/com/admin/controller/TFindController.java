@@ -20,7 +20,6 @@ import java.util.List;
  */
 @RestController
 @RequestMapping("tFind")
-@Api(value = "tFind/",description = "发现模块管理")
 public class TFindController {
     /**
      * 服务对象
@@ -35,19 +34,16 @@ public class TFindController {
      * @return 单条数据
      */
     @GetMapping("selectOne")
-    @ApiOperation(value = "按照发现ID查询发现",notes = "发现对象")
     public String selectOne(Integer id) {
         return JSON.toJSONString(this.tFindService.queryById(id));
     }
 
     @GetMapping("userid")
-    @ApiOperation(value = "按用户ID查询发现",notes = "发现对象")
     public String selectOnebyname(Integer userid) {
         return JSON.toJSONString(this.tFindService.queryByUserId(userid));
     }
 
     @GetMapping("getall")
-    @ApiOperation(value = "分页查询全部发现",notes = "发现信息json数组")
     public String getall(@RequestParam("page")int page , @RequestParam("limit") int limit){
         List<TFind> tFinds = tFindService.queryAllByLimit(page, limit);
         JSONObject obj=new JSONObject();
@@ -59,21 +55,18 @@ public class TFindController {
     }
 
     @GetMapping("del")
-    @ApiOperation(value = "删除发现信息",notes = "相应结果")
     public String del(@ApiParam(required = true, name ="findid", value ="发现ID") @RequestParam("findid") Integer findid){
         String s = tFindService.deleteById(findid);
         return s;
     }
 
     @RequestMapping(value = "insert",method = RequestMethod.POST)
-    @ApiOperation(value = "新增发现信息",notes = "相应结果")
     public String insert( TFind tFind){
         String insert = tFindService.insert(tFind);
         return insert;
     }
 
     @RequestMapping(value = "update",method = RequestMethod.POST)
-    @ApiOperation(value = "修改发现信息",notes = "相应结果")
     public String update( TFind tFind){
         String insert = tFindService.update(tFind);
         return insert;

@@ -19,7 +19,6 @@ import java.util.List;
  */
 @RestController
 @RequestMapping("tCategorie/")
-@Api(value = "tCategorie/",description = "商品种类管理")
 public class TCategorieController {
     /**
      * 服务对象
@@ -34,13 +33,11 @@ public class TCategorieController {
      * @return 单条数据
      */
     @GetMapping("selectOne")
-    @ApiOperation(value = "按ID查询类型",httpMethod = "GET",notes = "类型json数据")
     public T_Categorie selectOne(@RequestParam("id") Long id) {
         return this.tCategorieService.queryById(id);
     }
 
     @GetMapping("getall")
-    @ApiOperation(value = "分页查询全部订单",httpMethod = "GET",notes = "订单json数组")
     public String getall(@RequestParam("page")int page , @RequestParam("limit") int limit){
         List<T_Categorie> t_categories = tCategorieService.queryAllByLimit(page, limit);
         JSONObject obj=new JSONObject();
@@ -52,14 +49,12 @@ public class TCategorieController {
     }
 
     @RequestMapping(value = "update",method = RequestMethod.POST)
-    @ApiOperation(value = "动态修改商品类别信息",notes = "返回商品类别对象json")
     public String update(@ApiParam(required = true, name ="tCategorie", value ="商品类型名称")T_Categorie tCategorie){
         String update = tCategorieService.update(tCategorie);
         return update;
     }
 
     @RequestMapping(value = "insert",method = RequestMethod.POST)
-    @ApiOperation(value = "新增商品类别信息",notes = "相应结果")
     public String insert(@ApiParam(required = true, name ="tCategorie", value ="商品类型名称")T_Categorie tCategorie){
         String insert = tCategorieService.insert(tCategorie);
         return insert;
@@ -67,7 +62,6 @@ public class TCategorieController {
 
 
     @GetMapping("del")
-    @ApiOperation(value = "删除商品类型信息",httpMethod = "POST",notes = "相应结果")
     public String del(@RequestParam("categorieid") long categorieid){
         String s = tCategorieService.deleteById(categorieid);
         return s;

@@ -20,7 +20,6 @@ import java.util.List;
  */
 @RestController
 @RequestMapping("tProblem")
-@Api(value = "tProblem/",description = "常见问题管理")
 public class TProblemController {
     /**
      * 服务对象
@@ -41,13 +40,11 @@ public class TProblemController {
 
 
     @GetMapping("selectbyname")
-    @ApiOperation(value = "根据问题名称查询",notes = "常见问题json数组")
     public String selectOnebyname(String title) {
         return JSON.toJSONString(this.tProblemService.queryByTitle(title));
     }
 
     @GetMapping("getall")
-    @ApiOperation(value = "分页查询全部问题",notes = "常见问题json数组")
     public String getall(@RequestParam("page")int page , @RequestParam("limit") int limit){
         List<TProblem> tProblems = tProblemService.queryAllByLimit(page, limit);
         JSONObject obj=new JSONObject();
@@ -59,22 +56,19 @@ public class TProblemController {
     }
 
     @GetMapping("del")
-    @ApiOperation(value = "删除问题信息",notes = "相应结果")
-    public String del(@ApiParam(required = true, name ="问题ID", value ="qid") @RequestParam("qid") Integer qid){
+    public String del(@RequestParam("qid") Integer qid){
         String s = tProblemService.deleteById(qid);
         return s;
     }
 
     @RequestMapping(value = "insert",method = RequestMethod.POST)
-    @ApiOperation(value = "新增问题信息",notes = "相应结果")
     public String insert( TProblem tProblem){
         String insert = tProblemService.insert(tProblem);
         return insert;
     }
 
     @RequestMapping(value = "update",method = RequestMethod.POST)
-    @ApiOperation(value = "修改问题信息",notes = "相应结果")
-    public String update(@ApiParam(required = true, name ="问题对象", value ="tproblem") TProblem tProblem){
+    public String update( TProblem tProblem){
         String insert = tProblemService.update(tProblem);
         return insert;
     }

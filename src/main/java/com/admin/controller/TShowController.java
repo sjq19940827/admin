@@ -19,7 +19,6 @@ import java.util.List;
  */
 @RestController
 @RequestMapping("tShow/")
-@Api(value = "tShow/",description = "商品管理")
 public class TShowController {
     /**
      * 服务对象
@@ -41,7 +40,6 @@ public class TShowController {
 
 
     @GetMapping("getallshow")
-    @ApiOperation(value = "分页查询所有商品信息" , httpMethod = "GET", notes = "返回所有商品信息 数组")
     public String querybylimit(@RequestParam("page")int page , @RequestParam("limit") int limit) throws Exception{
         List<T_Show> t_shows = tShowService.queryAllByLimit(page, limit);
         JSONObject obj=new JSONObject();
@@ -53,14 +51,12 @@ public class TShowController {
     }
 
     @RequestMapping(value = "update",method = RequestMethod.POST)
-    @ApiOperation(value = "动态修改商品信息",notes = "返回商品对象json")
     public String update( T_Show t_show){
         String update = tShowService.update(t_show);
         return update;
     }
 
     @RequestMapping(value = "insert",method = RequestMethod.POST)
-    @ApiOperation(value = "新增商品信息",httpMethod = "GET",notes = "相应结果")
     public String insert( T_Show t_show){
         String insert = tShowService.insert(t_show);
         return insert;
@@ -68,7 +64,6 @@ public class TShowController {
 
 
     @GetMapping("del")
-    @ApiOperation(value = "删除商品信息",httpMethod = "POST",notes = "相应结果")
     public String del(@RequestParam("showid") long showid){
         String s = tShowService.deleteById(showid);
         return s;

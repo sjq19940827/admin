@@ -22,7 +22,6 @@ import java.util.List;
  */
 @RestController
 @RequestMapping("tAdmin")
-@Api(value = "tAdmin/",description = "管理员管理")
 public class TAdminController {
     /**
      * 服务对象
@@ -43,14 +42,12 @@ public class TAdminController {
 
 
     @GetMapping("login")
-    @ApiOperation(value = "登录",notes = "相应返回结果")
     public String login(@RequestParam("addountnumber")String addountnumber, @RequestParam("password")String password){
         String s = tAdminService.login(addountnumber, password);
         return s;
     }
 
     @GetMapping("getall")
-    @ApiOperation(value = "分页显示全部管理员信息",httpMethod = "GET",notes = "订单json数组")
     public String getall(@RequestParam("page")int page , @RequestParam("limit") int limit){
         List<TAdmin> tAdmins = tAdminService.queryAllByLimit(page, limit);
         JSONObject obj=new JSONObject();
@@ -62,30 +59,26 @@ public class TAdminController {
     }
 
     @RequestMapping(value = "update",method = RequestMethod.POST)
-    @ApiOperation(value = "修改管理员信息",notes = "相应结果")
     public String update(TAdmin tAdmin){
         String insert = tAdminService.update(tAdmin);
         return insert;
     }
     @GetMapping("del")
-    @ApiOperation(value = "删除管理员信息",notes = "相应结果")
-    public String del(@ApiParam(required = true, name ="管理员ID", value ="aid") @RequestParam("aid") Integer aid){
+    public String del(@RequestParam("aid") Integer aid){
         String s = tAdminService.deleteById(aid);
         return s;
     }
 
 
     @RequestMapping(value = "updatemark",method = RequestMethod.POST)
-    @ApiOperation(value = "修改管理员权限",notes = "相应结果")
-    public String updatemark(@ApiParam(required = true, name ="管理员ID", value ="adminid") @RequestParam("adminid")int adminid,
-                             @ApiParam(required = true, name ="管理员权限标记", value ="adminmark") @RequestParam("adminmark") int adminmark){
+    public String updatemark(@RequestParam("adminid")int adminid,
+                             @RequestParam("adminmark") int adminmark){
             String i = tAdminService.updatemark(adminid,adminmark);
         return i;
     }
 
 
     @RequestMapping(value = "insert",method = RequestMethod.POST)
-    @ApiOperation(value = "新增管理员",notes = "相应结果")
     public String insert(TAdmin tAdmin){
         String insert = tAdminService.insert(tAdmin);
         return insert;
