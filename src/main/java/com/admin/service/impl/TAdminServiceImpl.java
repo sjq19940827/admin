@@ -52,9 +52,11 @@ public class TAdminServiceImpl implements TAdminService {
 
         switch (tAdmin.getAdminMark()){
             case 1:
-                map.put("code","超级管理员");
+                map.put("code",1);
+                map.put("message","超级管理员");
                 break;
             case 2:
+                map.put("code",1);
                 map.put("code","商品管理员");
                 break;
             case 3:
