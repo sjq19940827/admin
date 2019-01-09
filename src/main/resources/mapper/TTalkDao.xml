@@ -45,6 +45,7 @@
     <select id="queryById" resultMap="TTalkMap">
         select
           talk_id, answer_id, user_id, talk_info, state, prase_count, createtime
+          id,userName,show_id,show_name
         from xiaomai.t_talk
         where talk_id = #{talkId}
     </select>

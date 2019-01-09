@@ -1,7 +1,9 @@
 package com.admin.pojo;
 
+import java.util.ArrayList;
 import java.util.Date;
 import java.io.Serializable;
+import java.util.List;
 
 /**
  * (TReplytalk)实体类
@@ -24,6 +26,25 @@ public class TReplytalk implements Serializable {
     
     private Date createtime;
 
+    private List<T_User> tUsers=new ArrayList<T_User>();
+
+    private List<TTalk> tTalks=new ArrayList<TTalk>();
+
+    public List<T_User> gettUsers() {
+        return this.tUsers;
+    }
+
+    public void settUsers(final List<T_User> tUsers) {
+        this.tUsers = tUsers;
+    }
+
+    public List<TTalk> gettTalks() {
+        return this.tTalks;
+    }
+
+    public void settTalks(final List<TTalk> tTalks) {
+        this.tTalks = tTalks;
+    }
 
     public Integer getReplyId() {
         return replyId;

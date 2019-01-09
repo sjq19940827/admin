@@ -77,6 +77,7 @@ public class CityServiceImpl implements CityService {
         if (update>0){
             return JSON.toJSONString(this.queryById(city.getCityId()));
         }else {
+            System.out.println(city.getCityId()+city.getCityName());
             return "修改失败";
         }
     }

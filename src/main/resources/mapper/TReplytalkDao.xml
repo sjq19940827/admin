@@ -9,6 +9,22 @@
         <result property="replyInfo" column="reply_info" jdbcType="VARCHAR"/>
         <result property="praseCount" column="prase_count" jdbcType="INTEGER"/>
         <result property="createtime" column="createtime" jdbcType="TIMESTAMP"/>
+        <association property="tUsers" javaType="com.admin.pojo.T_User">
+            <result column="id" property="id"/>
+            <result column="userName" property="userName"/>
+            <result column="nickname" property="nickname"/>
+            <result column="password" property="password"/>
+            <result column="sex" property="sex"/>
+            <result column="identityCode" property="identityCode"/>
+            <result column="identityCode" property="identityCode"/>
+            <result column="userdate" property="userdate"/>
+            <result column="loginName" property="loginName"/>
+            <result column="usertype" property="usertype"/>
+            <result column="imageName" property="imageName"/>
+            <result column="balance" property="balance"/>
+            <result column="latelyLogin" property="latelyLogin"/>
+            <result column="login_phone" property="login_Phone"/>
+        </association>
     </resultMap>
     <!--查询单个-->
     <select id="queryById" resultMap="TReplytalkMap">
@@ -29,8 +45,10 @@
     <!--通过实体作为筛选条件查询-->
     <select id="queryAll" resultMap="TReplytalkMap">
         select
-          reply_id, replyuser_id, talk_id, reply_info, prase_count, createtime
-        from xiaomai.t_replytalk
+          reply_id, replyuser_id, talk_id, reply_info, prase_count, createtime,
+          id,userName
+        from xiaomai.t_replytalk ta,xiaomai.t_user tu
+        where ta.replyuser_id=tu.id
     </select>
 
     <!--新增所有列-->

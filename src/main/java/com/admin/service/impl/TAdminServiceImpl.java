@@ -42,32 +42,64 @@ public class TAdminServiceImpl implements TAdminService {
         TAdmin tAdmin=new TAdmin();
         if (tAdmin1 != null) {
             tAdmin = tAdminDao.loginByname(addountnumber, password);
-            map.put("admin",tAdmin);
+            if(tAdmin != null){
+                map.put("admin",tAdmin);
+                switch (tAdmin.getAdminMark()){
+                    case 1:
+                        map.put("code",1);
+                        map.put("message","超级管理员");
+                        break;
+                    case 2:
+                        map.put("code",2);
+                        map.put("message","商品管理员");
+                        break;
+                    case 3:
+                        map.put("code",3);
+                        map.put("message","客服管理员");
+                        break;
+                    case 4:
+                        map.put("code",4);
+                        map.put("message","信息管理员");
+                        break;
+                    default:
+                        map.put("code","0");
+                        map.put("message","没有权限");
+                        break;
+                }
+            }else {
+                return "密码输入错误，请重新输入";
+            }
         } else if (tAdmin2 != null) {
             tAdmin = tAdminDao.loginByphone(addountnumber, password);
-            map.put("admin",tAdmin);
+            if(tAdmin != null){
+                map.put("admin",tAdmin);
+                switch (tAdmin.getAdminMark()){
+                    case 1:
+                        map.put("code",1);
+                        map.put("message","超级管理员");
+                        break;
+                    case 2:
+                        map.put("code",2);
+                        map.put("message","商品管理员");
+                        break;
+                    case 3:
+                        map.put("code",3);
+                        map.put("message","客服管理员");
+                        break;
+                    case 4:
+                        map.put("code",4);
+                        map.put("message","信息管理员");
+                        break;
+                    default:
+                        map.put("code","0");
+                        map.put("message","没有权限");
+                        break;
+                }
+            }else {
+                return "密码输入错误，请重新输入";
+            }
         }else {
-            return "输入错误";
-        }
-
-        switch (tAdmin.getAdminMark()){
-            case 1:
-                map.put("code",1);
-                map.put("message","超级管理员");
-                break;
-            case 2:
-                map.put("code",1);
-                map.put("code","商品管理员");
-                break;
-            case 3:
-                map.put("code","客服管理员");
-                break;
-            case 4:
-                map.put("code","信息管理员");
-                break;
-                default:
-                    map.put("code","没有任何权限");
-                    break;
+            return "用户名输入错误，请重新输入";
         }
         return JSON.toJSONString(map);
     }
