@@ -35,7 +35,7 @@
     <!--新增所有列-->
     <insert id="insert" keyProperty="findId" useGeneratedKeys="true">
         insert into xiaomai.t_find(information, show_id, user_id, releasetime)
-        values (#{information}, #{showId}, #{userId}, #{releasetime})
+        values (#{information}, #{showId}, 2, #{releasetime})
     </insert>
 
     <!--通过主键修改数据-->

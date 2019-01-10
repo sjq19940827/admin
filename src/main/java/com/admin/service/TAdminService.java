@@ -72,4 +72,13 @@ public interface TAdminService {
      */
     String insert(TAdmin tAdmin);
 
+    /**
+     * 修改密码
+     * @param id
+     * @param password
+     * @param Newpassword
+     * @return
+     */
+    String updatePassword(Integer id,String password,String Newpassword);
+
 }

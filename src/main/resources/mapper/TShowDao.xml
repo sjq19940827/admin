@@ -70,7 +70,7 @@
     <!--新增所有列-->
     <insert id="insert" keyProperty="show_Id" useGeneratedKeys="true">
         insert into t_show(show_name, show_img, show_min_price, show_place, categorie_id, areainfo_id, show_title, count, show_status, show_begin_time, show_end_time, show_max_price, show_ipt_num,show_mark)
-        values (#{show_Name}, #{show_Img}, #{show_Min_Price}, #{show_Place}, #{categorie_Id}, #{areainfo_Id}, #{show_Title}, #{count}, #{show_Status}, convert(varchar(10),getdate(),120), dateadd(ms,-3,DATEADD(yy,DATEDIFF(yy,0,getdate())+1,0)), #{show_Max_Price}, #{show_Ipt_Num} ,#{show_mark})
+        values (#{show_Name}, #{show_Img}, #{show_Min_Price}, #{show_Place}, #{categorie_Id}, #{areainfo_Id}, #{show_Title}, #{count}, #{show_Status}, #{show_begin_time}, #{show_end_time}, #{show_Max_Price}, #{show_Ipt_Num} ,#{show_mark})
     </insert>
 
     <!--通过主键修改数据-->

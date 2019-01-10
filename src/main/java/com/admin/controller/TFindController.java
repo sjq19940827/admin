@@ -55,7 +55,7 @@ public class TFindController {
     }
 
     @GetMapping("del")
-    public String del(@ApiParam(required = true, name ="findid", value ="发现ID") @RequestParam("findid") Integer findid){
+    public String del(@RequestParam("findid") Integer findid){
         String s = tFindService.deleteById(findid);
         return s;
     }

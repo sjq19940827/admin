@@ -36,8 +36,8 @@ public class TAdminController {
      * @return 单条数据
      */
     @GetMapping("selectOne")
-    public TAdmin selectOne(Integer id) {
-        return this.tAdminService.queryById(id);
+    public String selectOne(Integer id) {
+        return JSON.toJSONString(this.tAdminService.queryById(id));
     }
 
 
@@ -82,5 +82,10 @@ public class TAdminController {
     public String insert(TAdmin tAdmin){
         String insert = tAdminService.insert(tAdmin);
         return insert;
+    }
+
+    @GetMapping("updatePassword")
+    public String updatePassword(@RequestParam("id") Integer id, @RequestParam("password")String password, @RequestParam("Newpassword")String Newpassword){
+        return tAdminService.updatePassword(id,password,Newpassword);
     }
 }

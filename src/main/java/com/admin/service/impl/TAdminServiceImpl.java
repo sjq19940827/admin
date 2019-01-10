@@ -178,5 +178,34 @@ public class TAdminServiceImpl implements TAdminService {
         }
     }
 
+    /**
+     * 修改密码
+     * @param id
+     * @param password
+     * @param Newpassword
+     * @return
+     */
+    @Override
+    public String updatePassword(Integer id, String password, String Newpassword) {
+        TAdmin tAdmin = tAdminDao.queryById(id);
+        String adminPwd = tAdmin.getAdminPwd();
+        if(adminPwd.equals(password)){
+            if(!password.equals(Newpassword)){
+                tAdmin.setAdminPwd(Newpassword);
+                tAdmin.setAdminId(id);
+                int update = tAdminDao.update(tAdmin);
+                if(update != 0){
+                    return "修改成功";
+                }else {
+                    return "修改失败";
+                }
+            }else {
+                return "原始密码和新密码不能一致";
+            }
+        }else {
+            return "初始密码错误，请重新输入";
+        }
+    }
+
 
 }

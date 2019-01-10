@@ -33,9 +33,9 @@ public class T_Show implements Serializable {
     //演出状态，1:项目待定，2:预定/预售，3:售票中,4:退票，5:演出开始
     private Long show_Status;
     
-    private Date show_Begin_Time;
+    private String show_Begin_Time;
     
-    private Date show_End_Time;
+    private String show_End_Time;
     //最高票价
     private Object show_Max_Price;
     //票数
@@ -137,19 +137,19 @@ public class T_Show implements Serializable {
         this.show_Status = show_Status;
     }
 
-    public Date getShow_Begin_Time() {
+    public String getShow_Begin_Time() {
         return this.show_Begin_Time;
     }
 
-    public void setShow_Begin_Time(final Date show_Begin_Time) {
+    public void setShow_Begin_Time(final String show_Begin_Time) {
         this.show_Begin_Time = show_Begin_Time;
     }
 
-    public Date getShow_End_Time() {
+    public String getShow_End_Time() {
         return this.show_End_Time;
     }
 
-    public void setShow_End_Time(final Date show_End_Time) {
+    public void setShow_End_Time(final String show_End_Time) {
         this.show_End_Time = show_End_Time;
     }
 

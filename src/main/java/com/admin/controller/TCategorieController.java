@@ -49,7 +49,7 @@ public class TCategorieController {
     }
 
     @RequestMapping(value = "update",method = RequestMethod.POST)
-    public String update(@ApiParam(required = true, name ="tCategorie", value ="商品类型名称")T_Categorie tCategorie){
+    public String update(T_Categorie tCategorie){
         String update = tCategorieService.update(tCategorie);
         return update;
     }

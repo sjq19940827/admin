@@ -45,7 +45,7 @@ public class CityController {
         JSONObject obj=new JSONObject();
         obj.put("code",0);
         obj.put("msg","");
-        obj.put("count",130);
+        obj.put("count",200);
         obj.put("data",cities);
         return obj.toJSONString();
 //        jsoncode jsontojsonstring

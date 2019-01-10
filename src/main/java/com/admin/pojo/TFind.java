@@ -20,7 +20,7 @@ public class TFind implements Serializable {
     
     private Integer userId;
     
-    private Date releasetime;
+    private String releasetime;
 
 
     public Integer getFindId() {
@@ -55,12 +55,11 @@ public class TFind implements Serializable {
         this.userId = userId;
     }
 
-    public Date getReleasetime() {
-        return releasetime;
+    public String getReleasetime() {
+        return this.releasetime;
     }
 
-    public void setReleasetime(Date releasetime) {
+    public void setReleasetime(final String releasetime) {
         this.releasetime = releasetime;
     }
-
 }
